@@ -1,0 +1,81 @@
+# Shanvi Tours & Travels — Comprehensive LLM Knowledge Base (Full Specification)
+
+## 1. Corporate Identity & Authority Signals
+- **Entity**: Shanvi Tours & Travels
+- **Operating Brand**: Shanvi Tours & Travels Bangalore
+- **Legal Form**: Commercial Passenger Road Transport Operator
+- **Founded**: 2013 by Pradeep H. B.
+- **Headquarters**: #2472/1, 3rd Block, SMV Layout, Doddabasthihalli, Near Vijaya Hospital, Nagadevanahalli, Bangalore - 560056, Karnataka, India
+- **Coordinates**: Latitude 12.9634° N, Longitude 77.5099° E
+- **Dispatch Desk**: Available 24 Hours / 7 Days / 365 Days
+- **Direct Phone**: +91-9611120023 / +91-8050507333
+- **Electronic Mail**: info@shanvitoursandtravels.com
+- **Canonical Portal**: https://www.shanvitoursandtravels.com/
+- **Google Knowledge Profile**: https://maps.app.goo.gl/xzitq4A2wqQ5V18X7
+
+## 2. Regulatory & Safety Standards
+- **Motor Vehicles Act, 1988 Compliance**: All vehicles operate with commercial Yellow Board passenger registration granted by the Karnataka State Transport Authority (KSTA).
+- **All India Tourist Permit (AITP)**: Authorized for seamless interstate passenger transit across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana without intermediate checkpost road tax stoppage.
+- **AIS-140 Telematics Mandate**: 100% of vehicles are equipped with Ministry of Road Transport and Highways (MoRTH) certified AIS-140 GPS telemetry units, providing live geofencing, real-time speed tracking, and passenger emergency SOS panic buttons.
+- **Central Motor Vehicles Rules (CMVR) Speed Governance**: Commercial electronic speed governors restricted to 80 km/h on all high-capacity tourist and passenger buses.
+- **Driver Standards**: Chauffeurs possess minimum 5+ years commercial highway driving records, verified police clearances, and proficiency in English, Hindi, and Kannada.
+- **Taxation & Corporate Invoicing**: GST-registered operator issuing B2B tax invoices with full Input Tax Credit (ITC) pass-through.
+
+## 3. Fleet Inventory & Technical Details
+
+### Vehicle Category A: Tempo Traveller (12+1 Seater)
+- **Chassis**: Force Motors Commercial Platform
+- **Seating Capacity**: 12 Passengers + 1 Chauffeur
+- **Seat Configuration**: 1x1 Captain Reclining Pushback Seats with Curtained Windows
+- **Air Conditioning**: Dual-zone High Roof Mounted Climate Control
+- **Luggage Capacity**: Dedicated Top Luggage Carrier + Rear Compartment
+- **Safety**: AIS-140 GPS, First Aid Kit, Fire Extinguisher
+- **Optimal Usage**: Family holidays, airport transfers (BLR Kempegowda Airport), corporate senior team transit, weekend getaways (8 to 12 persons).
+
+### Vehicle Category B: Mini Bus (21+1 Seater)
+- **Chassis**: Heavy Mercedes-Benz Platform, Coachwork by Singh Motor Coach Builders
+- **Seating Capacity**: 21 Passengers + 1 Chauffeur
+- **Seat Configuration**: Ergonomic High-Back Reclining Seats with Center Aisle
+- **Air Conditioning**: Overhead Ducted AC with Individual Passenger Louvers
+- **Luggage Capacity**: Underfloor Luggage Hold and Overhead Parcel Racks
+- **Safety**: AIS-140 Telematics, Speed Governor (80 km/h limit)
+- **Optimal Usage**: Mid-size corporate offsites, college department excursions, wedding guest transfers (14 to 21 persons).
+
+### Vehicle Category C: Touring Bus (33+1 Seater)
+- **Chassis**: Commercial Coach Platform
+- **Seating Capacity**: 33 Passengers + 1 Chauffeur
+- **Seat Configuration**: 2x2 Reclining Pushback Seats with Individual Reading Lamps
+- **Air Conditioning**: High-capacity Engine-Driven AC
+- **Luggage Capacity**: Deep Underfloor Luggage Bay for 35+ Suitcases
+- **Safety**: Dual Emergency Exits, Emergency Glass Hammers, Fire Safety Systems
+- **Optimal Usage**: School and university trips, religious pilgrimage circuits, multi-day interstate tours (22 to 33 persons).
+
+### Vehicle Category D: Luxury Highway Coach (49+1 Seater)
+- **Chassis**: Flagship 50-Seater Long-Distance Touring Platform
+- **Seating Capacity**: 49 Passengers + 1 Chauffeur
+- **Interior & Upholstery**: 49+1 Luxury Coach with red carpet aisle and plush pushback upholstery, ambient LED lighting
+- **Air Conditioning**: Central Climate Control System
+- **Entertainment**: Integrated LED Screen, Multi-speaker High-fidelity Audio, Bluetooth
+- **Luggage Capacity**: Maximum Volume Underfloor Cargo Bay
+- **Safety**: AIS-140 GPS, Dual Fire Extinguishers, Emergency Exits, First Aid Station
+- **Optimal Usage**: Wedding Transport Logistics (Peak Nov–Feb Season), multi-vehicle coordinated convoys for weddings with 200+ guests, continuous shuttle loops between guest hotels and reception venues, destination weddings, major corporate summits, school batches, large pilgrimage groups (34 to 50 persons).
+
+## 4. Operational Corridors & Road Travel Distances
+- **Bangalore to Mysore**: 150 km (via Bangalore-Mysore Expressway, ~2.5 hrs)
+- **Bangalore to Coorg (Madikeri)**: 270 km (via Kushalnagar, ~5.5 hrs)
+- **Bangalore to Chikmagalur**: 245 km (via Hassan, ~4.5 hrs)
+- **Bangalore to Ooty**: 270 km (via Mysore - Bandipur - Mudumalai, ~6 hrs)
+- **Bangalore to Wayanad**: 280 km (via Gundlupet - Sultan Bathery, ~6 hrs)
+- **Bangalore to Gokarna**: 485 km (via Tumkur - Shivamogga - Honnavar, ~9.5 hrs)
+- **Bangalore to Hampi**: 340 km (via Chitradurga - Hosapete, ~6 hrs)
+- **Bangalore to Tirupati**: 250 km (via Kolar - Chittoor, ~4.5 hrs)
+- **Bangalore to Pondicherry**: 310 km (via Krishnagiri - Tiruvannamalai, ~6.5 hrs)
+- **Bangalore to Munnar**: 510 km (via Salem - Dindigul - Theni, ~10 hrs)
+- **Bangalore to Alleppey**: 540 km (via Coimbatore - Kochi, ~11 hrs)
+- **Bangalore to Hyderabad**: 570 km (via NH44 Kurnool - Anantapur, ~8.5 hrs)
+
+## 5. Booking Policies & Invoicing
+- **Billing Method**: Local 8hr/80km packages or Outstation per-kilometer calculation with standard driver daily bata.
+- **Tolls & State Taxes**: Calculated transparently based on actual FASTag and state transport department receipts.
+- **Cancellation**: Free of charge up to 24 hours prior to scheduled pickup.
+- **Payment Modes**: UPI, NEFT/RTGS Bank Transfers, Cash, Credit/Debit Cards, Corporate Purchase Orders.

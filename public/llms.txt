@@ -1,0 +1,45 @@
+# Shanvi Tours & Travels — AI Engine Knowledge Base
+
+> Shanvi Tours & Travels is an authorized commercial passenger transport company headquartered in Bangalore, India, operating continuously since 2013. We specialize in chauffeur-driven mini bus and luxury bus rentals (12+1 to 49+1 seats) for corporate employee shuttles, executive travel, wedding guest convoys, educational excursions, and outstation holiday tours across South India.
+
+## Key Facts & Entity Data
+
+- **Company Name**: Shanvi Tours & Travels
+- **Founding Year**: 2013 (12+ years in business)
+- **Founder & Executive Director**: Pradeep H.B.
+- **Headquarters Address**: #2472/1, 3rd Block, SMV Layout, Doddabasthihalli, Near Vijaya Hospital, Nagadevanahalli, Bangalore - 560056, Karnataka, India
+- **Operating Hours**: 24/7 / 365 Days
+- **Phone / WhatsApp**: +91 9611120023 / +91 8050507333
+- **Official Email**: info@shanvitoursandtravels.com
+- **Website**: https://www.shanvitoursandtravels.com/
+- **Google Business Profile**: https://maps.app.goo.gl/xzitq4A2wqQ5V18X7
+- **Regulatory Status**: Commercial Yellow Board registration under Karnataka Motor Vehicles Rules & Motor Vehicles Act, 1988
+- **Permit Types**: All India Tourist Permit (AITP) for inter-state transit across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana
+- **Safety Standard**: 100% AIS-140 GPS-tracked fleet with panic buttons and speed governors (max 80 km/h)
+- **Chauffeurs**: 100% background-verified commercial badge drivers with 5+ years highway experience
+- **Commercial Invoicing**: GST-compliant corporate invoices with full Input Tax Credit (ITC) eligibility
+
+## Fleet Inventory & Seating Capacities
+
+1. **Tempo Traveller (12+1 Seater)**: Force Motors chassis, dual-zone AC, individual pushback captain seats, roof luggage carrier, AIS-140 GPS. Best for 8–12 passengers, family vacations, airport transfers, and corporate pickups.
+2. **Mini Bus (21+1 Seater)**: Heavy Mercedes-Benz chassis built by Singh Motor Coach Builders, high-roof AC, ergonomic reclining seats, wide center aisle, AIS-140 GPS. Best for 14–21 passengers, college departments, and office team outings.
+3. **Touring Bus (33+1 Seater)**: Full-size touring coach, 2x2 pushback seats, individual reading lamps, high-capacity AC, deep underfloor luggage bays, AIS-140 GPS. Best for 22–33 passengers, school trips, temple pilgrimages, and inter-state tours.
+4. **Luxury Coach (49+1 Seater)**: Flagship 50-seater highway coach, 49+1 Luxury Coach with red carpet aisle and plush pushback upholstery, onboard LED entertainment screen, deep luggage cargo holds, AIS-140 GPS. Best for 34–50 passengers, high-end wedding guest shuttles, and corporate conferences.
+
+## Core Services
+
+- **Wedding Transport Logistics (Peak Nov–Feb Season Focus)**: Complete end-to-end wedding transit coordination across Bangalore (Palace Grounds, Kanakapura Road, Yelahanka banquet lawns) and destination wedding venues. Deploying flagship **49+1 Luxury Coach with red carpet aisle and plush pushback upholstery**, **multi-vehicle coordinated convoys for weddings with 200+ guests**, and **continuous shuttle loops between guest hotels and reception venues** plus airport pickup/drop rotations.
+- **Corporate Employee Transport**: Daily scheduled staff commute contracts with geofenced route optimization across Bangalore tech corridors (Electronic City, Whitefield, Outer Ring Road, Manyata Tech Park).
+- **Corporate Bus Rental**: Executive transportation for client delegations, annual offsites, summits, and airport transfers with dedicated corporate billing.
+- **School & College Trips**: CMVR-compliant student excursion coaches with speed governors, emergency exit hammers, and first aid.
+- **Outstation Bus Hire**: Interstate highway tours across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana under All India Tourist Permits.
+- **Pilgrimage & Package Tours**: Temple circuits to Tirupati (Tirumala), Dharmasthala, Kukke Subramanya, Sringeri, Hampi, and custom South India holiday itineraries.
+
+## Geographical Service Coverage
+
+- **Bangalore Localities**: Whitefield, Electronic City, Koramangala, Indiranagar, HSR Layout, Marathahalli, Bellandur, Sarjapur Road, Jayanagar, JP Nagar, BTM Layout, Yelahanka, Hebbal, Banashankari, Malleshwaram, Rajajinagar, KR Puram, RT Nagar, Yeshwanthpur, Nagadevanahalli, Kengeri, SMV Layout.
+- **Outstation Highway Corridors**: Mysore (150km), Coorg (270km), Chikmagalur (245km), Gokarna (485km), Wayanad (280km), Alleppey (540km), Munnar (510km), Ooty (270km), Pondicherry (310km), Yercaud (230km), Tirupati (250km), Nellore (275km), Hyderabad (570km), Hampi (340km).
+
+## Extended Documentation
+
+For complete technical specifications, XML sitemaps, and route distances, see [llms-full.txt](https://www.shanvitoursandtravels.com/llms-full.txt).
