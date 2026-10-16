@@ -14,8 +14,8 @@ npm run build && npm start
 
 ## Deploy (Vercel)
 
-In the Vercel project settings set **Root Directory = `web`** (framework preset: Next.js).
-The root `vercel.json` belongs to the PHP site and is ignored once the root directory is `web`.
+This app lives at the root of [Shabiul/shanvi-2](https://github.com/Shabiul/shanvi-2); Vercel auto-detects Next.js, no settings needed.
+In the original monorepo it sits in `web/` — there, set **Root Directory = `web`**.
 
 ## What's where
 
