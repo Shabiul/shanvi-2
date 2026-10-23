@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { CalendarDays, MapPin, Minus, Navigation, Plus, Sparkles } from "lucide-react";
+import Link from "next/link";
 import { vehicleFor, waLink } from "@/lib/content";
 
 const tabs = ["Outstation", "Local", "Airport", "Wedding"] as const;
@@ -108,6 +109,13 @@ export function BookingWidget({ className = "" }: { className?: string }) {
           <span className="relative">Get fare on WhatsApp</span>
         </button>
       </div>
+      <p className="px-3 pb-1 pt-2 text-[11px] text-muted">
+        Sends your trip details to us on WhatsApp. See our{" "}
+        <Link href="/privacy-policy" className="inline-block py-1.5 font-bold text-forest underline decoration-forest/30 underline-offset-2">
+          Privacy Policy
+        </Link>
+        .
+      </p>
 
       <AnimatePresence>
         {sent && (

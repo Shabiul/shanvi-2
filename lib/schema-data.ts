@@ -1,3 +1,6 @@
+// Prices in the offer catalog come from the fleet data, so they never drift from the site.
+import { fleet, rateText } from "./content";
+
 // Site-wide JSON-LD ported from the PHP header.
 export const websiteSchema = {
   "@context": "https://schema.org",
@@ -50,86 +53,15 @@ export const organizationSchema = {
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Bangalore Commercial Bus & Tempo Traveller Rental Tariffs",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "12+1 Seater Tempo Traveller Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹4,500; outstation from ₹20/km"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "4500",
-          "priceCurrency": "INR"
-        }
+    "itemListElement": fleet.map((v) => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": `${v.seats} ${v.name} Rental Bangalore`,
+        "description": `Local 8-Hour / 80-Km package from ₹${v.local.toLocaleString("en-IN")}; outstation ${rateText(v)} per km`,
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "21+1 Seater Mercedes Mini Bus Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹6,500; outstation from ₹30/km"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "6500",
-          "priceCurrency": "INR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "25+1 Seater Mini Coach Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹7,500; outstation from ₹32/km"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "7500",
-          "priceCurrency": "INR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "33+1 Seater Touring Bus Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹9,500; outstation from ₹38/km"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "9500",
-          "priceCurrency": "INR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "45+1 Seater Premium Coach Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹14,000; outstation from ₹55/km"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "14000",
-          "priceCurrency": "INR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "49+1 Seater Luxury Wedding Coach Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹12,500; outstation from ₹48/km"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "12500",
-          "priceCurrency": "INR"
-        }
-      }
-    ]
+      "priceSpecification": { "@type": "PriceSpecification", "price": String(v.local), "priceCurrency": "INR" },
+    })),
   },
   "paymentAccepted": [
     "Cash",

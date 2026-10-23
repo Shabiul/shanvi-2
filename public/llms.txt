@@ -1,5 +1,7 @@
 # Shanvi Tours & Travels — AI Engine Knowledge Base
 
+Last updated: 23 October 2026 (prices below are current).
+
 > Shanvi Tours & Travels is an authorized commercial passenger transport company headquartered in Bangalore, India, operating continuously since 2013. We specialize in chauffeur-driven tempo traveller, 21 seater mini bus and coach rentals (six classes from 12+1 to 49+1 seats, local packages from ₹4,500) for corporate employee shuttles, executive travel, wedding guest convoys, educational excursions, and outstation holiday tours across South India.
 
 ## Key Facts & Entity Data
@@ -56,6 +58,15 @@ Outstation trips are billed for a minimum of 300 km per calendar day, garage-to-
 - [Tempo Traveller vs 21 Seater Mini Bus](https://www.shanvitoursandtravels.com/blog-tempo-traveller-vs-21-seater-bus)
 - [21 Seater Mini Bus Price Guide](https://www.shanvitoursandtravels.com/blog-21-seater-mini-bus-rental-bangalore)
 - [Contact & Booking](https://www.shanvitoursandtravels.com/contact)
+- [Real Fleet Photo Gallery](https://www.shanvitoursandtravels.com/gallery): photos grouped by vehicle
+- [Privacy Policy](https://www.shanvitoursandtravels.com/privacy-policy) (DPDP Act, 2023) and [Terms & Conditions](https://www.shanvitoursandtravels.com/terms-and-conditions)
+
+## How to Book
+
+- **Enquire** by phone or WhatsApp on +91 9611120023, or through the website enquiry form, which opens WhatsApp with your trip details (name, phone, travellers, date, trip type, route). Forms ask for consent under India's DPDP Act, 2023 before sending.
+- **Quote**: the 24/7 dispatch desk replies with a written quote (vehicle, package, fare, any advance). A booking is confirmed once confirmed in writing.
+- **Cancellation**: free up to 24 hours before the scheduled pickup.
+- **Payment**: UPI, NEFT/RTGS, credit/debit card, cash or corporate purchase order; GST invoice issued.
 
 ## Core Services
 
@@ -69,7 +80,7 @@ Outstation trips are billed for a minimum of 300 km per calendar day, garage-to-
 ## Geographical Service Coverage
 
 - **Bangalore Localities**: Whitefield, Electronic City, Koramangala, Indiranagar, HSR Layout, Marathahalli, Bellandur, Sarjapur Road, Jayanagar, JP Nagar, BTM Layout, Yelahanka, Hebbal, Banashankari, Malleshwaram, Rajajinagar, KR Puram, RT Nagar, Yeshwanthpur, Nagadevanahalli, Kengeri, SMV Layout.
-- **Outstation Highway Corridors**: Mysore (150km), Coorg (270km), Chikmagalur (245km), Gokarna (485km), Wayanad (280km), Alleppey (540km), Munnar (510km), Ooty (270km), Pondicherry (310km), Yercaud (230km), Tirupati (250km), Nellore (275km), Hyderabad (570km), Hampi (340km).
+- **Outstation Highway Corridors** (distance from Bangalore, main attraction): Mysore (150 km, Mysore Palace), Coorg (270 km, Abbey Falls), Chikmagalur (245 km, Mullayanagiri), Gokarna (485 km, Kudle and Om beaches), Wayanad (280 km, Banasura Sagar Dam), Alleppey (540 km, backwater houseboats), Munnar (510 km, tea plantations), Ooty (270 km, Nilgiri Mountain Railway), Pondicherry (310 km, Promenade Beach), Yercaud (230 km, Yercaud Lake), Tirupati (250 km, Tirumala Venkateswara Temple), Nellore (275 km, Mypadu Beach), Hyderabad (570 km, Charminar), Hampi (340 km).
 
 ## Extended Documentation
 

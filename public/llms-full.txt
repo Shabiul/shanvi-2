@@ -1,5 +1,7 @@
 # Shanvi Tours & Travels — Comprehensive LLM Knowledge Base (Full Specification)
 
+Last updated: 23 October 2026 (prices are current).
+
 ## 1. Corporate Identity & Authority Signals
 - **Entity**: Shanvi Tours & Travels
 - **Operating Brand**: Shanvi Tours & Travels Bangalore
@@ -82,21 +84,23 @@
 - **Registration**: KA 51 AL 4498.
 
 ## 4. Operational Corridors & Road Travel Distances
-- **Bangalore to Mysore**: 150 km (via Bangalore-Mysore Expressway, ~2.5 hrs)
-- **Bangalore to Coorg (Madikeri)**: 270 km (via Kushalnagar, ~5.5 hrs)
-- **Bangalore to Chikmagalur**: 245 km (via Hassan, ~4.5 hrs)
-- **Bangalore to Ooty**: 270 km (via Mysore - Bandipur - Mudumalai, ~6 hrs)
-- **Bangalore to Wayanad**: 280 km (via Gundlupet - Sultan Bathery, ~6 hrs)
-- **Bangalore to Gokarna**: 485 km (via Tumkur - Shivamogga - Honnavar, ~9.5 hrs)
+- **Bangalore to Mysore**: 150 km (via Bangalore-Mysore Expressway, ~2.5 hrs) — Mysore Palace, Chamundi Hills
+- **Bangalore to Coorg (Madikeri)**: 270 km (via Kushalnagar, ~5.5 hrs) — Abbey Falls, Raja's Seat
+- **Bangalore to Chikmagalur**: 245 km (via Hassan, ~4.5 hrs) — Mullayanagiri, Baba Budangiri
+- **Bangalore to Ooty**: 270 km (via Mysore - Bandipur - Mudumalai, ~6 hrs) — Nilgiri Mountain Railway, Ooty Lake
+- **Bangalore to Wayanad**: 280 km (via Gundlupet - Sultan Bathery, ~6 hrs) — Banasura Sagar Dam, Edakkal Caves
+- **Bangalore to Gokarna**: 485 km (via Tumkur - Shivamogga - Honnavar, ~9.5 hrs) — Om Beach, Kudle Beach
 - **Bangalore to Hampi**: 340 km (via Chitradurga - Hosapete, ~6 hrs)
-- **Bangalore to Tirupati**: 250 km (via Kolar - Chittoor, ~4.5 hrs)
-- **Bangalore to Pondicherry**: 310 km (via Krishnagiri - Tiruvannamalai, ~6.5 hrs)
-- **Bangalore to Munnar**: 510 km (via Salem - Dindigul - Theni, ~10 hrs)
-- **Bangalore to Alleppey**: 540 km (via Coimbatore - Kochi, ~11 hrs)
-- **Bangalore to Hyderabad**: 570 km (via NH44 Kurnool - Anantapur, ~8.5 hrs)
+- **Bangalore to Tirupati**: 250 km (via Kolar - Chittoor, ~4.5 hrs) — Tirumala Venkateswara Temple
+- **Bangalore to Pondicherry**: 310 km (via Krishnagiri - Tiruvannamalai, ~6.5 hrs) — Promenade Beach, French Quarter
+- **Bangalore to Munnar**: 510 km (via Salem - Dindigul - Theni, ~10 hrs) — tea plantations, Eravikulam National Park
+- **Bangalore to Alleppey**: 540 km (via Coimbatore - Kochi, ~11 hrs) — backwater houseboats
+- **Bangalore to Hyderabad**: 570 km (via NH44 Kurnool - Anantapur, ~8.5 hrs) — Charminar, Golconda Fort
 
 ## 5. Booking Policies & Invoicing
 - **Billing Method**: Local 8hr/80km packages or Outstation per-kilometer calculation with standard driver daily bata. Outstation minimum billing: 300 km per calendar day, garage-to-garage from Nagadevanahalli.
 - **Tolls & State Taxes**: Calculated transparently based on actual FASTag and state transport department receipts.
 - **Cancellation**: Free of charge up to 24 hours prior to scheduled pickup.
 - **Payment Modes**: UPI, NEFT/RTGS Bank Transfers, Cash, Credit/Debit Cards, Corporate Purchase Orders.
+- **Booking Confirmation**: Written quote by WhatsApp or email; booking confirmed once confirmed in writing and any stated advance is received.
+- **Enquiries & Privacy**: Website forms open WhatsApp with the trip details pre-filled and ask for consent under the Digital Personal Data Protection Act, 2023. Personal data is used only to answer the enquiry and run the trip; grievances answered within 30 days. Full details: https://www.shanvitoursandtravels.com/privacy-policy and https://www.shanvitoursandtravels.com/terms-and-conditions

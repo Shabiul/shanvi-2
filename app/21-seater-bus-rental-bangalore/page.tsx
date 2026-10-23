@@ -293,7 +293,7 @@ export default function Seater21Page() {
           image: `${site.url}/images/fleet/mini-bus-exterior.jpg`,
           url: `${site.url}/21-seater-bus-rental-bangalore`,
           offers: [
-            { "@type": "Offer", name: "8 hours / 80 km Bangalore package", price: "6500", priceCurrency: "INR", availability: "https://schema.org/InStock" },
+            { "@type": "Offer", name: "8 hours / 80 km Bangalore package", price: String(v21.local), priceCurrency: "INR", availability: "https://schema.org/InStock" },
             { "@type": "Offer", name: "12 hours / 120 km Bangalore package", price: "9000", priceCurrency: "INR", availability: "https://schema.org/InStock" },
             { "@type": "Offer", name: "Bangalore airport (BLR) transfer", price: "4200", priceCurrency: "INR", availability: "https://schema.org/InStock" },
           ],
@@ -314,12 +314,12 @@ export default function Seater21Page() {
           offers: {
             "@type": "AggregateOffer",
             priceCurrency: "INR",
-            lowPrice: "6500",
+            lowPrice: String(v21.local),
             highPrice: "9000",
             offerCount: "2",
             offers: [
-              { "@type": "Offer", name: "Local Bangalore 8-Hour / 80-Km Package", price: "6500", priceCurrency: "INR", availability: "https://schema.org/InStock" },
-              { "@type": "Offer", name: "Outstation per Kilometer Rate", price: "32", priceCurrency: "INR", priceSpecification: { "@type": "UnitPriceSpecification", price: "32", priceCurrency: "INR", unitCode: "KMT" }, availability: "https://schema.org/InStock" },
+              { "@type": "Offer", name: "Local Bangalore 8-Hour / 80-Km Package", price: String(v21.local), priceCurrency: "INR", availability: "https://schema.org/InStock" },
+              { "@type": "Offer", name: "Outstation per Kilometer Rate", price: String(v21.rateMin), priceCurrency: "INR", priceSpecification: { "@type": "UnitPriceSpecification", price: String(v21.rateMin), maxPrice: String(v21.rateMax), priceCurrency: "INR", unitCode: "KMT" }, availability: "https://schema.org/InStock" },
             ],
           },
           provider: { "@id": `${site.url}/#organization` },

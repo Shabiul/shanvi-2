@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { MessageCircle } from "lucide-react";
 import { waLink } from "@/lib/content";
+import { ConsentField, consentRecord } from "./legal";
 
 const services = [
   ["12+1 Tempo Traveller", "12+1 Seater Tempo Traveller"],
@@ -38,7 +39,7 @@ export function ContactForm() {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     if (form.website) return; // honeypot
-    const text = ["New enquiry from shanvitoursandtravels.com", "", `Name: ${form.name}`, `Phone: ${form.phone}`, form.email && `Email: ${form.email}`, form.service && `Service: ${form.service}`, `Message: ${form.message}`].filter(Boolean).join("\n");
+    const text = ["New enquiry from shanvitoursandtravels.com", "", `Name: ${form.name}`, `Phone: ${form.phone}`, form.email && `Email: ${form.email}`, form.service && `Service: ${form.service}`, `Message: ${form.message}`, "", consentRecord()].filter(Boolean).join("\n");
     window.open(waLink(text), "_blank", "noopener");
     setSent(true);
     setTimeout(() => setSent(false), 3000);
@@ -84,6 +85,7 @@ export function ContactForm() {
           <textarea required rows={5} className={`${input} resize-y`} value={form.message} onChange={set("message")} placeholder="Dates, passenger count, pickup locality and destination…" />
         </label>
       </div>
+      <ConsentField id="contact-consent" />
       <button type="submit" className="mt-5 flex h-14 w-full items-center justify-center gap-2 rounded-full bg-wa font-extrabold text-night transition hover:brightness-110" data-cursor="Send">
         <MessageCircle className="h-5 w-5" /> Send via WhatsApp (instant reply)
       </button>

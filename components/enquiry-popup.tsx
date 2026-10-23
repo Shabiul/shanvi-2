@@ -6,9 +6,10 @@ import { useEffect, useRef, useState } from "react";
 import { Send, X } from "lucide-react";
 import Image from "@/components/img";
 import { vehicleFor, waLink } from "@/lib/content";
+import { ConsentField, consentRecord } from "./legal";
 
 const KEY = "shanvi-enquiry-done";
-const SKIP = ["/contact", "/photo-credits"];
+const SKIP = ["/contact", "/photo-credits", "/privacy-policy", "/terms-and-conditions"];
 const trips = ["Local (8 hr / 80 km)", "Outstation", "Airport transfer", "Wedding", "Corporate / employee", "School / college trip"];
 
 // Enquiry popup shown shortly after landing, once per visit. It only records "done" when the
@@ -69,6 +70,8 @@ export function EnquiryPopup() {
       f.date && `Travel date: ${f.date}`,
       `Trip: ${f.trip}`,
       f.route && `Pickup / destination: ${f.route}`,
+      "",
+      consentRecord(),
     ]
       .filter(Boolean)
       .join("\n");
@@ -158,7 +161,9 @@ export function EnquiryPopup() {
                 </p>
               )}
 
-              <button type="submit" className="mt-5 flex h-13 w-full items-center justify-center gap-2 rounded-full bg-forest py-4 font-extrabold text-white transition hover:bg-forest-2">
+              <ConsentField id="enquiry-consent" />
+
+              <button type="submit" className="mt-4 flex h-13 w-full items-center justify-center gap-2 rounded-full bg-forest py-4 font-extrabold text-white transition hover:bg-forest-2">
                 {sent ? "Opening WhatsApp…" : "Get my quote on WhatsApp"} <Send className="h-4 w-4" />
               </button>
               <button type="button" onClick={close} className="mt-2 w-full py-3 text-sm font-bold text-muted hover:text-ink">

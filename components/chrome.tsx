@@ -247,6 +247,14 @@ export function Footer() {
         <p suppressHydrationWarning>© {year} Shanvi Tours &amp; Travels Bangalore (Registered Commercial Passenger Transport, Karnataka). All Rights Reserved.</p>
         <p>
           Independent operator · Not affiliated with namesake agencies in other states ·{" "}
+          <Link href="/privacy-policy" className="inline-block py-2 underline decoration-ink/20 underline-offset-4 hover:text-forest">
+            Privacy Policy
+          </Link>{" "}
+          ·{" "}
+          <Link href="/terms-and-conditions" className="inline-block py-2 underline decoration-ink/20 underline-offset-4 hover:text-forest">
+            Terms &amp; Conditions
+          </Link>{" "}
+          ·{" "}
           <Link href="/photo-credits" className="inline-block py-2 underline decoration-ink/20 underline-offset-4 hover:text-forest">
             Photo credits
           </Link>

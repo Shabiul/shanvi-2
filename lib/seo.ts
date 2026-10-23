@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { fleet, galleryPhotos, services, site } from "./content";
+import { destinations, fleet, galleryPhotos, services, site } from "./content";
 import { pageMeta, posts } from "./generated";
 
 type Key = keyof typeof pageMeta;
@@ -59,8 +59,8 @@ const album = (id: string) => fleet.find((v) => v.id === id)!.images.filter((p) 
 
 /** Every indexable route, in priority order. Drives sitemap-pages.xml and sitemap-images.xml. */
 export const sitemapPages: { path: string; priority: number; changefreq: "daily" | "weekly" | "monthly"; images: SitemapImage[] }[] = [
-  { path: "/", priority: 1, changefreq: "weekly", images: [{ src: "/images/coach/coach-sunset-side.jpg", alt: "Shanvi Tours & Travels 33+1 touring coach, Bangalore" }, ...album("21").slice(0, 2), album("12")[0]] },
-  { path: "/21-seater-bus-rental-bangalore", priority: 0.95, changefreq: "weekly", images: album("21") },
+  { path: "/", priority: 1, changefreq: "weekly", images: [{ src: "/images/destinations/tajmahal-poster.jpg", alt: "Shanvi Tours & Travels South India tour video" }, ...album("21").slice(0, 2), album("12")[0], ...destinations.map((d) => ({ src: d.img, alt: `${d.attraction}, ${d.name} (${d.state}): bus and tempo traveller trips from Bangalore` }))] },
+  { path: "/21-seater-bus-rental-bangalore", priority: 0.95, changefreq: "weekly", images: [...album("21"), ...destinations.filter((d) => ["coorg", "chikmagalur", "mysore"].includes(d.slug)).map((d) => ({ src: d.img, alt: `${d.attraction}, ${d.name}: 21 seater bus trip from Bangalore` }))] },
   { path: "/mini-bus-rental-bangalore", priority: 0.9, changefreq: "weekly", images: [...album("21"), ...album("25")] },
   { path: "/fleet", priority: 0.9, changefreq: "weekly", images: fleet.map((v) => v.images[0]) },
   { path: "/services", priority: 0.8, changefreq: "monthly", images: services.map((s) => ({ src: s.image, alt: `${s.title} — Shanvi Tours & Travels Bangalore` })) },
@@ -68,6 +68,8 @@ export const sitemapPages: { path: string; priority: number; changefreq: "daily"
   { path: "/gallery", priority: 0.7, changefreq: "weekly", images: galleryPhotos },
   { path: "/about", priority: 0.6, changefreq: "monthly", images: [] },
   { path: "/blog", priority: 0.6, changefreq: "weekly", images: [] },
+  { path: "/privacy-policy", priority: 0.3, changefreq: "monthly", images: [] },
+  { path: "/terms-and-conditions", priority: 0.3, changefreq: "monthly", images: [] },
   ...posts.map((p) => ({ path: `/${p.slug}`, priority: 0.7, changefreq: "monthly" as const, images: [{ src: p.image, alt: p.imageAlt }] })),
 ];
 
