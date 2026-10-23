@@ -159,7 +159,7 @@ export default function Home() {
             </Reveal>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
-                ["₹4,500 / day", "Local 8hr / 80km package (₹26/extra km, ₹350/extra hr)"],
+                ["₹6,500 / day", "Local 8hr / 80km package (₹26/extra km, ₹350/extra hr)"],
                 ["₹32 – ₹36 / km", "Outstation interstate rate + ₹600/day driver bata"],
               ].map(([a, b], i) => (
                 <Reveal key={a} delay={i * 0.1} className="rounded-3xl p-6 card">

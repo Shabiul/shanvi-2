@@ -58,6 +58,51 @@ export type Vehicle = {
   perks: string[];
 };
 
+// Vehicle photo albums, sorted by the number plate visible in the photos. Clicking
+// any of these anywhere on the site opens only that vehicle's album
+// (components/photo-viewer.tsx); the first two double as the fleet card photos.
+const pic = (file: string, alt: string) => ({ src: `/images/${file}.jpg`, alt });
+const albums = {
+  tempo: [
+    pic("tempo/tempo-front-quarter", "Shanvi Tours & Travels 12+1 Seater Tempo Traveller Bangalore exterior"),
+    pic("tempo/tempo-interior-lights", "12+1 Seater Tempo Traveller interior with pushback captain seats"),
+    pic("tempo/tempo-side", "Force Tempo Traveller side view, Shanvi Tours & Travels fleet"),
+    pic("tempo/tempo-front", "Tempo Traveller front with illuminated grille"),
+    pic("tempo/tempo-rear-quarter", "Tempo Traveller rear three-quarter view"),
+    pic("tempo/tempo-rear", "Tempo Traveller rear doors and roof ladder"),
+    pic("tempo/tempo-side-pink", "Tempo Traveller at dusk with ambient lighting"),
+    pic("tempo/tempo-interior-ceiling", "Tempo Traveller cabin with illuminated ceiling panels"),
+    pic("tempo/tempo-ceiling-art", "Custom illuminated ceiling art inside a Shanvi Tempo Traveller"),
+  ],
+  mini: [pic("fleet/mini-bus-exterior", "Shanvi Tours & Travels 21+1 Seater Mercedes Mini Bus Bangalore KA 51 AB 8485")],
+  touring: [
+    pic("coach/coach-sunset-side", "Shanvi Tours & Travels 33+1 Seater Touring Coach at sunset, Bangalore"),
+    pic("coach/coach-interior-aisle", "33+1 Touring Coach interior with red carpet aisle and pushback seats"),
+    pic("coach/coach-front-dusk", "33+1 Touring Coach KA 51 AL 7388 front lights at dusk"),
+    pic("coach/coach-sunset-front", "33+1 Touring Coach front three-quarter view at sunset"),
+    pic("fleet/bus-road-angle", "33+1 Touring Coach on a Bangalore road"),
+    pic("fleet/bus-city-street", "33+1 Touring Coach parked on a city street"),
+    pic("coach/bus-rear", "33+1 Touring Coach rear with Shanvi branding"),
+    pic("coach/coach-interior-seats", "33+1 Touring Coach pushback seats with ambient lighting"),
+  ],
+  luxury: [
+    pic("fleet/luxury-bus-exterior", "Shanvi Tours & Travels 49+1 Seater Luxury Coach KA 51 AL 4498, Bangalore"),
+    pic("fleet/luxury-bus-interior", "49+1 Luxury Coach interior with red carpet aisle and plush pushback upholstery"),
+    pic("fleet/luxury-bus-temple-1", "49+1 Luxury Coach on a pilgrimage tour from Bangalore"),
+    pic("fleet/luxury-bus-parked", "49+1 Luxury Coach parked at a temple, ready for departure"),
+    pic("fleet/luxury-bus-temple-2", "49+1 Luxury Coach on a temple pilgrimage circuit"),
+    pic("coach/bus-side", "49+1 Luxury Coach side profile"),
+  ],
+};
+// Re-saved copies of album photos that some pages still reference.
+const photoAliases: Record<string, string> = {
+  "/images/fleet/tempo-traveller-exterior.jpg": "/images/tempo/tempo-front.jpg",
+  "/images/fleet/tempo-traveller-interior.jpg": "/images/tempo/tempo-interior-ceiling.jpg",
+  "/images/fleet/mini-bus-interior.jpg": "/images/tempo/tempo-side.jpg",
+  "/images/fleet/bus-exterior.jpg": "/images/coach/coach-front-dusk.jpg",
+  "/images/fleet/bus-interior.jpg": "/images/coach/coach-interior-aisle.jpg",
+};
+
 export const fleet: Vehicle[] = [
   {
     id: "12",
@@ -69,12 +114,8 @@ export const fleet: Vehicle[] = [
     anchor: "12-tempo-traveller",
     plate: "KA 51 AM 0045",
     chassis: "Force Motors",
-    images: [
-      { src: "/images/tempo/tempo-front-quarter.jpg", alt: "Shanvi Tours & Travels 12+1 Seater Tempo Traveller Bangalore exterior" },
-      { src: "/images/tempo/tempo-interior-lights.jpg", alt: "12+1 Seater Tempo Traveller interior with pushback captain seats" },
-      { src: "/images/tempo/tempo-side.jpg", alt: "Force Tempo Traveller side view, Shanvi Tours & Travels fleet" },
-    ],
-    local: 2800,
+    images: albums.tempo,
+    local: 4500,
     localLabel: "8 hr / 80 km",
     extraKm: 20,
     extraHr: 250,
@@ -96,11 +137,8 @@ export const fleet: Vehicle[] = [
     anchor: "21-mini-bus",
     plate: "KA 51 AB 8485",
     chassis: "Mercedes-Benz · Singh Motor Coach Builders",
-    images: [
-      { src: "/images/fleet/mini-bus-exterior.jpg", alt: "Shanvi Tours & Travels 21+1 Seater Mercedes Mini Bus Bangalore KA 51 AB 8485" },
-      { src: "/images/fleet/mini-bus-interior.jpg", alt: "21+1 Seater Mini Bus Bangalore, Shanvi Tours & Travels fleet" },
-    ],
-    local: 4500,
+    images: albums.mini,
+    local: 6500,
     localLabel: "8 hr / 80 km",
     extraKm: 26,
     extraHr: 350,
@@ -124,12 +162,8 @@ export const fleet: Vehicle[] = [
     anchor: "33-tourist-bus",
     plate: "KA 51 AL 7388",
     chassis: "Full-size touring coach",
-    images: [
-      { src: "/images/fleet/bus-exterior.jpg", alt: "Shanvi Tours & Travels 33+1 Seater Touring Coach Bangalore" },
-      { src: "/images/fleet/bus-interior.jpg", alt: "33+1 Seater bus interior with 2x2 reclining seats" },
-      { src: "/images/fleet/bus-city-street.jpg", alt: "33+1 Seater bus on a Bangalore city route" },
-    ],
-    local: 6500,
+    images: albums.touring,
+    local: 9000,
     localLabel: "8 hr / 80 km",
     extraKm: 35,
     extraHr: 450,
@@ -151,12 +185,8 @@ export const fleet: Vehicle[] = [
     anchor: "49-luxury-bus",
     plate: "KA 51 AL 4498",
     chassis: "Flagship luxury coach",
-    images: [
-      { src: "/images/coach/coach-sunset-side.jpg", alt: "Shanvi Tours & Travels 49+1 Seater Luxury Coach at sunset, Bangalore" },
-      { src: "/images/coach/coach-interior-aisle.jpg", alt: "49+1 Luxury Coach interior with red carpet aisle and plush pushback upholstery" },
-      { src: "/images/fleet/luxury-bus-temple-1.jpg", alt: "49+1 Luxury Coach on a pilgrimage tour from Bangalore" },
-    ],
-    local: 8500,
+    images: albums.luxury,
+    local: 12000,
     localLabel: "8 hr / 80 km",
     extraKm: 45,
     extraHr: 550,
@@ -170,6 +200,16 @@ export const fleet: Vehicle[] = [
     perks: ["Red carpet aisle", "LED entertainment screen", "Underfloor cargo hold", "Ambient mood lighting"],
   },
 ];
+
+/** The album (vehicle photos) a site image belongs to, or null if it is not a vehicle photo. */
+export function albumFor(src: string) {
+  const s = photoAliases[src] ?? src;
+  for (const v of fleet) {
+    const index = v.images.findIndex((p) => p.src === s);
+    if (index >= 0) return { title: `${v.name} · ${v.seats}`, photos: v.images, index };
+  }
+  return null;
+}
 
 export const vehicleFor = (pax: number) => fleet.find((v) => pax <= v.maxPax) ?? fleet[fleet.length - 1];
 
@@ -286,15 +326,4 @@ export const team = [
   { name: "Kiran Gowda", role: "Wedding Logistics & Route Dispatch", text: "Specialist in Bangalore wedding season logistics (Nov–Feb). Coordinates 49+1 Luxury Coach convoys for 200+ guests and continuous shuttle loops between guest hotels, reception halls, and airport terminals.", foot: "Wedding Convoy Specialist" },
 ];
 
-export const galleryPhotos = [
-  ...fleet.flatMap((v) => v.images.map((i) => ({ ...i, label: `${v.name} · ${v.seats}` }))),
-  { src: "/images/coach/coach-sunset-front.jpg", alt: "49+1 Luxury Coach front three-quarter view at sunset", label: "Luxury Coach · Sunset" },
-  { src: "/images/coach/coach-front-dusk.jpg", alt: "Shanvi Tours & Travels coach headlights at dusk", label: "Luxury Coach · Dusk" },
-  { src: "/images/coach/coach-interior-seats.jpg", alt: "Luxury coach interior with ambient lighting and red carpet", label: "Luxury Coach · Interior" },
-  { src: "/images/tempo/tempo-ceiling-art.jpg", alt: "Custom illuminated ceiling art inside a Shanvi Tempo Traveller", label: "Tempo Traveller · Ceiling art" },
-  { src: "/images/tempo/tempo-side-pink.jpg", alt: "Tempo Traveller at dusk with ambient lighting", label: "Tempo Traveller · Dusk" },
-  { src: "/images/fleet/luxury-bus-temple-2.jpg", alt: "Luxury tourist bus on a temple pilgrimage circuit", label: "Luxury Coach · Pilgrimage" },
-  { src: "/images/fleet/luxury-bus-parked.jpg", alt: "49+1 Luxury Tourist Bus parked ready for departure", label: "Luxury Coach · Ready" },
-  { src: "/images/fleet/bus-road-angle.jpg", alt: "33+1 Seater bus on a highway route across Karnataka", label: "Touring Coach · Highway" },
-  { src: "/images/coach/bus-side.jpg", alt: "White Shanvi touring bus side profile", label: "Touring Coach · Side" },
-];
+export const galleryPhotos = fleet.flatMap((v) => v.images.map((i) => ({ ...i, label: `${v.name} · ${v.seats}` })));

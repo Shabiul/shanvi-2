@@ -6,7 +6,7 @@ import { site, waLink } from "@/lib/content";
 export const metadata = { title: "404 - Page Not Found | Shanvi Tours & Travels Bangalore", robots: { index: false } };
 
 const tiles = [
-  { href: "/21-seater-bus-rental-bangalore", I: Bus, t: "21 Seater Mini Bus", d: "From ₹4,500/day • 2x2 AC Pushback" },
+  { href: "/21-seater-bus-rental-bangalore", I: Bus, t: "21 Seater Mini Bus", d: "From ₹6,500/day • 2x2 AC Pushback" },
   { href: "/fleet", I: ClipboardList, t: "Fleet & Tariffs", d: "12, 21, 33 & 49 Seater Coaches" },
   { href: "/blog", I: Newspaper, t: "Travel Guides & Blog", d: "Outstation itineraries & tips" },
   { href: "/contact", I: Phone, t: "24/7 Dispatch Desk", d: "Instant quotes & vehicle booking" },

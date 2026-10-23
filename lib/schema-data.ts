@@ -56,20 +56,7 @@ export const organizationSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "12+1 Seater Tempo Traveller Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹2,800; outstation from ₹24/km"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "2800",
-          "priceCurrency": "INR"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "21+1 Seater Mercedes Mini Bus Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹4,500; outstation from ₹32/km"
+          "description": "Local 8-Hour / 80-Km package starting from ₹4,500; outstation from ₹24/km"
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
@@ -81,8 +68,8 @@ export const organizationSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "33+1 Seater Touring Bus Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹6,500; outstation from ₹42/km"
+          "name": "21+1 Seater Mercedes Mini Bus Rental Bangalore",
+          "description": "Local 8-Hour / 80-Km package starting from ₹6,500; outstation from ₹32/km"
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
@@ -94,12 +81,25 @@ export const organizationSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "49+1 Seater Luxury Wedding Coach Rental Bangalore",
-          "description": "Local 8-Hour / 80-Km package starting from ₹8,500; outstation from ₹50/km"
+          "name": "33+1 Seater Touring Bus Rental Bangalore",
+          "description": "Local 8-Hour / 80-Km package starting from ₹9,000; outstation from ₹42/km"
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
-          "price": "8500",
+          "price": "9000",
+          "priceCurrency": "INR"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "49+1 Seater Luxury Wedding Coach Rental Bangalore",
+          "description": "Local 8-Hour / 80-Km package starting from ₹12,000; outstation from ₹50/km"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "12000",
           "priceCurrency": "INR"
         }
       }

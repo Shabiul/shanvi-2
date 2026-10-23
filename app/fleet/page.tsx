@@ -64,10 +64,12 @@ export default function FleetPage() {
                   <span className="absolute bottom-5 left-5 rounded-md border-2 border-ink bg-[#ffd84d] px-3 py-1 font-mono text-sm font-bold text-ink">{v.plate}</span>
                   {v.tag && <span className="absolute right-5 top-5 rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{v.tag}</span>}
                 </Reveal>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-[1fr_230px]">
-                  <Reveal className="relative overflow-hidden rounded-[28px]" delay={0.1}>
-                    <Image src={v.images[1].src} alt={v.images[1].alt} fill sizes="(max-width:1024px) 60vw, 30vw" className="object-cover" />
-                  </Reveal>
+                <div className={`grid grid-cols-1 gap-4 ${v.images[1] ? "sm:grid-cols-[1fr_230px]" : ""}`}>
+                  {v.images[1] && (
+                    <Reveal className="relative overflow-hidden rounded-[28px]" delay={0.1}>
+                      <Image src={v.images[1].src} alt={v.images[1].alt} fill sizes="(max-width:1024px) 60vw, 30vw" className="object-cover" />
+                    </Reveal>
+                  )}
                   <Reveal className="rounded-[28px] p-5 card" delay={0.15}>
                     <p className="mb-3 text-center text-[10px] font-extrabold uppercase tracking-[0.2em] text-muted">Seat layout</p>
                     <SeatMap v={v} filled={v.capacity} compact />

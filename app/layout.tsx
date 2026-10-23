@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, Manrope } from "next/font/google";
 import "./globals.css";
 import { Providers, Cursor, ScrollProgress } from "@/components/motion";
+import { PhotoViewer } from "@/components/photo-viewer";
 import { Nav, Footer, Fabs } from "@/components/chrome";
 import { JsonLd } from "@/components/ui";
 import { site } from "@/lib/content";
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main id="main">{children}</main>
           <Footer />
           <Fabs />
+          <PhotoViewer />
         </Providers>
       </body>
     </html>

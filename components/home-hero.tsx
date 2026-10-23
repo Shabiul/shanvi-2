@@ -117,7 +117,7 @@ export function HomeHero() {
             <motion.div className="absolute inset-0" style={{ y: imgY, scale: imgScale }}>
               <Image
                 src="/images/coach/coach-sunset-side.jpg"
-                alt="Shanvi Tours & Travels 49+1 luxury coach ready for departure at sunset in Bangalore"
+                alt="Shanvi Tours & Travels 33+1 touring coach ready for departure at sunset in Bangalore"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 48vw"
@@ -132,7 +132,7 @@ export function HomeHero() {
               <div>
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-forest">Most booked</p>
                 <p className="text-sm font-extrabold text-ink">21+1 Mini Bus</p>
-                <p className="text-xs text-muted">From ₹4,500 / day</p>
+                <p className="text-xs text-muted">From ₹6,500 / day</p>
               </div>
             </div>
           </motion.div>
