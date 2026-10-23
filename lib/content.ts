@@ -94,14 +94,19 @@ const albums = {
     pic("fleet/luxury-bus-temple-2", "49+1 Luxury Coach on a temple pilgrimage circuit"),
     pic("coach/bus-side", "49+1 Luxury Coach side profile"),
   ],
+  seater25: [
+    pic("seater25/side-front", "Shanvi Tours & Travels 25+1 Seater Mini Coach Bangalore exterior"),
+    pic("seater25/front", "25+1 Seater Mini Coach front with Shanvi windscreen branding"),
+    pic("seater25/interior-covers", "25+1 Seater Mini Coach interior with Shanvi seat covers and curtains"),
+    pic("seater25/side", "25+1 Seater Mini Coach side view with luggage hold"),
+    pic("seater25/rear", "25+1 Seater Mini Coach rear with Shanvi Tours & Travels branding"),
+    pic("seater25/interior-aisle", "25+1 Seater Mini Coach aisle with pushback seats and red carpet"),
+  ],
 };
 // No own photos yet: licensed stock stand-ins, shown with a "Representative photo"
 // tag and credit, and kept out of the gallery (which promises real fleet photos).
 const pexels = "Photo: Pexels";
 const stock = {
-  seater25: [
-    { ...pic("stock/traveller-26-seater", "Representative photo of a Force Traveller 26 seater mini coach"), credit: "Photo: Biswarup Ganguly, CC BY 3.0, via Wikimedia Commons" },
-  ],
   coach45: [
     { ...pic("stock/coach-45-front", "Representative photo of a 45+1 seater white luxury coach, front view"), credit: pexels },
     { ...pic("stock/coach-45-interior", "Representative photo of a 45+1 seater coach interior with pushback seats and TV screens"), credit: pexels },
@@ -169,14 +174,14 @@ export const fleet: Vehicle[] = [
   {
     id: "25",
     name: "Mini Coach",
-    seats: "25 Seater",
+    seats: "25+1 Seater",
     capacity: 25,
     minPax: 22,
     maxPax: 25,
     anchor: "25-mini-coach",
     plate: "",
-    chassis: "Force Traveller 26 class",
-    images: stock.seater25,
+    chassis: "Shanvi 25+1 mini coach",
+    images: albums.seater25,
     local: 7500,
     localLabel: "8 hr / 80 km",
     extraKm: 30,
@@ -185,9 +190,9 @@ export const fleet: Vehicle[] = [
     rateMax: 40,
     bata: 650,
     ideal: "22–25 passengers: office outings, extended families, college groups",
-    desc: "A 25 seater mini coach for groups that just outgrow a mini bus. Air-conditioned with pushback seats and rear luggage space, it suits city outings, airport transfers, and weekend trips to Mysore, Coorg, and Chikmagalur.",
+    desc: "A 25+1 seater mini coach for groups that just outgrow a mini bus. Pushback seats with Shanvi seat covers, curtained windows, a red-carpet aisle, and an underfloor luggage hold — it suits city outings, airport transfers, and weekend trips to Mysore, Coorg, and Chikmagalur.",
     layout: ["LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LLLLL"],
-    perks: ["Pushback seats", "Full AC cabin", "Rear luggage space", "Speed-governed 80 km/h"],
+    perks: ["Pushback seats", "Curtained windows", "Underfloor luggage hold", "Speed-governed 80 km/h"],
   },
   {
     id: "33",

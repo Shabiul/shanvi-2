@@ -9,7 +9,7 @@ import { waLink } from "@/lib/content";
 const services = [
   ["12+1 Tempo Traveller", "12+1 Seater Tempo Traveller"],
   ["21+1 Mini Bus", "21+1 Seater Mini Bus"],
-  ["25 Seater Mini Coach", "25 Seater Mini Coach"],
+  ["25+1 Mini Coach", "25+1 Seater Mini Coach"],
   ["33+1 Touring Bus", "33+1 Seater Touring Bus"],
   ["45+1 Premium Coach", "45+1 Seater Premium Coach"],
   ["49+1 Luxury Bus", "49+1 Seater Luxury Bus"],
@@ -20,7 +20,7 @@ const services = [
   ["Pilgrimage Tour", "Pilgrimage & Temple Circuit"],
   ["Other", "Other Requirement"],
 ] as const;
-const vehicleMap: Record<string, string> = { "12-seater": "12+1 Tempo Traveller", "21-seater": "21+1 Mini Bus", "25-seater": "25 Seater Mini Coach", "33-seater": "33+1 Touring Bus", "45-seater": "45+1 Premium Coach", "49-seater": "49+1 Luxury Bus" };
+const vehicleMap: Record<string, string> = { "12-seater": "12+1 Tempo Traveller", "21-seater": "21+1 Mini Bus", "25-seater": "25+1 Mini Coach", "33-seater": "33+1 Touring Bus", "45-seater": "45+1 Premium Coach", "49-seater": "49+1 Luxury Bus" };
 
 export function ContactForm() {
   const params = useSearchParams();

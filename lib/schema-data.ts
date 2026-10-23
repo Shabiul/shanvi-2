@@ -81,7 +81,7 @@ export const organizationSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "25 Seater Mini Coach Rental Bangalore",
+          "name": "25+1 Seater Mini Coach Rental Bangalore",
           "description": "Local 8-Hour / 80-Km package starting from ₹7,500; outstation from ₹36/km"
         },
         "priceSpecification": {

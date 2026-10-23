@@ -146,9 +146,9 @@ export function FleetExplorer() {
           {active.tag ? <span className="rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{active.tag}</span> : <span />}
           {active.plate ? (
             <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{active.plate}</span>
-          ) : (
+          ) : active.images[img].credit ? (
             <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-ink">Representative photo</span>
-          )}
+          ) : null}
         </div>
         <div className="relative flex flex-1 flex-col p-6 md:p-7">
           <AnimatePresence mode="wait">
