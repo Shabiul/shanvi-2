@@ -190,7 +190,10 @@ export function Footer() {
             <h3 className="text-xs font-extrabold uppercase tracking-[0.22em] text-forest">Bus rental services</h3>
             <ul className="mt-5 grid gap-2.5 text-sm font-semibold">
               <li>
-                <Link href="/21-seater-bus-rental-bangalore" className="text-muted hover:text-forest">21 Seater Mini Bus Rental</Link>
+                <Link href="/21-seater-bus-rental-bangalore" className="text-muted hover:text-forest">21 Seater Bus Rental</Link>
+              </li>
+              <li>
+                <Link href="/mini-bus-rental-bangalore" className="text-muted hover:text-forest">Mini Bus Rental Bangalore</Link>
               </li>
               {services.map((s) => (
                 <li key={s.id}>

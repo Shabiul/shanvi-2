@@ -1,43 +1,48 @@
 // Generated from the legacy PHP site by scratchpad/extract.py — content source of truth for SEO copy.
 export const pageMeta = {
   "home": {
-    "title": "Mini Bus & Tempo Traveller Rental in Bangalore | Shanvi Tours & Travels",
-    "description": "Shanvi Tours & Travels Bangalore: 12+1 to 49+1 seater tempo traveller, mini bus & luxury coach rental with verified driver. 5.0★ Google rated, AIS-140 GPS, 100% Yellow Board, 24/7 dispatch. Call 9611120023.",
+    "title": "Mini Bus & Tempo Traveller Rental Bangalore | Shanvi Tours",
+    "description": "Rent a 21 seater mini bus, 12+1 tempo traveller or 25 to 49 seater coach in Bangalore with driver. 8hr/80km from ₹4,500, AC, GPS, 24/7. Call 9611120023.",
     "keywords": "tempo traveller rental bangalore, tempo traveller hire bangalore, 12 seater tempo traveller bangalore, mini bus rental bangalore, mini bus hire bangalore, 21 seater mini bus bangalore, bus rental bangalore, bus hire bangalore, 33 seater bus rental bangalore, luxury bus rental bangalore, 49 seater bus rental bangalore, tourist bus rental bangalore, bus rental near me, mini bus with driver bangalore, tempo traveller with driver bangalore, corporate bus rental bangalore, employee transport bus bangalore, wedding bus rental bangalore, school bus rental bangalore, college trip bus rental bangalore, outstation bus rental bangalore, pilgrimage tour bus bangalore, bus rental whitefield, bus rental electronic city, bus rental koramangala, bus rental indiranagar, bus rental hsr layout, bus rental marathahalli, bus rental jayanagar, bus rental jp nagar, bus rental btm layout, bus rental yelahanka, bus rental hebbal, bus rental sarjapur road, bus rental bannerghatta road, tempo traveller rental karnataka, mini bus rental karnataka, bus rental karnataka"
   },
   "about": {
-    "title": "About Us - Bangalore Commercial Bus Fleet Since 2013 | Shanvi Tours & Travels",
+    "title": "About Shanvi Tours & Travels | Bus Rental Since 2013",
     "description": "Founded in 2013 by Pradeep H.B. in Bangalore, Shanvi Tours & Travels operates yellow-board mini buses and luxury coaches with verified drivers. Call 9611120023.",
     "keywords": "about shanvi tours and travels, bangalore bus rental company, mini bus rental company bangalore, reliable bus rental company bangalore, best bus rental company bangalore, pradeep hb shanvi travels, bus driver verification bangalore"
   },
   "services": {
-    "title": "Bus Rental Services in Bangalore - Corporate, Wedding & Outstation | Shanvi Tours & Travels",
-    "description": "Commercial bus rental in Bangalore by Shanvi Tours & Travels: Corporate employee shuttles, wedding coach convoys, outstation tours. 12 to 49 seats from ₹4,500. Call 9611120023.",
+    "title": "Bus Rental Services Bangalore: Corporate & Wedding | Shanvi",
+    "description": "Bus rental services in Bangalore: corporate shuttles, wedding guest transport, school trips, outstation and pilgrimage tours in 12 to 49 seaters from ₹4,500.",
     "keywords": "mini bus rental bangalore, bus rental bangalore, bus hire bangalore, mini bus hire bangalore, tourist bus rental bangalore, corporate bus rental bangalore, wedding bus rental bangalore, school trip bus rental bangalore, college trip bus rental bangalore, pilgrimage bus rental bangalore, outstation bus rental bangalore, mini bus with driver bangalore, bus rental near me, employee transport bangalore, staff shuttle bus bangalore, tempo traveller corporate rental, bus rental pricing bangalore"
   },
   "fleet": {
-    "title": "Fleet & Rental Tariffs - Tempo Traveller & Buses Bangalore | Shanvi Tours & Travels",
-    "description": "Transparent Bangalore bus rental tariffs: 12+1 Tempo Traveller from ₹4,500, 21+1 Mini Bus from ₹6,500, 33+1 Bus & 49+1 Luxury Wedding Coach with verified driver. Call 9611120023.",
+    "title": "Bus & Tempo Traveller Fleet, Rates Bangalore | Shanvi Tours",
+    "description": "Six rental classes in Bangalore with real photos and fixed rates: 12+1 tempo traveller ₹4,500, 21+1 mini bus ₹6,500, 25+1 ₹7,500, plus 33+1 to 49+1 coaches.",
     "keywords": "mini bus rental bangalore, bus hire bangalore, 12 seater mini bus rental bangalore, 21 seater mini bus rental bangalore, 33 seater bus rental bangalore, 49 seater bus rental bangalore, mini bus with driver bangalore, bus rental near me, tempo traveller rental bangalore, 50 seater luxury bus bangalore, tempo traveller price bangalore, bus rental cost bangalore"
   },
   "seater21": {
-    "title": "21 Seater Mini Bus Rental Bangalore - 21+1 Mercedes Coach Hire | Shanvi Tours & Travels",
-    "description": "Rent 21 seater mini bus in Bangalore from ₹6,500. Pushback 2x2 luxury seating, dual AC, AIS-140 GPS & verified driver. Ideal for corporate offsites, weddings & outstation. Call 9611120023.",
+    "title": "21 Seater Bus & Mini Bus Rental Bangalore from ₹6,500/Day",
+    "description": "21 seater bus rental in Bangalore: 21+1 Mercedes mini bus with 2x2 pushback seats, AC and driver. ₹6,500 for 8hr/80km, outstation ₹32–36/km. Call 9611120023.",
     "keywords": "21 seater mini bus rental bangalore, 21 seater bus hire bangalore, 21 seater tempo traveller bangalore, 21 seater bus price bangalore, mini bus rental bangalore, 21 seater luxury bus bangalore, 21 seater outstation bus bangalore, corporate bus rental bangalore, 21 seater bus with driver bangalore, 20 seater bus rental bangalore"
   },
+  "miniBus": {
+    "title": "Mini Bus Rental Bangalore: 21 & 25 Seater | Shanvi Tours",
+    "description": "Mini bus rental in Bangalore with driver: 21+1 Mercedes mini bus from ₹6,500 and 25+1 mini coach from ₹7,500 per 8hr/80km. AC, pushback seats. Call 9611120023.",
+    "keywords": "mini bus rental bangalore, mini bus hire bangalore, mini bus on rent bangalore, 21 seater mini bus bangalore, 25 seater mini bus bangalore, 20 seater mini bus rental bangalore, minibus hire with driver bangalore"
+  },
   "contact": {
-    "title": "Contact & 24/7 Booking Office Bangalore | Shanvi Tours & Travels",
+    "title": "Contact & 24/7 Bus Booking Bangalore | Shanvi Tours",
     "description": "Contact Shanvi Tours & Travels Bangalore 24/7 at +91-9611120023. Instant bus rental quotes from ₹4,500. Office at SMV Layout, Nagadevanahalli, Bangalore.",
     "keywords": "bus rental bangalore booking, mini bus rental near me, bus rental phone number, shanvi tours contact, whatsapp bus booking bangalore, bus booking nagadevanahalli, bus hire kengeri bangalore, tempo traveller price bangalore"
   },
   "gallery": {
-    "title": "Fleet Photo Gallery - Verified Bus Photos Bangalore | Shanvi Tours & Travels",
-    "description": "View 100% real photos of Shanvi Tours & Travels Bangalore fleet: 12+1 Tempo Traveller, 21+1 Mini Bus, 33+1 Bus & 49+1 Luxury Wedding Coach. Call 9611120023.",
+    "title": "Real Fleet Photos: Mini Bus & Coaches Bangalore | Shanvi",
+    "description": "Real photos of the Shanvi Tours & Travels fleet in Bangalore: 12+1 tempo traveller, 21+1 Mercedes mini bus, 25+1 mini coach and 33+1 to 49+1 coaches. No stock.",
     "keywords": "mini bus rental bangalore, bus hire bangalore, 12 seater mini bus rental bangalore, 21 seater mini bus rental bangalore, 33 seater bus rental bangalore, 49 seater bus rental bangalore, mini bus with driver bangalore, bus rental near me, bus photos bangalore, real bus fleet images"
   },
   "blog": {
-    "title": "Travel Blog & Bus Rental Guides Bangalore | Shanvi Tours & Travels",
-    "description": "Official travel blog of Shanvi Tours & Travels Bangalore. In-depth guides on 21 seater mini bus rental, outstation road trip itineraries, fleet comparisons & corporate travel tips.",
+    "title": "Bus Rental Guides & Travel Blog Bangalore | Shanvi Tours",
+    "description": "Guides from Shanvi Tours & Travels Bangalore: 21 seater mini bus rental costs, tempo traveller vs mini bus, weekend road trips and corporate outing transport.",
     "keywords": "bangalore travel blog, bus rental blog bangalore, 21 seater mini bus guide, outstation travel guide bangalore, tempo traveller tips, corporate bus rental bangalore"
   },
   "notFound": {
@@ -202,11 +207,11 @@ export const faqs = {
       "a": "A local city day trip package within Bangalore costs ₹6,500 for 8 hours and 80 kilometers. If your schedule extends longer, extra usage is billed transparently at ₹26 per additional kilometer and ₹350 per extra hour. For 12-hour itineraries (such as day-long corporate team outings or wedding events), our 12-hour / 120-km package is ₹9,000."
     },
     {
-      "q": "Can the 21 seater mini bus climb steep hill station roads like Ooty, Coorg, and Wayanad?",
+      "q": "Can the mini bus climb steep hill station roads like Ooty, Coorg, and Wayanad?",
       "a": "Yes, absolutely. The Mercedes chassis mini coach has a compact wheelbase and powerful diesel torque engineered specifically for Western Ghats terrain. Unlike full-size 33 and 49-seater coaches that often face road bans or tight hairpin difficulties on Ooty's 36 hairpin Kalhatty ghat, our 21-seater navigates hill curves effortlessly and parks conveniently at boutique hillside homestays."
     },
     {
-      "q": "How much luggage can fit into the 21 seater mini bus?",
+      "q": "How much luggage fits in the mini bus?",
       "a": "The vehicle is built with an integrated deep rear and undercarriage luggage boot that comfortably holds 18 to 20 medium trolley suitcases. Inside the passenger cabin, full-length overhead parcels racks allow passengers to store backpacks, laptop bags, and camera gear, keeping the floor and seating area completely uncluttered."
     },
     {
@@ -214,8 +219,54 @@ export const faqs = {
       "a": "Yes, 100%. Every vehicle in our fleet, including KA 51 AB 8485, is strictly registered as a commercial passenger transport vehicle (Yellow Board) under the Karnataka Motor Vehicles Rules and MoRTH guidelines. It holds a valid All India Tourist Permit (AITP), up-to-date commercial fitness certificate, comprehensive passenger insurance, and AIS-140 emergency GPS telemetry."
     },
     {
-      "q": "How do I confirm a booking for a 21-seater mini bus?",
+      "q": "How do I confirm a booking?",
       "a": "Booking is straightforward. You can call our dispatch manager at +91-9611120023, chat with us on WhatsApp, or submit our online quote request. We will provide a formal quotation. Once confirmed with a nominal advance payment, you receive vehicle registration details and driver contact information 24 hours prior to journey kickoff."
+    },
+    {
+      "q": "Do you have a 21 seater tempo traveller in Bangalore?",
+      "a": "Most tempo travellers top out at 17 to 20 seats with a narrow 1x2 aisle. For 21 passengers we supply our 21+1 Mercedes-chassis mini bus (KA 51 AB 8485), which is what most people searching for a 21 seater tempo traveller actually need: 2x2 pushback seats with a wide centre aisle and a boot for 18 to 20 medium suitcases, at ₹6,500 for 8 hours / 80 km. For 12 or fewer passengers, our 12+1 Force tempo traveller costs ₹4,500 for the same package."
+    },
+    {
+      "q": "What is the 21 seater bus rent per km in Bangalore?",
+      "a": "Outstation trips in our 21 seater mini bus cost ₹32 to ₹36 per km, with a minimum billing of 300 km per calendar day and a driver bata of ₹600 per day. Within Bangalore, the 8 hour / 80 km package is ₹6,500 and extra distance is ₹26 per km. Tolls, parking and interstate permits are charged at actuals."
+    },
+    {
+      "q": "How many people can travel in a 21 seater bus?",
+      "a": "A 21 seater (21+1) bus carries 21 passengers plus the driver. It is most comfortable for 14 to 21 adults with luggage. For 22 to 25 passengers choose our 25+1 mini coach (₹7,500 for 8 hours / 80 km); for 12 or fewer, the 12+1 tempo traveller (₹4,500)."
+    },
+    {
+      "q": "Can I book a 21 seater bus for a Bangalore airport pickup or drop?",
+      "a": "Yes. Kempegowda International Airport (BLR) pickups and drops in the 21 seater mini bus start from ₹4,200 flat. Airport parking slips and tolls are payable at actuals."
+    },
+    {
+      "q": "Which areas of Bangalore do you pick up from for a 21 seater rental?",
+      "a": "We pick up anywhere in Bangalore, including Whitefield, Electronic City, Koramangala, Indiranagar, HSR Layout, Marathahalli, Hebbal, Yelahanka, Jayanagar, JP Nagar, Sarjapur Road, Manyata Tech Park and Kempegowda Airport. For outstation trips, kilometres are counted garage-to-garage from our Nagadevanahalli base on Mysore Road."
+    }
+  ],
+  "miniBus": [
+    {
+      "q": "What is the price of mini bus rental in Bangalore?",
+      "a": "Our 21+1 Mercedes mini bus costs ₹6,500 for 8 hours / 80 km (₹26 per extra km, ₹350 per extra hour) and ₹32 to ₹36 per km outstation with a ₹600 daily driver bata. Our 25+1 mini coach costs ₹7,500 for 8 hours / 80 km (₹30 per extra km, ₹400 per extra hour) and ₹36 to ₹40 per km outstation with a ₹650 daily bata. Outstation trips are billed for a minimum of 300 km per day."
+    },
+    {
+      "q": "Should I rent a 21 seater or a 25 seater mini bus?",
+      "a": "Choose by headcount: the 21+1 mini bus fits 13 to 21 passengers and the 25+1 mini coach fits 22 to 25. Both have pushback seats and an underfloor luggage hold. Booking the smallest vehicle that seats everyone keeps the per-head cost lowest."
+    },
+    {
+      "q": "Is a mini bus better than a tempo traveller for 20 people?",
+      "a": "For 20 people, yes. Our tempo traveller seats 12, so 20 people would need two vehicles. One 21+1 mini bus carries all 20 with a 2x2 aisle and room for 18 to 20 suitcases, at ₹6,500 for 8 hours / 80 km, against ₹9,000 for two 12+1 tempo travellers."
+    },
+    {
+      "q": "Do your mini bus rentals include a driver?",
+      "a": "Yes. Every mini bus is rented with a police-verified, commercially badged driver. Driver bata is ₹600 per day for the 21+1 and ₹650 per day for the 25+1 on outstation trips; tolls, parking and interstate permits are charged at actuals."
+    },
+    {
+      "q": "Can a mini bus go to hill stations like Ooty, Coorg and Chikmagalur?",
+      "a": "Yes. Both run regularly on Ooty, Coorg, Chikmagalur and Wayanad ghat roads, where they are easier to handle than full-size 33+1 to 49+1 coaches."
+    },
+    {
+      "q": "How far in advance should I book a mini bus in Bangalore?",
+      "a": "Book 3 to 7 days ahead for regular dates and 2 to 4 weeks ahead for weekends, long weekends and the November to February wedding season. Same-day bookings are possible when a vehicle is free; call or WhatsApp +91 9611120023 to check availability."
     }
   ]
 } as const;
@@ -329,8 +380,8 @@ export const posts = [
     "date": "October 10, 2026",
     "readTime": "8 min read",
     "excerpt": "Everything you need to know about hiring a 21-seater mini bus in Bangalore. Check 2026 tariffs (from ₹6,500), 2x2 pushback seating comfort, luggage space, and top outstation routes.",
-    "metaTitle": "21 Seater Mini Bus Rental in Bangalore: Complete Tariff Guide & Specs (2026)",
-    "description": "Complete guide to renting a 21 seater mini bus in Bangalore. Check 2026 tariffs (from ₹6,500), 2x2 pushback seating layout, luggage space & top outstation road trip routes.",
+    "metaTitle": "21 Seater Mini Bus Rental Bangalore: 2026 Price Guide",
+    "description": "21 seater mini bus rental in Bangalore explained: ₹6,500 for 8hr/80km, ₹32–36/km outstation, 2x2 pushback seats, 18–20 bags of luggage and hill-route tips.",
     "keywords": "21 seater mini bus rental bangalore, 21 seater bus hire bangalore, 21 seater tempo traveller bangalore, 21 seater bus price bangalore, mini bus rental bangalore, 21 seater outstation bus bangalore",
     "h1": "21 Seater Mini Bus Rental in Bangalore: Complete Tariff Guide, Seating Layout & Outstation Routes",
     "lede": "Planning a group trip with 14 to 21 passengers from Bangalore? Here is everything you need to know about tariffs, seating configurations, luggage boot capacities, and road feasibility before hiring.",
@@ -407,8 +458,8 @@ export const posts = [
     "date": "October 11, 2026",
     "readTime": "7 min read",
     "excerpt": "Comparing headcounts, per-head costs (₹325 vs ₹375), luggage limits, and Western Ghats agility to help you choose the right vehicle for your group.",
-    "metaTitle": "12 Seater Tempo Traveller vs 21 Seater Mini Bus: Rental Guide Bangalore | Shanvi Tours",
-    "description": "Comparing 12 seater Tempo Traveller vs 21 seater Mini Bus rental in Bangalore: passenger capacity, cost-per-head, luggage space & ghat road comfort compared.",
+    "metaTitle": "Tempo Traveller vs 21 Seater Mini Bus: Which to Rent?",
+    "description": "12 seater tempo traveller or 21 seater mini bus in Bangalore? Compare per-head cost, seating, luggage, hill-road handling and rates (₹4,500 vs ₹6,500 a day).",
     "keywords": "tempo traveller vs mini bus bangalore, 12 seater tempo traveller vs 21 seater bus, tempo traveller or mini bus for outstation, tempo traveller rent bangalore, 21 seater bus hire bangalore",
     "h1": "12 Seater Tempo Traveller vs. 21 Seater Mini Bus: Which Should You Rent in Bangalore?",
     "lede": "Comparing passenger comfort, per-head costs, luggage space, and highway safety between Force Tempo Travellers and Mercedes Mini Coaches for Bangalore trips.",
@@ -455,15 +506,15 @@ export const posts = [
     "date": "October 12, 2026",
     "readTime": "9 min read",
     "excerpt": "Tested highway itineraries to Coorg, Chikmagalur, Ooty, Wayanad, and Mysore with driving times, ghat road feasibility, and vehicle recommendations.",
-    "metaTitle": "Top 7 Weekend Road Trips from Bangalore for Groups of 15 to 21 | Shanvi Tours",
-    "description": "Discover the best weekend road trips from Bangalore for groups of 15-21 in a luxury 21-seater mini bus. Distance, driving times, routes & tariffs for Coorg, Ooty, Chikmagalur & more.",
+    "metaTitle": "7 Weekend Road Trips from Bangalore for 15–21 People",
+    "description": "Seven weekend road trips from Bangalore for groups of 15 to 21 in a 21 seater mini bus: Coorg, Chikmagalur, Ooty, Mysore and more, with distances and costs.",
     "keywords": "weekend road trips from bangalore, 21 seater bus road trip bangalore, bangalore to coorg mini bus, bangalore to ooty mini bus, bangalore to chikmagalur bus hire, group trips from bangalore",
     "h1": "Top 7 Weekend Road Trips from Bangalore for Groups of 15 to 21 Passengers",
     "lede": "Looking for the perfect destination for your next office team outing, college reunion, or extended family holiday? Here are 7 tested highway routes best suited for a 21-seater luxury mini bus.",
     "byline": "By Shanvi Tours & Travels Editorial Desk",
     "bylineSub": "Commercial Tour & Outstation Fleet Specialist",
     "updated": "Published: October 2026",
-    "body": "<div class=\"callout callout--key\">\n<h3>\nQuick Itinerary Overview\n</h3>\n<p>\nFor mid-sized groups of 15 to 21 travelers, the top weekend road trips from Bangalore are: \n<strong>1) Coorg (270 km, 5.5 hrs)</strong> for coffee estate offsites;\n<strong>2) Chikmagalur (245 km, 4.5 hrs)</strong> for Western Ghats trekking;\n<strong>3) Ooty &amp; Coonoor (280 km, 6 hrs)</strong> for tea gardens and cool weather;\n<strong>4) Wayanad (290 km, 6 hrs)</strong> for waterfalls and rainforest trails;\n<strong>5) Mysore &amp; Kabini (220 km, 3.5 hrs)</strong> for heritage and wildlife;\n<strong>6) Nandi Hills &amp; Lepakshi (120 km, 2.5 hrs)</strong> for a single-day corporate picnic;\n<strong>7) Hampi (340 km, 6 hrs)</strong> for UNESCO heritage architecture.\nAll destinations are 100% accessible via our <a href=\"/21-seater-bus-rental-bangalore\">21-seater Mercedes Mini Bus</a>.\n</p>\n</div>\n<h2>1. Coorg (Madikeri &amp; Kushalnagar) &mdash; 270 km</h2>\n<p>\n<strong>Best for:</strong> Corporate offsites, team bonding, coffee estate homestays.<br>\n<strong>Route:</strong> Bangalore &rarr; Mysore Expressway (NH 275) &rarr; Kushalnagar &rarr; Madikeri.<br>\n<strong>Travel Time:</strong> ~5.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> The smooth 10-lane expressway allows cruising up to Mysore, after which the road winds through lush coffee plantations. Many plantation homestays have narrow gravel approach roads where heavy 49-seater coaches get stuck, but a 21-seater mini bus reaches right up to the resort driveway.\n</p>\n<h2>2. Chikmagalur &amp; Mullayanagiri Peak &mdash; 245 km</h2>\n<p>\n<strong>Best for:</strong> Nature enthusiasts, college batches, monsoon photography.<br>\n<strong>Route:</strong> Bangalore &rarr; Nelamangala &rarr; Hassan (NH 75) &rarr; Belur &rarr; Chikmagalur.<br>\n<strong>Travel Time:</strong> ~4.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> Excellent 4-lane highway until Hassan. In Chikmagalur, ascents toward Mullayanagiri base, Baba Budangiri, and Hebbe falls feature twisting mountain turns. The 21-seater's Mercedes engine provides ample low-end torque to climb gradients effortlessly with dual AC running.\n</p>\n<h2>3. Ooty &amp; Nilgiris (Tamil Nadu) &mdash; 280 km</h2>\n<p>\n<strong>Best for:</strong> Family reunions, cool climate getaways, scenic viewpoints.<br>\n<strong>Route:</strong> Bangalore &rarr; Mysore &rarr; Bandipur Tiger Reserve &rarr; Mudumalai &rarr; Ooty.<br>\n<strong>Travel Time:</strong> ~6 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> The Kalhatty ghat road features 36 hairpin bends with strict RTO vehicle restrictions. 33-seater and 49-seater coaches are frequently prohibited or forced to take the longer Gudalur detour. Our 21-seater easily manages the gradient and holds interstate tourist permits for Tamil Nadu.\n</p>\n<h2>4. Wayanad (Kerala) &mdash; 290 km</h2>\n<p>\n<strong>Best for:</strong> Bamboo rafting, Chembra Peak trek, Edakkal caves.<br>\n<strong>Route:</strong> Bangalore &rarr; Mysore &rarr; Gundlupet &rarr; Sultan Bathery.<br>\n<strong>Travel Time:</strong> ~6 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> Crossing into Kerala requires paying the state passenger entry tax at the border checkpost. Shanvi Tours coordinates all state permit paperwork in advance so your team doesn't waste time waiting at RTO counters.\n</p>\n<h2>5. Mysore &amp; Kabini Wildlife Sanctuary &mdash; 220 km</h2>\n<p>\n<strong>Best for:</strong> Jungle safaris, bird watching, heritage palace tours.<br>\n<strong>Route:</strong> Bangalore &rarr; Bangalore-Mysore Expressway &rarr; Hunsur &rarr; Kabini.<br>\n<strong>Travel Time:</strong> ~3.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> Thanks to the new expressway, groups can reach Mysore in 2 hours and Kabini resorts before lunch. The spacious luggage hold comfortably stores safari gear, camera tripods, and weekend luggage for 20 travelers.\n</p>\n<h2>6. Nandi Hills &amp; Lepakshi (Single Day Tour) &mdash; 120 km</h2>\n<p>\n<strong>Best for:</strong> 1-day corporate team outing, sunrise viewing, architecture visits.<br>\n<strong>Route:</strong> Bangalore &rarr; Airport Highway (NH 44) &rarr; Nandi Foothills / Lepakshi.<br>\n<strong>Travel Time:</strong> ~2.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> For single-day trips, our local 8-hour / 80-km or 12-hour / 120-km packages offer incredible value (from ₹6,500), avoiding expensive hotel room bookings while keeping your entire team together in one comfortable air-conditioned vehicle.\n</p>\n<h2>7. Hampi (UNESCO World Heritage Site) &mdash; 340 km</h2>\n<p>\n<strong>Best for:</strong> Extended 3-day holiday, historical exploration, photography expeditions.<br>\n<strong>Route:</strong> Bangalore &rarr; Tumkur &rarr; Chitradurga &rarr; Hospet &rarr; Hampi (NH 48 / NH 50).<br>\n<strong>Travel Time:</strong> ~6 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> The long highway stretch demands high-speed stability and reclining comfort so passengers arrive fresh. With pushback seats, individual phone charging ports, and dual AC blowers, our 21-seater makes the 6-hour ride feel effortless.\n</p>\n<div class=\"article-cta\">\n<h3>Planning a Group Trip to Any of These Destinations?</h3>\n<p>\nLet Shanvi Tours &amp; Travels calculate your custom kilometer itinerary, toll estimates, and driver allowance with zero hidden costs.\n</p>\n<div class=\"row-actions\">\n<a href=\"/21-seater-bus-rental-bangalore\" class=\"btn btn--primary\">\nView 21-Seater Tariffs\n</a>\n<a href=\"contact.php?trip=outstation\" class=\"btn btn--ghost\">\nGet Route Quotation\n</a>\n<a href=\"https://wa.me/919611120023?text=Hi%20Shanvi%20Tours,%20need%20quote%20for%20weekend%20outstation%20trip\" target=\"_blank\" rel=\"noopener\" class=\"btn btn--wa\">\nWhatsApp Dispatch\n</a>\n</div>\n</div>\n<div class=\"author-card\">\n<div class=\"byline__avatar\">\n</div>\n<div>\n<h4>Written by Shanvi Tours Editorial Desk</h4>\n<p>\nGround-tested route guides curated by Bangalore's leading commercial tour operator. Operating 10,000+ completed outstation journeys across South India since 2013.\n</p>\n</div>\n</div>",
+    "body": "<div class=\"callout callout--key\">\n<h3>\nQuick Itinerary Overview\n</h3>\n<p>\nFor mid-sized groups of 15 to 21 travelers, the top weekend road trips from Bangalore are: \n<strong>1) Coorg (270 km, 5.5 hrs)</strong> for coffee estate offsites;\n<strong>2) Chikmagalur (245 km, 4.5 hrs)</strong> for Western Ghats trekking;\n<strong>3) Ooty &amp; Coonoor (280 km, 6 hrs)</strong> for tea gardens and cool weather;\n<strong>4) Wayanad (290 km, 6 hrs)</strong> for waterfalls and rainforest trails;\n<strong>5) Mysore &amp; Kabini (220 km, 3.5 hrs)</strong> for heritage and wildlife;\n<strong>6) Nandi Hills &amp; Lepakshi (120 km, 2.5 hrs)</strong> for a single-day corporate picnic;\n<strong>7) Hampi (340 km, 6 hrs)</strong> for UNESCO heritage architecture.\nAll destinations are 100% accessible via our <a href=\"/21-seater-bus-rental-bangalore\">21-seater Mercedes Mini Bus</a>.\n</p>\n</div>\n<h2>1. Coorg (Madikeri &amp; Kushalnagar) &mdash; 270 km</h2>\n<p>\n<strong>Best for:</strong> Corporate offsites, team bonding, coffee estate homestays.<br>\n<strong>Route:</strong> Bangalore &rarr; Mysore Expressway (NH 275) &rarr; Kushalnagar &rarr; Madikeri.<br>\n<strong>Travel Time:</strong> ~5.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> The smooth 10-lane expressway allows cruising up to Mysore, after which the road winds through lush coffee plantations. Many plantation homestays have narrow gravel approach roads where heavy 49-seater coaches get stuck, but a 21-seater mini bus reaches right up to the resort driveway.\n</p>\n<h2>2. Chikmagalur &amp; Mullayanagiri Peak &mdash; 245 km</h2>\n<p>\n<strong>Best for:</strong> Nature enthusiasts, college batches, monsoon photography.<br>\n<strong>Route:</strong> Bangalore &rarr; Nelamangala &rarr; Hassan (NH 75) &rarr; Belur &rarr; Chikmagalur.<br>\n<strong>Travel Time:</strong> ~4.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> Excellent 4-lane highway until Hassan. In Chikmagalur, ascents toward Mullayanagiri base, Baba Budangiri, and Hebbe falls feature twisting mountain turns. The 21-seater's Mercedes engine provides ample low-end torque to climb gradients effortlessly with dual AC running.\n</p>\n<h2>3. Ooty &amp; Nilgiris (Tamil Nadu) &mdash; 280 km</h2>\n<p>\n<strong>Best for:</strong> Family reunions, cool climate getaways, scenic viewpoints.<br>\n<strong>Route:</strong> Bangalore &rarr; Mysore &rarr; Bandipur Tiger Reserve &rarr; Mudumalai &rarr; Ooty.<br>\n<strong>Travel Time:</strong> ~6 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> The Kalhatty ghat road features 36 hairpin bends with strict RTO vehicle restrictions. 33-seater and 49-seater coaches are frequently prohibited or forced to take the longer Gudalur detour. Our 21-seater easily manages the gradient and holds interstate tourist permits for Tamil Nadu.\n</p>\n<h2>4. Wayanad (Kerala) &mdash; 290 km</h2>\n<p>\n<strong>Best for:</strong> Bamboo rafting, Chembra Peak trek, Edakkal caves.<br>\n<strong>Route:</strong> Bangalore &rarr; Mysore &rarr; Gundlupet &rarr; Sultan Bathery.<br>\n<strong>Travel Time:</strong> ~6 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> Crossing into Kerala requires paying the state passenger entry tax at the border checkpost. Shanvi Tours coordinates all state permit paperwork in advance so your team doesn't waste time waiting at RTO counters.\n</p>\n<h2>5. Mysore &amp; Kabini Wildlife Sanctuary &mdash; 220 km</h2>\n<p>\n<strong>Best for:</strong> Jungle safaris, bird watching, heritage palace tours.<br>\n<strong>Route:</strong> Bangalore &rarr; Bangalore-Mysore Expressway &rarr; Hunsur &rarr; Kabini.<br>\n<strong>Travel Time:</strong> ~3.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> Thanks to the new expressway, groups can reach Mysore in 2 hours and Kabini resorts before lunch. The spacious luggage hold comfortably stores safari gear, camera tripods, and weekend luggage for 20 travelers.\n</p>\n<h2>6. Nandi Hills &amp; Lepakshi (Single Day Tour) &mdash; 120 km</h2>\n<p>\n<strong>Best for:</strong> 1-day corporate team outing, sunrise viewing, architecture visits.<br>\n<strong>Route:</strong> Bangalore &rarr; Airport Highway (NH 44) &rarr; Nandi Foothills / Lepakshi.<br>\n<strong>Travel Time:</strong> ~2.5 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> For single-day trips, our local 8-hour / 80-km or 12-hour / 120-km packages offer incredible value (from ₹6,500), avoiding expensive hotel room bookings while keeping your entire team together in one comfortable air-conditioned vehicle.\n</p>\n<h2>7. Hampi (UNESCO World Heritage Site) &mdash; 340 km</h2>\n<p>\n<strong>Best for:</strong> Extended 3-day holiday, historical exploration, photography expeditions.<br>\n<strong>Route:</strong> Bangalore &rarr; Tumkur &rarr; Chitradurga &rarr; Hospet &rarr; Hampi (NH 48 / NH 50).<br>\n<strong>Travel Time:</strong> ~6 hours.<br>\n<strong>Why the 21-Seater Wins:</strong> The long highway stretch demands high-speed stability and reclining comfort so passengers arrive fresh. With pushback seats, individual phone charging ports, and dual AC blowers, our 21-seater makes the 6-hour ride feel effortless.\n</p>\n<div class=\"article-cta\">\n<h3>Planning a Group Trip to Any of These Destinations?</h3>\n<p>\nLet Shanvi Tours &amp; Travels calculate your custom kilometer itinerary, toll estimates, and driver allowance with zero hidden costs.\n</p>\n<div class=\"row-actions\">\n<a href=\"/21-seater-bus-rental-bangalore\" class=\"btn btn--primary\">\nView 21-Seater Tariffs\n</a>\n<a href=\"/contact?trip=outstation\" class=\"btn btn--ghost\">\nGet Route Quotation\n</a>\n<a href=\"https://wa.me/919611120023?text=Hi%20Shanvi%20Tours,%20need%20quote%20for%20weekend%20outstation%20trip\" target=\"_blank\" rel=\"noopener\" class=\"btn btn--wa\">\nWhatsApp Dispatch\n</a>\n</div>\n</div>\n<div class=\"author-card\">\n<div class=\"byline__avatar\">\n</div>\n<div>\n<h4>Written by Shanvi Tours Editorial Desk</h4>\n<p>\nGround-tested route guides curated by Bangalore's leading commercial tour operator. Operating 10,000+ completed outstation journeys across South India since 2013.\n</p>\n</div>\n</div>",
     "schemas": [
       {
         "@context": "https://schema.org",
@@ -498,8 +549,8 @@ export const posts = [
     "date": "October 12, 2026",
     "readTime": "7 min read",
     "excerpt": "How Bangalore tech parks and enterprise HR teams manage offsite transport with GST invoicing, AIS-140 GPS telemetry, and background-verified chauffeurs.",
-    "metaTitle": "Corporate Team Outing & Employee Bus Rental Bangalore | Shanvi Tours & Travels",
-    "description": "Hiring 21 seater buses for Bangalore corporate team outings, offsites & employee transport. GST compliance, tech park pickups & verified drivers. Call 9611120023.",
+    "metaTitle": "Corporate Team Outing Bus Rental Bangalore | Shanvi Tours",
+    "description": "Corporate team outing and employee transport in Bangalore: 12 to 49 seater buses with GST invoices, AIS-140 GPS, verified drivers and fixed day packages.",
     "keywords": "corporate bus rental bangalore, team outing bus hire bangalore, employee transport bangalore, 21 seater corporate bus bangalore, it company bus rental bangalore, whitefield bus rental",
     "h1": "Corporate Team Outings & Employee Transport in Bangalore: Why Companies Choose 21-Seater Mini Buses",
     "lede": "From tech park pickups in Whitefield and Electronic City to day offsites at Kanakapura resorts, discover why Bangalore HR and admin teams trust 21-seater mini coaches for seamless team logistics.",

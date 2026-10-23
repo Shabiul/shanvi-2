@@ -7,7 +7,7 @@ import { SeatMap } from "@/components/fleet-explorer";
 import { CtaBanner, RevealImage } from "@/components/sections";
 import { Btn, JsonLd, SectionHeading } from "@/components/ui";
 import { Reveal, Tilt } from "@/components/motion";
-import { fleet, site, waLink } from "@/lib/content";
+import { areas, fleet, site, waLink } from "@/lib/content";
 import { faqs } from "@/lib/generated";
 import { meta } from "@/lib/seo";
 
@@ -35,7 +35,7 @@ const compare = [
 
 const routes = [
   { slug: "coorg", tag: "Weekend Hill Escape", name: "Bangalore to Coorg (270 km)", time: "~5.5 Hours", img: "/images/destinations/coorg.jpg", text: "Travel via Bangalore-Mysore Expressway and Kushalnagar. Perfect 3-day corporate offsite or family tour exploring Abbey Falls, Raja's Seat, and coffee plantations. Easy parking at homestays." },
-  { slug: "chikmagalur", tag: "Trek & Nature Retreat", name: "Bangalore to Chikmagalur (245 km)", time: "~4.5 Hours", img: "/images/destinations/chikmagalur.jpg", text: "Via Hassan highway (NH 75). Excellent road conditions. Our 21-seater easily handles Western Ghats ascents up to Mullayanagiri base, Baba Budangiri, and Hebbe Falls." },
+  { slug: "chikmagalur", tag: "Trek & Nature Retreat", name: "Bangalore to Chikmagalur (245 km)", time: "~4.5 Hours", img: "/images/destinations/chikmagalur.jpg", text: "Via Hassan highway (NH 75). Excellent road conditions. Our mini bus easily handles Western Ghats ascents up to Mullayanagiri base, Baba Budangiri, and Hebbe Falls." },
   { slug: "mysore", tag: "Heritage & Palaces", name: "Bangalore to Mysore (150 km)", time: "~2.5 Hours", img: "/images/destinations/mysore.jpg", text: "Cruises in just 2.5 hours via the 10-lane Bangalore-Mysore Expressway. Ideal for one-day corporate picnics and family visits to Mysore Palace, Chamundi Hills, and Brindavan Gardens." },
 ];
 
@@ -45,7 +45,7 @@ const tables = [
     title: "Intra-City & Airport Packages",
     rows: [["8 Hours / 80 Km Package", "₹6,500"], ["12 Hours / 120 Km Package", "₹9,000"], ["Extra Kilometer Rate", "₹26 / km"], ["Extra Hour Rate", "₹350 / hr"], ["Bangalore Airport (BLR) Pickup / Drop", "From ₹4,200 (flat)"], ["Driver Night Surcharge (10 PM – 6 AM)", "₹400"]],
     note: "*Toll charges, airport parking slips, and parking fees at monuments/malls are payable at actuals.",
-    cta: ["/contact?vehicle=21-seater&trip=local", "Reserve local 21-seater"],
+    cta: ["/contact?vehicle=21-seater&trip=local", "Reserve for a local trip"],
   },
   {
     tag: "Outstation Interstate",
@@ -59,13 +59,13 @@ const tables = [
 export default function Seater21Page() {
   return (
     <>
-      <Breadcrumbs items={[{ name: "21 Seater Mini Bus Rental", path: "/21-seater-bus-rental-bangalore" }]} />
+      <Breadcrumbs items={[{ name: "21 Seater Bus Rental", path: "/21-seater-bus-rental-bangalore" }]} />
       <PageHero
-        crumbs={[{ href: "/", label: "Home" }, { href: "/fleet", label: "Fleet" }, { label: "21 Seater Mini Bus" }]}
-        eyebrow="Bangalore's most-requested 15 to 21 passenger coach"
-        title="21 Seater Mini Bus Rental"
+        crumbs={[{ href: "/", label: "Home" }, { href: "/fleet", label: "Fleet" }, { label: "21 Seater Bus Rental" }]}
+        eyebrow="Mercedes mini bus · the tempo traveller alternative"
+        title="21 Seater Bus Rental"
         accent="in Bangalore"
-        lede="Executive 21+1 Seater Mercedes-Chassis Mini Coach built by Singh Motor Coach Builders. Plush 2x2 pushback reclining seats, high-efficiency dual AC, AIS-140 GPS, and verified professional chauffeurs for city events and interstate holidays."
+        lede="Rent our 21+1 seater Mercedes-chassis mini bus, built by Singh Motor Coach Builders, from ₹6,500 a day. Plush 2x2 pushback reclining seats, dual AC, AIS-140 GPS, and a verified driver for city events, airport runs and interstate holidays."
         image="/images/tempo/tempo-interior-ceiling.jpg"
         imageAlt="Ambient-lit coach interior, Shanvi Tours & Travels Bangalore"
         aside={
@@ -111,7 +111,7 @@ export default function Seater21Page() {
 
       <section className="alt py-24">
         <div className="wrap">
-          <AnswerBox title="Quick Answer: 21 Seater Mini Bus Rental Tariff & Specifications in Bangalore" chips={["Standard 2x2 Center-Aisle Configuration", "Fits 14 to 21 Passengers Comfortably", "Hill-Station Approved (Ooty, Coorg, Chikmagalur)", "Commercial Yellow Board Compliant"]}>
+          <AnswerBox title="Quick Answer: 21 Seater Bus Rental Price in Bangalore" chips={["Standard 2x2 Center-Aisle Configuration", "Fits 14 to 21 Passengers Comfortably", "Hill-Station Approved (Ooty, Coorg, Chikmagalur)", "Commercial Yellow Board Compliant"]}>
             <p>
               Renting a <strong>21 seater mini bus in Bangalore</strong> with Shanvi Tours &amp; Travels costs <strong>₹6,500 for a local 8-hour / 80-kilometer city package</strong> (additional distance at ₹26/km and extra hours at ₹350/hr). For outstation journeys across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana, the tariff is <strong>₹32 to ₹36 per kilometer</strong> with a standard minimum billing of 300 km/day and a driver bata of <strong>₹600/day</strong>.
             </p>
@@ -119,6 +119,34 @@ export default function Seater21Page() {
               Our 21+1 vehicle (Registration <strong>KA 51 AB 8485</strong>) is an executive coach on a Mercedes-Benz chassis fabricated by <strong>Singh Motor Coach Builders</strong>. It is equipped with <strong>2x2 luxury pushback reclining seats</strong>, dual heavy-duty air conditioning, mobile phone charging points at every row, an LED TV infotainment system, a microphone for tour commentary, and a dedicated boot space accommodating 18 to 20 medium suitcases. The vehicle operates with a valid <strong>All India Tourist Permit (AITP)</strong> and <strong>AIS-140 GPS telemetry</strong>, making it the highest-rated transport solution in Bangalore for groups of 14 to 21 passengers.
             </p>
           </AnswerBox>
+        </div>
+      </section>
+
+      <section className="pt-28">
+        <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+          <div>
+            <p className="eyebrow">21 seater tempo traveller vs mini bus</p>
+            <h2 className="display mt-4 text-[clamp(2rem,1.4rem+2.4vw,3.4rem)] leading-[1.05]">
+              Looking for a <span className="serif">21 seater tempo traveller?</span>
+            </h2>
+            <div className="mt-6 space-y-4 text-[15.5px] leading-relaxed text-muted">
+              <p>
+                Most tempo travellers stop at 17 to 20 seats and use a narrow 1x2 aisle, so a full group of 21 is a tight squeeze with little room for bags. Our <strong className="text-ink">21+1 seater mini bus</strong> is the vehicle most people searching for a 21 seater tempo traveller actually need: every passenger gets a 2x2 pushback seat beside a wide centre aisle, and the boot takes 18 to 20 medium suitcases.
+              </p>
+              <p>
+                It costs <strong className="text-ink">₹6,500 for 8 hours / 80 km</strong> in Bangalore, the same day package you would book for a large tempo traveller. For 12 or fewer people, our 12+1 tempo traveller is ₹4,500; for 22 to 25, see our{" "}
+                <Link href="/mini-bus-rental-bangalore" className="font-bold text-forest underline decoration-forest/30 underline-offset-4">mini bus rental options</Link>, including the 25+1 mini coach at ₹7,500. Still deciding? Read our{" "}
+                <Link href="/blog-tempo-traveller-vs-21-seater-bus" className="font-bold text-forest underline decoration-forest/30 underline-offset-4">tempo traveller vs 21 seater mini bus guide</Link>.
+              </p>
+            </div>
+          </div>
+          <div data-vehicle="21" className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {v21.images.filter((p) => !p.shared).map((p, i, all) => (
+              <div key={p.src} className={`relative overflow-hidden rounded-2xl bg-sand ${i === 0 ? "col-span-2 aspect-[16/10] sm:row-span-2 sm:aspect-auto" : i === all.length - 1 && all.length % 2 ? "aspect-square sm:col-span-2 sm:aspect-auto" : "aspect-square"}`}>
+                <Image src={p.src} alt={p.alt} fill sizes={i === 0 ? "(max-width:640px) 100vw, 400px" : "(max-width:640px) 50vw, 200px"} className="object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -148,7 +176,7 @@ export default function Seater21Page() {
 
       <section className="alt py-28">
         <div className="wrap">
-          <SectionHeading eyebrow="Zero hidden surprises" title="21 seater Bangalore" accent="rental tariff card" align="split" light lede="Clear, upfront pricing with published overtime and outstation kilometer slabs." />
+          <SectionHeading eyebrow="Zero hidden surprises" title="Bangalore" accent="rental tariff card" align="split" light lede="Clear, upfront pricing with published overtime and outstation kilometer slabs." />
           <div className="grid gap-5 lg:grid-cols-2">
             {tables.map((t, i) => (
               <Reveal key={t.title} delay={i * 0.1} className="overflow-hidden rounded-[32px] bg-white shadow-[0_30px_80px_-40px_rgb(20_33_28/0.4)]">
@@ -180,7 +208,7 @@ export default function Seater21Page() {
 
       <section className="py-28">
         <div className="wrap">
-          <SectionHeading eyebrow="Smart vehicle selection" title="Why choose the 21-seater" accent="over other options?" align="split" lede="Compare passenger capacity, comfort, luggage volume, and per-head economy." />
+          <SectionHeading eyebrow="Smart vehicle selection" title="Why choose this size" accent="over other options?" align="split" lede="Compare passenger capacity, comfort, luggage volume, and per-head economy." />
           <Reveal className="overflow-x-auto rounded-[28px] border border-line bg-sand">
             <table className="w-full min-w-[760px] text-left text-sm">
               <thead>
@@ -236,7 +264,41 @@ export default function Seater21Page() {
         </div>
       </section>
 
-      <FaqSection items={faqs.seater21} title="21 seater mini bus" accent="questions" lede="Everything you need to know before booking your Bangalore mini coach." />
+      <section className="alt py-24">
+        <div className="wrap">
+          <SectionHeading eyebrow="Pickup anywhere in Bangalore" title="21 seater rental" accent="near you" align="split" lede="Doorstep pickup and drop for the mini bus across every Bangalore locality, tech park and the airport. Outstation kilometres run garage-to-garage from our Nagadevanahalli base on Mysore Road." />
+          <ul className="flex flex-wrap gap-2">
+            {areas.map((a) => (
+              <li key={a} className="rounded-full border border-line bg-white px-4 py-2 text-sm font-bold text-ink">
+                {a}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <FaqSection items={faqs.seater21} title="21 seater bus rental" accent="questions" lede="Prices, seating, tempo traveller alternatives and booking: what people ask before booking." />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": `${site.url}/21-seater-bus-rental-bangalore#service`,
+          name: "21 Seater Bus Rental in Bangalore",
+          alternateName: ["21 Seater Mini Bus Rental", "21 Seater Tempo Traveller Rental", "21 Seater Minibus Hire", "21+1 Seater Bus on Rent"],
+          serviceType: "Mini bus rental with driver",
+          description: "Chauffeur-driven 21+1 seater Mercedes-chassis mini bus rental in Bangalore: ₹6,500 for 8 hours / 80 km, ₹32–36 per km outstation, 2x2 pushback seats, AC, AIS-140 GPS.",
+          provider: { "@id": `${site.url}/#organization` },
+          areaServed: [{ "@type": "City", name: "Bangalore" }, ...["Karnataka", "Kerala", "Tamil Nadu", "Andhra Pradesh", "Telangana"].map((name) => ({ "@type": "State", name }))],
+          image: `${site.url}/images/fleet/mini-bus-exterior.jpg`,
+          url: `${site.url}/21-seater-bus-rental-bangalore`,
+          offers: [
+            { "@type": "Offer", name: "8 hours / 80 km Bangalore package", price: "6500", priceCurrency: "INR", availability: "https://schema.org/InStock" },
+            { "@type": "Offer", name: "12 hours / 120 km Bangalore package", price: "9000", priceCurrency: "INR", availability: "https://schema.org/InStock" },
+            { "@type": "Offer", name: "Bangalore airport (BLR) transfer", price: "4200", priceCurrency: "INR", availability: "https://schema.org/InStock" },
+          ],
+        }}
+      />
 
       <JsonLd
         data={{
@@ -263,7 +325,7 @@ export default function Seater21Page() {
           provider: { "@id": `${site.url}/#organization` },
         }}
       />
-      <CtaBanner title="Ready to reserve the" accent="21 seater mini coach?" text="Peak weekends and wedding dates book out fast. Speak directly with our dispatch manager Pradeep H.B. to lock in your dates with zero surge pricing." primary={{ href: "/contact?vehicle=21-seater", label: "Request instant quotation" }} image="/images/fleet/mini-bus-exterior.jpg" />
+      <CtaBanner title="Ready to reserve the" accent="Mercedes mini coach?" text="Peak weekends and wedding dates book out fast. Speak directly with our dispatch manager Pradeep H.B. to lock in your dates with zero surge pricing." primary={{ href: "/contact?vehicle=21-seater", label: "Request instant quotation" }} image="/images/fleet/mini-bus-exterior.jpg" />
     </>
   );
 }

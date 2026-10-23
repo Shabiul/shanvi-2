@@ -9,7 +9,7 @@ import { AnswerBox, AreasCloud, CredentialsBand, FaqSection } from "@/components
 import { Btn, JsonLd, SectionHeading } from "@/components/ui";
 import { Reveal } from "@/components/motion";
 import { faqs } from "@/lib/generated";
-import { meta } from "@/lib/seo";
+import { meta, videoSchema, videos } from "@/lib/seo";
 import { site } from "@/lib/content";
 
 export const metadata = meta("home", "/");
@@ -176,7 +176,8 @@ export default function Home() {
               ))}
             </ul>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Btn href="/21-seater-bus-rental-bangalore">View 21-seater tariffs &amp; specs</Btn>
+              <Btn href="/21-seater-bus-rental-bangalore">21 seater bus rental prices</Btn>
+              <Btn href="/mini-bus-rental-bangalore" variant="ghost">All mini bus sizes</Btn>
               <Btn href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hi Shanvi Tours, need quote for 21 Seater Mini Bus")}`} external variant="ghost">
                 WhatsApp dispatch
               </Btn>
@@ -242,19 +243,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "VideoObject",
-          name: "Shanvi Tours & Travels — Aerial Drone Footage of South India Luxury Tours",
-          description: "Aerial drone tour highlighting outstation destinations and luxury passenger fleet managed by Shanvi Tours & Travels Bangalore.",
-          thumbnailUrl: `${site.url}/images/destinations/tajmahal-poster.jpg`,
-          uploadDate: "2026-10-01T08:00:00+05:30",
-          duration: "PT30S",
-          contentUrl: `${site.url}/videos/scene-w2.mp4`,
-          embedUrl: `${site.url}/#video-showcase`,
-        }}
-      />
+      <JsonLd data={videoSchema(videos.home)} />
 
       {/* Areas */}
       <section className="alt overflow-hidden pt-28">

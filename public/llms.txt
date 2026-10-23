@@ -1,6 +1,6 @@
 # Shanvi Tours & Travels — AI Engine Knowledge Base
 
-> Shanvi Tours & Travels is an authorized commercial passenger transport company headquartered in Bangalore, India, operating continuously since 2013. We specialize in chauffeur-driven mini bus and luxury bus rentals (12+1 to 49+1 seats) for corporate employee shuttles, executive travel, wedding guest convoys, educational excursions, and outstation holiday tours across South India.
+> Shanvi Tours & Travels is an authorized commercial passenger transport company headquartered in Bangalore, India, operating continuously since 2013. We specialize in chauffeur-driven tempo traveller, 21 seater mini bus and coach rentals (six classes from 12+1 to 49+1 seats, local packages from ₹4,500) for corporate employee shuttles, executive travel, wedding guest convoys, educational excursions, and outstation holiday tours across South India.
 
 ## Key Facts & Entity Data
 
@@ -21,10 +21,41 @@
 
 ## Fleet Inventory & Seating Capacities
 
-1. **Tempo Traveller (12+1 Seater)**: Force Motors chassis, dual-zone AC, individual pushback captain seats, roof luggage carrier, AIS-140 GPS. Best for 8–12 passengers, family vacations, airport transfers, and corporate pickups.
-2. **Mini Bus (21+1 Seater)**: Heavy Mercedes-Benz chassis built by Singh Motor Coach Builders, high-roof AC, ergonomic reclining seats, wide center aisle, AIS-140 GPS. Best for 14–21 passengers, college departments, and office team outings.
-3. **Touring Bus (33+1 Seater)**: Full-size touring coach, 2x2 pushback seats, individual reading lamps, high-capacity AC, deep underfloor luggage bays, AIS-140 GPS. Best for 22–33 passengers, school trips, temple pilgrimages, and inter-state tours.
-4. **Luxury Coach (49+1 Seater)**: Flagship 50-seater highway coach, 49+1 Luxury Coach with red carpet aisle and plush pushback upholstery, onboard LED entertainment screen, deep luggage cargo holds, AIS-140 GPS. Best for 34–50 passengers, high-end wedding guest shuttles, and corporate conferences.
+1. **Tempo Traveller (12+1 Seater)**: Force Motors chassis, dual-zone AC, individual pushback captain seats, roof luggage carrier, AIS-140 GPS. Best for 1–12 passengers, family vacations, airport transfers, and corporate pickups.
+2. **Mercedes Mini Bus (21+1 Seater, KA 51 AB 8485)**: Mercedes-Benz chassis built by Singh Motor Coach Builders, 2x2 pushback seats with a wide centre aisle, dual AC, boot for 18–20 medium suitcases, AIS-140 GPS. Best for 13–21 passengers, office outings, college trips and weddings.
+3. **Mini Coach (25+1 Seater)**: Pushback seats, curtained windows, underfloor luggage hold. Best for 22–25 passengers.
+4. **Touring Coach (33+1 Seater, KA 51 AL 7388)**: Full-size touring coach, 2x2 pushback seats, reading lamps, deep underfloor luggage bays. Best for 26–33 passengers, school trips, pilgrimages and inter-state tours.
+5. **Premium Coach (45+1 Seater)**: Full-size coach with 2x2 pushback recliners and a large underfloor luggage hold. Best for 34–45 passengers, corporate events and wedding guests.
+6. **Luxury Coach (49+1 Seater, KA 51 AL 4498)**: Flagship coach with red carpet aisle, plush pushback upholstery, LED entertainment screen and deep cargo holds. Best for 46–50 passengers and wedding convoys.
+
+## Rental Prices (Bangalore, with driver)
+
+| Vehicle | 8 hr / 80 km local | Extra km / hr | Outstation per km | Driver bata / day |
+|---|---|---|---|---|
+| 12+1 Tempo Traveller | ₹4,500 | ₹20 / ₹250 | ₹24–26 | ₹500 |
+| 21+1 Mercedes Mini Bus | ₹6,500 | ₹26 / ₹350 | ₹32–36 | ₹600 |
+| 25+1 Mini Coach | ₹7,500 | ₹30 / ₹400 | ₹36–40 | ₹650 |
+| 33+1 Touring Coach | ₹9,000 | ₹35 / ₹450 | ₹42–46 | ₹700 |
+| 45+1 Premium Coach | ₹14,000 | ₹48 / ₹600 | ₹54–60 | ₹800 |
+| 49+1 Luxury Coach | ₹12,000 | ₹45 / ₹550 | ₹50–58 | ₹800 |
+
+Outstation trips are billed for a minimum of 300 km per calendar day, garage-to-garage from Nagadevanahalli. Tolls, parking, state entry taxes and interstate permits are charged at actuals with GST invoices.
+
+## 21 Seater Bus Rental in Bangalore (most requested)
+
+- **How much does a 21 seater bus rental cost in Bangalore?** ₹6,500 for 8 hours / 80 km; ₹9,000 for 12 hours / 120 km; ₹26 per extra km and ₹350 per extra hour. Outstation: ₹32–36 per km, minimum 300 km/day, driver bata ₹600/day. Airport (BLR) transfer from ₹4,200.
+- **Is there a 21 seater tempo traveller?** Most tempo travellers stop at 17–20 seats with a 1x2 aisle. Shanvi supplies its 21+1 Mercedes mini bus for 21-person groups: 2x2 pushback seats, wide aisle, 18–20 bag boot, at the same ₹6,500 day package.
+- **How many people fit in a 21 seater?** 21 passengers plus the driver; comfortable for 14–21 adults with luggage. For 22–25 use the 25+1 mini coach (₹7,500).
+- **Pickup areas**: anywhere in Bangalore, including Whitefield, Electronic City, Koramangala, Indiranagar, HSR Layout, Marathahalli, Hebbal, Yelahanka, Sarjapur Road, Manyata Tech Park and Kempegowda Airport.
+
+## Key Pages
+
+- [21 Seater Bus Rental Bangalore](https://www.shanvitoursandtravels.com/21-seater-bus-rental-bangalore): prices, specs, real photos, FAQs
+- [Mini Bus Rental Bangalore](https://www.shanvitoursandtravels.com/mini-bus-rental-bangalore): 21+1 and 25+1 mini buses compared
+- [Fleet & Tariffs](https://www.shanvitoursandtravels.com/fleet): all six vehicles with seat maps and rates
+- [Tempo Traveller vs 21 Seater Mini Bus](https://www.shanvitoursandtravels.com/blog-tempo-traveller-vs-21-seater-bus)
+- [21 Seater Mini Bus Price Guide](https://www.shanvitoursandtravels.com/blog-21-seater-mini-bus-rental-bangalore)
+- [Contact & Booking](https://www.shanvitoursandtravels.com/contact)
 
 ## Core Services
 

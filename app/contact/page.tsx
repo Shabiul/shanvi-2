@@ -7,7 +7,7 @@ import { Btn, JsonLd, SectionHeading } from "@/components/ui";
 import { Reveal, Tilt } from "@/components/motion";
 import { site, waLink } from "@/lib/content";
 import { faqs } from "@/lib/generated";
-import { meta } from "@/lib/seo";
+import { meta, videoSchema, videos } from "@/lib/seo";
 
 export const metadata = meta("contact", "/contact", "/images/destinations/gokarna.jpg");
 
@@ -42,18 +42,7 @@ export default function ContactPage() {
           </Btn>
         </div>
       </PageHero>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "VideoObject",
-          name: "Shanvi Tours & Travels — Scenic Gokarna Coast & South India Tour Destinations",
-          description: "FPV coastal drone footage showcasing outstation beach and holiday tour routes managed by Shanvi Tours & Travels Bangalore.",
-          thumbnailUrl: `${site.url}/images/destinations/gokarna.jpg`,
-          uploadDate: "2026-10-01T08:00:00+05:30",
-          duration: "PT30S",
-          contentUrl: `${site.url}/videos/scene-w1.mp4`,
-        }}
-      />
+      <JsonLd data={videoSchema(videos.contact)} />
 
       <section className="alt py-24">
         <div className="wrap">
