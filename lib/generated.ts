@@ -501,7 +501,7 @@ export const posts = [
     "title": "Top 7 Weekend Road Trips from Bangalore for Groups of 15 to 21 Passengers",
     "slug": "blog-weekend-road-trips-bangalore-21-seater",
     "category": "Outstation Itineraries",
-    "image": "/images/destinations/coorg.jpg",
+    "image": "/images/destinations/coorg-abbey-falls.jpg",
     "imageAlt": "Weekend Road Trips from Bangalore for 15-21 Passenger Groups",
     "date": "October 12, 2026",
     "readTime": "9 min read",
@@ -521,7 +521,7 @@ export const posts = [
         "@type": "BlogPosting",
         "headline": "Top 7 Weekend Road Trips from Bangalore for Groups of 15 to 21 Passengers",
         "description": "Discover the best weekend road trips from Bangalore for groups of 15-21 in a luxury 21-seater mini bus. Distance, driving times, routes & tariffs for Coorg, Ooty, Chikmagalur & more.",
-        "image": "https://www.shanvitoursandtravels.com/images/destinations/coorg.jpg",
+        "image": "https://www.shanvitoursandtravels.com/images/destinations/coorg-abbey-falls.jpg",
         "author": {
           "@type": "Organization",
           "name": "Shanvi Tours & Travels Bangalore"

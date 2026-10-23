@@ -15,7 +15,7 @@ function Card({ d, i }: { d: (typeof destinations)[number]; i: number }) {
       className="group relative block h-[min(64vh,560px)] w-[min(78vw,400px)] shrink-0 overflow-hidden rounded-[30px] bg-sand"
       title={`Book Bangalore to ${d.name} bus rental (${d.km} km)`}
     >
-      <Image src={d.img} alt={`${d.name}, ${d.state} — bus rental from Bangalore (${d.km} km)`} fill sizes="400px" className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110" />
+      <Image src={d.img} alt={`${d.attraction}, ${d.name} (${d.state}) — bus rental from Bangalore, ${d.km} km`} fill sizes="400px" className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110" />
       <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-night via-night/20 to-transparent" />
       <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1.5 text-xs font-extrabold text-ink">{d.state}</span>
       <span className="display absolute right-5 top-4 text-6xl text-white/20">{String(i + 1).padStart(2, "0")}</span>

@@ -34,7 +34,7 @@ export const videos = {
     page: "/contact",
     name: "Shanvi Tours & Travels — Gokarna Coast & South India Tour Destinations",
     description: "Coastal drone footage of Gokarna and South India holiday routes covered by Shanvi Tours & Travels bus rentals from Bangalore.",
-    thumbnail: "/images/destinations/gokarna.jpg",
+    thumbnail: "/images/destinations/gokarna-kudle-beach.jpg",
     file: "/videos/scene-w1.mp4",
     seconds: 23,
   },

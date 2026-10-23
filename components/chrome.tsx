@@ -245,7 +245,12 @@ export function Footer() {
 
       <div className="wrap relative flex flex-col gap-3 border-t border-line pb-28 pt-6 text-xs text-subtle md:flex-row md:flex-wrap md:items-center md:justify-between md:pb-6">
         <p suppressHydrationWarning>© {year} Shanvi Tours &amp; Travels Bangalore (Registered Commercial Passenger Transport, Karnataka). All Rights Reserved.</p>
-        <p>Independent operator · Not affiliated with namesake agencies in other states.</p>
+        <p>
+          Independent operator · Not affiliated with namesake agencies in other states ·{" "}
+          <Link href="/photo-credits" className="inline-block py-2 underline decoration-ink/20 underline-offset-4 hover:text-forest">
+            Photo credits
+          </Link>
+        </p>
         <p className="text-sm text-muted md:basis-full md:pt-2 md:text-center">
           Designed and Developed with <span aria-label="love" className="text-forest">♥</span> by{" "}
           <a href="https://naazailabs.com" target="_blank" rel="noopener" className="font-extrabold text-ink underline decoration-forest/40 underline-offset-4 transition hover:text-forest">

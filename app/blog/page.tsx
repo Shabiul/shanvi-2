@@ -23,7 +23,7 @@ export default function BlogPage() {
         title="Shanvi Tours & Travels"
         accent="Blog & Guides"
         lede="Expert advice from Bangalore's commercial fleet operator since 2013. Learn how to pick the right vehicle, calculate transparent tariffs, and explore South India safely."
-        image="/images/destinations/coorg.jpg"
+        image="/images/destinations/coorg-abbey-falls.jpg"
         imageAlt="Green coffee country in Coorg, a favourite outstation route from Bangalore"
       />
 

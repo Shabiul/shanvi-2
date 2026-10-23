@@ -9,7 +9,7 @@ import { site, waLink } from "@/lib/content";
 import { faqs } from "@/lib/generated";
 import { meta, videoSchema, videos } from "@/lib/seo";
 
-export const metadata = meta("contact", "/contact", "/images/destinations/gokarna.jpg");
+export const metadata = meta("contact", "/contact", "/images/destinations/gokarna-kudle-beach.jpg");
 
 const lines = [
   { I: MapPin, h: "Our Bangalore Address", body: <>#2472/1, 3rd Block, SMV Layout,<br />Doddabasthihalli, Near Vijaya Hospital,<br />Nagadevanahalli, Bangalore - 560056, Karnataka, India</> },
@@ -29,7 +29,7 @@ export default function ContactPage() {
         title="Contact Shanvi"
         accent="Tours & Travels"
         lede="24/7 Reservations, Transparent Quotes & Dispatch Support in Bangalore"
-        image="/images/destinations/gokarna.jpg"
+        image="/images/destinations/gokarna-kudle-beach.jpg"
         imageAlt="Cinematic FPV drone footage over a tropical beach cove and South India travel route"
         video="/videos/scene-w1.mp4"
       >

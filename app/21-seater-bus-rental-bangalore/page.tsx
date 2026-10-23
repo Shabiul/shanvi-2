@@ -34,7 +34,7 @@ const compare = [
 ];
 
 const routes = [
-  { slug: "coorg", tag: "Weekend Hill Escape", name: "Bangalore to Coorg (270 km)", time: "~5.5 Hours", img: "/images/destinations/coorg.jpg", text: "Travel via Bangalore-Mysore Expressway and Kushalnagar. Perfect 3-day corporate offsite or family tour exploring Abbey Falls, Raja's Seat, and coffee plantations. Easy parking at homestays." },
+  { slug: "coorg", tag: "Weekend Hill Escape", name: "Bangalore to Coorg (270 km)", time: "~5.5 Hours", img: "/images/destinations/coorg-abbey-falls.jpg", text: "Travel via Bangalore-Mysore Expressway and Kushalnagar. Perfect 3-day corporate offsite or family tour exploring Abbey Falls, Raja's Seat, and coffee plantations. Easy parking at homestays." },
   { slug: "chikmagalur", tag: "Trek & Nature Retreat", name: "Bangalore to Chikmagalur (245 km)", time: "~4.5 Hours", img: "/images/destinations/chikmagalur.jpg", text: "Via Hassan highway (NH 75). Excellent road conditions. Our mini bus easily handles Western Ghats ascents up to Mullayanagiri base, Baba Budangiri, and Hebbe Falls." },
   { slug: "mysore", tag: "Heritage & Palaces", name: "Bangalore to Mysore (150 km)", time: "~2.5 Hours", img: "/images/destinations/mysore.jpg", text: "Cruises in just 2.5 hours via the 10-lane Bangalore-Mysore Expressway. Ideal for one-day corporate picnics and family visits to Mysore Palace, Chamundi Hills, and Brindavan Gardens." },
 ];
