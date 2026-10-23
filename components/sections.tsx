@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/img";
 import Link from "next/link";
 import { AnimatePresence, motion, useInView, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
@@ -8,6 +8,7 @@ import { ArrowUpRight, Briefcase, GraduationCap, Heart, Landmark, Play, Plus, Ro
 import { services, stats, process, waLink, site } from "@/lib/content";
 import { reviews } from "@/lib/generated";
 import { Counter, Reveal, VelocityMarquee } from "./motion";
+import { slug } from "./ui";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const icons = { users: Users, briefcase: Briefcase, heart: Heart, graduation: GraduationCap, road: Route, temple: Landmark } as const;
@@ -286,7 +287,7 @@ export function CtaBanner({ title, accent, text, image = "/images/coach/coach-su
         <div className="wrap relative grid gap-10 py-24 md:py-32 lg:grid-cols-[1.4fr_0.6fr] lg:items-end">
           <div>
             <p className="eyebrow">24/7 dispatch desk</p>
-            <h2 className="display mt-5 text-[clamp(2.8rem,1.6rem+4.6vw,6.4rem)] text-ink">
+            <h2 id={slug(title, accent)} className="display mt-5 scroll-mt-28 text-[clamp(2.8rem,1.6rem+4.6vw,6.4rem)] text-ink">
               {title} <span className="serif text-forest">{accent}</span>
             </h2>
             <p className="mt-6 max-w-xl text-lg text-muted">{text}</p>

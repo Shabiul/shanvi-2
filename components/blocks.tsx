@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { BadgeCheck, Sparkles } from "lucide-react";
-import { Btn, JsonLd, SectionHeading } from "./ui";
+import { Btn, JsonLd, SectionHeading, slug } from "./ui";
 import { Faq } from "./sections";
 import { Reveal, VelocityMarquee } from "./motion";
 import { areas, credentials, fleet, site } from "@/lib/content";
@@ -13,7 +13,7 @@ export function AnswerBox({ title, children, chips }: { title: string; children:
         <span className="grid h-14 w-14 place-items-center rounded-2xl bg-forest text-white">
           <Sparkles className="h-6 w-6" />
         </span>
-        <h2 className="mt-5 text-lg font-extrabold leading-snug">{title}</h2>
+        <h2 id={slug(title)} className="mt-5 scroll-mt-28 text-lg font-extrabold leading-snug">{title}</h2>
       </div>
       <div>
         <div className="space-y-3 text-[15.5px] leading-relaxed text-body [&_strong]:text-ink">{children}</div>

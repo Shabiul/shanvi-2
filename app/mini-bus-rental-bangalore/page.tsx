@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/img";
 import Link from "next/link";
 import { ArrowUpRight, Check } from "lucide-react";
 import { PageHero } from "@/components/page-hero";

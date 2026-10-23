@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/img";
 import Link from "next/link";
 import { ArrowUpRight, BadgeCheck, BatteryCharging, Clock, IdCard, Luggage, Satellite, Snowflake, Tv } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
@@ -126,7 +126,7 @@ export default function Seater21Page() {
         <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <div>
             <p className="eyebrow">21 seater tempo traveller vs mini bus</p>
-            <h2 className="display mt-4 text-[clamp(2rem,1.4rem+2.4vw,3.4rem)] leading-[1.05]">
+            <h2 id="21-seater-tempo-traveller" className="display mt-4 scroll-mt-28 text-[clamp(2rem,1.4rem+2.4vw,3.4rem)] leading-[1.05]">
               Looking for a <span className="serif">21 seater tempo traveller?</span>
             </h2>
             <div className="mt-6 space-y-4 text-[15.5px] leading-relaxed text-muted">

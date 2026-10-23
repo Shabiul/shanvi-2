@@ -1,4 +1,5 @@
-import { BadgeCheck } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, BadgeCheck } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { AnswerBox, Breadcrumbs } from "@/components/blocks";
 import { GalleryGrid } from "@/components/gallery-grid";
@@ -9,6 +10,9 @@ import { fleet, galleryPhotos, site } from "@/lib/content";
 import { meta } from "@/lib/seo";
 
 export const metadata = meta("gallery", "/gallery", "/images/coach/coach-interior-aisle.jpg");
+
+// One section per vehicle with its own photos (the 45+1 shares the 49+1 album, so it is not repeated).
+const groups = fleet.map((v) => ({ v, photos: galleryPhotos.filter((p) => p.anchor === `${v.anchor}-photos`) })).filter((g) => g.photos.length);
 
 export default function GalleryPage() {
   return (
@@ -43,7 +47,28 @@ export default function GalleryPage() {
       <section className="py-28">
         <div className="wrap">
           <SectionHeading eyebrow="Tap any photo to enlarge" title="Mini bus & commercial" accent="bus rental vehicles" align="split" lede="Every photo below represents an actual vehicle in our Bangalore fleet — no stock photography." />
-          <GalleryGrid photos={galleryPhotos} />
+          <nav aria-label="Jump to a vehicle" className="mb-14 flex flex-wrap gap-2">
+            {groups.map(({ v, photos }) => (
+              <a key={v.id} href={`#${v.anchor}-photos`} className="rounded-full border border-line bg-white px-4 py-3 text-xs font-extrabold text-ink transition hover:border-forest hover:text-forest">
+                {v.seats.replace(" Seater", "")} {v.name} · {photos.length}
+              </a>
+            ))}
+          </nav>
+          <div className="grid gap-20">
+            {groups.map(({ v, photos }) => (
+              <div key={v.id}>
+                <div className="mb-6 flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
+                  <h2 id={`${v.anchor}-photos`} className="display scroll-mt-28 text-[clamp(2rem,1.5rem+2vw,3.2rem)]">
+                    {v.seats} <span className="serif">{v.name}</span> photos
+                  </h2>
+                  <Link href={v.page ?? `/fleet#${v.anchor}`} className="inline-flex items-center gap-1 py-2 text-sm font-extrabold text-forest hover:underline">
+                    {v.seats} prices &amp; specs <ArrowUpRight className="h-4 w-4" />
+                  </Link>
+                </div>
+                <GalleryGrid photos={photos} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -79,9 +104,9 @@ export default function GalleryPage() {
           "@context": "https://schema.org",
           "@type": "ImageGallery",
           name: "Shanvi Tours & Travels Real Commercial Bus Fleet Gallery",
-          description: "Photographs of authentic commercial buses and Tempo Travellers in Bangalore: 12+1, 21+1, 33+1, and 49+1 seater coaches.",
+          description: "Photographs of authentic commercial buses and Tempo Travellers in Bangalore: 12+1, 21+1, 25+1, 33+1, and 49+1 seater vehicles.",
           url: `${site.url}/gallery`,
-          hasPart: galleryPhotos.map((p) => ({ "@type": "ImageObject", name: p.label, caption: p.alt, contentUrl: site.url + p.src, thumbnailUrl: site.url + p.src })),
+          hasPart: galleryPhotos.map((p) => ({ "@type": "ImageObject", name: p.label, caption: p.alt, contentUrl: site.url + p.src, thumbnailUrl: site.url + p.src, url: `${site.url}/gallery#${p.anchor}` })),
         }}
       />
       <CtaBanner title="Like what" accent="you see?" text="Check seating capacity, luggage limits, and transparent rates on our fleet page." primary={{ href: "/fleet", label: "See fleet specs" }} image="/images/coach/coach-interior-seats.jpg" />

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/img";
 import { BatteryCharging, Gauge, MapPinned, Music, Snowflake, Sofa, Stethoscope, Briefcase } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { AnswerBox, Breadcrumbs, FaqSection, TariffTable } from "@/components/blocks";

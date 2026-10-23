@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/img";
 import Link from "next/link";
 import { ArrowUpRight, CalendarDays, Clock } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
@@ -41,7 +41,7 @@ export default function BlogPage() {
                   <span className="flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5" /> {featured.date}</span>
                   <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> {featured.readTime}</span>
                 </p>
-                <h2 className="display mt-5 text-[clamp(2rem,3.2vw,3.2rem)]">{featured.title}</h2>
+                <h2 id={featured.slug} className="display mt-5 scroll-mt-28 text-[clamp(2rem,3.2vw,3.2rem)]">{featured.title}</h2>
                 <p className="mt-4 text-[15px] leading-relaxed text-muted">{featured.excerpt}</p>
                 <span className="mt-8 inline-flex items-center gap-2 font-extrabold text-forest">
                   Read complete guide <ArrowUpRight className="h-5 w-5 transition-transform group-hover:rotate-45" />
@@ -50,7 +50,7 @@ export default function BlogPage() {
             </Link>
           </Reveal>
 
-          <h2 className="display mt-24 text-[clamp(2.4rem,4vw,4rem)]">
+          <h2 id="latest-travel-and-vehicle-guides" className="display mt-24 scroll-mt-28 text-[clamp(2.4rem,4vw,4rem)]">
             Latest travel &amp; <span className="serif text-forest">vehicle guides</span>
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -67,7 +67,7 @@ export default function BlogPage() {
                         <span>{p.date}</span>
                         <span>{p.readTime}</span>
                       </p>
-                      <h3 className="mt-3 text-lg font-extrabold leading-snug">{p.title}</h3>
+                      <h3 id={p.slug} className="mt-3 scroll-mt-28 text-lg font-extrabold leading-snug">{p.title}</h3>
                       <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{p.excerpt}</p>
                       <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-extrabold text-forest">
                         Read article <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />

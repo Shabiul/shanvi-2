@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "@/components/img";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, CalendarDays, ChevronRight, Clock } from "lucide-react";
@@ -53,7 +53,7 @@ export default async function PostPage({ params }: { params: Promise<{ post: str
             <span className="flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5" /> {p.updated}</span>
             <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> {p.readTime}</span>
           </p>
-          <h1 className="display mt-6 text-[clamp(2.6rem,1.6rem+4vw,5.6rem)] leading-[0.92]">
+          <h1 id={p.slug} className="display mt-6 text-[clamp(2.6rem,1.6rem+4vw,5.6rem)] leading-[0.92]">
             <span className="block animate-[page-in_1s_cubic-bezier(0.16,1,0.3,1)_both]">{p.h1}</span>
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted">{p.lede}</p>
@@ -80,7 +80,7 @@ export default async function PostPage({ params }: { params: Promise<{ post: str
 
       <section className="py-24">
         <div className="wrap">
-          <h2 className="display text-[clamp(2.2rem,3.6vw,3.6rem)]">
+          <h2 id="keep-reading" className="display scroll-mt-28 text-[clamp(2.2rem,3.6vw,3.6rem)]">
             Keep <span className="serif text-forest">reading</span>
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -92,7 +92,7 @@ export default async function PostPage({ params }: { params: Promise<{ post: str
                   </div>
                   <div className="p-6">
                     <p className="text-xs font-bold text-forest">{o.category}</p>
-                    <h3 className="mt-2 font-extrabold leading-snug">{o.title}</h3>
+                    <h3 id={`related-${o.slug}`} className="mt-2 scroll-mt-28 font-extrabold leading-snug">{o.title}</h3>
                     <span className="mt-4 inline-flex items-center gap-1 text-sm font-extrabold text-forest">
                       Read <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
                     </span>

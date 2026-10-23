@@ -3,6 +3,10 @@ import type { ReactNode } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Magnetic, Reveal, SplitText } from "./motion";
 
+/** URL-fragment id from heading text, so every section heading is a linkable anchor. */
+export const slug = (...parts: (string | undefined)[]) =>
+  parts.filter(Boolean).join(" ").toLowerCase().replace(/&/g, " and ").replace(/\+/g, " plus ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 type BtnProps = {
   href: string;
   children: ReactNode;
@@ -59,6 +63,7 @@ export function SectionHeading({
   align = "left",
   className = "",
   as = "h2",
+  id,
 }: {
   eyebrow?: string;
   title: string;
@@ -68,6 +73,7 @@ export function SectionHeading({
   light?: boolean;
   className?: string;
   as?: "h1" | "h2";
+  id?: string;
 }) {
   const H = as;
   const heading = (
@@ -77,7 +83,7 @@ export function SectionHeading({
           <span className="eyebrow">{eyebrow}</span>
         </Reveal>
       )}
-      <H className={`display mt-4 text-[clamp(2.6rem,1.6rem+4.2vw,5.6rem)] `}>
+      <H id={id ?? slug(title, accent)} className="display mt-4 scroll-mt-28 text-[clamp(2.6rem,1.6rem+4.2vw,5.6rem)]">
         <SplitText text={title} />
         {accent && (
           <>

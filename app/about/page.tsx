@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/img";
 import Link from "next/link";
 import { ArrowUpRight, Award, BadgeCheck, Clock, IndianRupee, ShieldCheck, Target, UserCheck, Bus, Eye } from "lucide-react";
 import { PageHero } from "@/components/page-hero";

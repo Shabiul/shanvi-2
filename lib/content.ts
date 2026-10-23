@@ -394,4 +394,16 @@ export const team = [
   { name: "Kiran Gowda", role: "Wedding Logistics & Route Dispatch", text: "Specialist in Bangalore wedding season logistics (Nov–Feb). Coordinates 49+1 Luxury Coach convoys for 200+ guests and continuous shuttle loops between guest hotels, reception halls, and airport terminals.", foot: "Wedding Convoy Specialist" },
 ];
 
-export const galleryPhotos = fleet.flatMap((v) => v.images.filter((i) => !i.shared).map((i) => ({ ...i, label: `${v.name} · ${v.seats}` })));
+export const galleryPhotos = fleet.flatMap((v) => v.images.filter((i) => !i.shared).map((i) => ({ ...i, label: `${v.name} · ${v.seats}`, anchor: `${v.anchor}-photos` })));
+
+/** Catalogued description for a site image (used when a component passes an empty alt). */
+export function altFor(src: string): string {
+  const s = photoAliases[src] ?? src;
+  const photo = fleet.flatMap((v) => v.images).find((p) => p.src === s);
+  if (photo) return photo.alt;
+  const dest = destinations.find((d) => d.img === s);
+  if (dest) return `${dest.name}, ${dest.state}: bus and tempo traveller trips from Bangalore with Shanvi Tours & Travels`;
+  const svc = services.find((x) => x.image === s);
+  if (svc) return `${svc.title} by Shanvi Tours & Travels, Bangalore`;
+  return "Shanvi Tours & Travels bus rental, Bangalore";
+}

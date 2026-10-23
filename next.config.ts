@@ -19,6 +19,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     // Old PHP URLs keep their search equity: /about.php -> /about (301).
     return [
+      // One canonical host: the bare domain always lands on www.
+      { source: "/:path*", has: [{ type: "host", value: "shanvitoursandtravels.com" }], destination: "https://www.shanvitoursandtravels.com/:path*", permanent: true },
       { source: "/index.php", destination: "/", permanent: true },
       { source: "/index_comingsoon.html", destination: "/", permanent: true },
       ...legacyPages.map((p) => ({ source: `/${p}.php`, destination: `/${p}`, permanent: true })),
@@ -34,6 +36,12 @@ const nextConfig: NextConfig = {
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=()" },
         ],
+      },
+      {
+        // Vercel preview/deployment URLs must never be indexed alongside www.
+        source: "/:path*",
+        has: [{ type: "host", value: "(?<sub>.+)\\.vercel\\.app" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
       },
     ];
   },

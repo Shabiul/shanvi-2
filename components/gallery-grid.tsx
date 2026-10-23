@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/img";
 import { motion } from "motion/react";
 
 type Photo = { src: string; alt: string; label: string };

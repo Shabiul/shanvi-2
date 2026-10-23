@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/img";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Phone, ShieldCheck, Star } from "lucide-react";
@@ -62,7 +62,7 @@ export function HomeHero() {
             </span>
           </motion.div>
 
-          <h1 className="display mt-7 text-[clamp(2.9rem,1.6rem+5vw,6.4rem)] leading-[0.98] text-ink">
+          <h1 id="mini-bus-and-tempo-traveller-rental-in-bangalore" className="display mt-7 text-[clamp(2.9rem,1.6rem+5vw,6.4rem)] leading-[0.98] text-ink">
             <span className="block overflow-hidden pb-[0.04em]">
               <span className="block animate-[line-up_1.1s_cubic-bezier(0.16,1,0.3,1)_both]" style={{ animationDelay: "0.25s" }}>
                 Mini Bus &amp; Tempo

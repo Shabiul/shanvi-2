@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/img";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef, type ReactNode } from "react";
 import { ChevronRight } from "lucide-react";
+import { slug } from "./ui";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -81,7 +82,7 @@ export function PageHero({
               {eyebrow}
             </motion.p>
           )}
-          <h1 className="display mt-5 max-w-[18ch] text-[clamp(2.7rem,1.6rem+4.2vw,5.8rem)] leading-[1]">
+          <h1 id={slug(title, accent)} className="display mt-5 max-w-[18ch] text-[clamp(2.7rem,1.6rem+4.2vw,5.8rem)] leading-[1]">
             <span className="block overflow-hidden pb-[0.05em]">
               <span className="block animate-[line-up_1.1s_cubic-bezier(0.16,1,0.3,1)_both] [animation-delay:0.25s]">{title}</span>
             </span>
