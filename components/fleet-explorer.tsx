@@ -5,7 +5,7 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, Check, Users } from "lucide-react";
-import { fleet, vehicleFor, type Vehicle } from "@/lib/content";
+import { fleet, rateText, vehicleFor, type Vehicle } from "@/lib/content";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const inr = (n: number) => "₹" + new Intl.NumberFormat("en-IN").format(n);
@@ -144,7 +144,7 @@ export function FleetExplorer() {
         </div>
         <div className="absolute left-5 right-5 top-5 flex items-start justify-between gap-3">
           {active.tag ? <span className="rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{active.tag}</span> : <span />}
-          {active.plate && <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{active.plate}</span>}
+          
         </div>
         <div className="relative flex flex-1 flex-col p-6 md:p-7">
           <AnimatePresence mode="wait">
@@ -195,7 +195,7 @@ export function FleetExplorer() {
           <div className="rounded-2xl bg-sand p-3">
             <dt className="text-[10px] font-extrabold uppercase tracking-widest text-subtle">Outstation</dt>
             <dd className="mt-1 text-lg font-extrabold text-ink">
-              ₹{active.rateMin}–{active.rateMax}
+              {rateText(active)}
               <span className="text-xs text-muted">/km</span>
             </dd>
           </div>

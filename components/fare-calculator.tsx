@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Calculator, MessageCircle } from "lucide-react";
-import { fleet, waLink } from "@/lib/content";
+import { fleet, rateText, waLink } from "@/lib/content";
 import { AnimatedNumber } from "./motion";
 
 type Mode = "outstation" | "local";
@@ -52,7 +52,7 @@ export function FareCalculator() {
     mode === "outstation"
       ? [
           [`Chargeable distance${chargeKm > km ? " (300 km/day minimum)" : ""}`, `${new Intl.NumberFormat("en-IN").format(chargeKm)} km`],
-          ["Rate", `₹${v.rateMin}–${v.rateMax} / km`],
+          ["Rate", `${rateText(v)} / km`],
           [`Driver bata × ${days} day${days > 1 ? "s" : ""}`, `₹${new Intl.NumberFormat("en-IN").format(bata)}`],
         ]
       : [

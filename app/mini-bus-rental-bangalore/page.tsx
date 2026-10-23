@@ -7,7 +7,7 @@ import { SeatMap } from "@/components/fleet-explorer";
 import { CtaBanner } from "@/components/sections";
 import { Btn, JsonLd, SectionHeading } from "@/components/ui";
 import { Reveal } from "@/components/motion";
-import { areas, fleet, site, waLink } from "@/lib/content";
+import { areas, fleet, rateText, site, waLink } from "@/lib/content";
 import { faqs } from "@/lib/generated";
 import { meta } from "@/lib/seo";
 
@@ -20,7 +20,7 @@ const sizes = [
   ["1 – 12 passengers", "12+1 Tempo Traveller", "₹4,500", "/fleet#12-tempo-traveller"],
   ["13 – 21 passengers", "21+1 Mercedes Mini Bus", "₹6,500", "/21-seater-bus-rental-bangalore"],
   ["22 – 25 passengers", "25+1 Mini Coach", "₹7,500", "/fleet#25-mini-coach"],
-  ["26 – 33 passengers", "33+1 Touring Coach", "₹9,000", "/fleet#33-tourist-bus"],
+  ["26 – 33 passengers", "33+1 Touring Coach", "₹9,500", "/fleet#33-tourist-bus"],
 ];
 
 export default function MiniBusPage() {
@@ -46,9 +46,9 @@ export default function MiniBusPage() {
 
       <section className="alt py-24">
         <div className="wrap">
-          <AnswerBox title="Quick Answer: Mini Bus Rental Price in Bangalore" chips={["21+1 and 25+1 seat sizes", "8 hr / 80 km local packages", "Outstation from ₹32 per km", "Yellow Board, AIS-140 GPS"]}>
+          <AnswerBox title="Quick Answer: Mini Bus Rental Price in Bangalore" chips={["21+1 and 25+1 seat sizes", "8 hr / 80 km local packages", "Outstation from ₹30 per km", "Yellow Board, AIS-140 GPS"]}>
             <p>
-              <strong>Mini bus rental in Bangalore</strong> with Shanvi Tours &amp; Travels costs <strong>₹6,500 for the 21+1 seater</strong> and <strong>₹7,500 for the 25+1 seater</strong> for a local 8-hour / 80-kilometre package. Extra distance is ₹26 per km (21+1) or ₹30 per km (25+1). Outstation trips cost ₹32 to ₹36 per km for the 21+1 and ₹36 to ₹40 per km for the 25+1, billed for a minimum of 300 km a day plus a driver bata of ₹600 to ₹650 a day.
+              <strong>Mini bus rental in Bangalore</strong> with Shanvi Tours &amp; Travels costs <strong>₹6,500 for the 21+1 seater</strong> and <strong>₹7,500 for the 25+1 seater</strong> for a local 8-hour / 80-kilometre package. Extra distance is ₹26 per km (21+1) or ₹30 per km (25+1). Outstation trips cost ₹30 to ₹34 per km for the 21+1 and ₹32 to ₹36 per km for the 25+1, billed for a minimum of 300 km a day plus a driver bata of ₹600 to ₹650 a day.
             </p>
             <p>
               Both vehicles run on commercial <strong>Yellow Board</strong> registration under the Karnataka Motor Vehicles Rules with an <strong>All India Tourist Permit</strong>, <strong>AIS-140 GPS</strong> tracking and an 80 km/h speed governor, and both are small enough for ghat roads to Ooty, Coorg and Chikmagalur. Tolls, parking and interstate permits are charged at actuals with GST invoices.
@@ -83,7 +83,7 @@ export default function MiniBusPage() {
                         {[
                           ["8 hr / 80 km", inr(v.local)],
                           ["Extra km / hr", `₹${v.extraKm} · ₹${v.extraHr}`],
-                          ["Outstation", `₹${v.rateMin}–${v.rateMax}/km`],
+                          ["Outstation", `${rateText(v)}/km`],
                           ["Driver bata", `₹${v.bata}/day`],
                           ["Best for", `${v.minPax}–${v.maxPax} people`],
                         ].map(([k, val]) => (
@@ -175,7 +175,7 @@ export default function MiniBusPage() {
           name: "Mini Bus Rental in Bangalore",
           alternateName: ["Mini Bus Hire Bangalore", "Minibus on Rent Bangalore", "21 Seater and 25 Seater Mini Bus Rental"],
           serviceType: "Mini bus rental with driver",
-          description: "Chauffeur-driven mini bus rental in Bangalore: 21+1 seater from ₹6,500 and 25+1 seater from ₹7,500 for 8 hours / 80 km, outstation from ₹32 per km.",
+          description: "Chauffeur-driven mini bus rental in Bangalore: 21+1 seater from ₹6,500 and 25+1 seater from ₹7,500 for 8 hours / 80 km, outstation from ₹30 per km.",
           provider: { "@id": `${site.url}/#organization` },
           areaServed: { "@type": "City", name: "Bangalore" },
           url: `${site.url}/mini-bus-rental-bangalore`,

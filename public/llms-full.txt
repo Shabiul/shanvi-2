@@ -31,7 +31,7 @@
 - **Luggage Capacity**: Dedicated Top Luggage Carrier + Rear Compartment
 - **Safety**: AIS-140 GPS, First Aid Kit, Fire Extinguisher
 - **Optimal Usage**: Family holidays, airport transfers (BLR Kempegowda Airport), corporate senior team transit, weekend getaways (1 to 12 persons).
-- **Price**: ₹4,500 per 8 hr / 80 km; ₹20 per extra km; outstation ₹24–26 per km; driver bata ₹500/day.
+- **Price**: ₹4,500 per 8 hr / 80 km; ₹20 per extra km; outstation ₹20–24 per km; driver bata ₹500/day.
 
 ### Vehicle Category B: Mini Bus (21+1 Seater)
 - **Chassis**: Heavy Mercedes-Benz Platform, Coachwork by Singh Motor Coach Builders
@@ -41,14 +41,14 @@
 - **Luggage Capacity**: Underfloor Luggage Hold and Overhead Parcel Racks
 - **Safety**: AIS-140 Telematics, Speed Governor (80 km/h limit)
 - **Optimal Usage**: Mid-size corporate offsites, college department excursions, wedding guest transfers (13 to 21 persons).
-- **Price**: ₹6,500 per 8 hr / 80 km; ₹9,000 per 12 hr / 120 km; ₹26 per extra km; outstation ₹32–36 per km; driver bata ₹600/day; airport (BLR) transfer from ₹4,200.
+- **Price**: ₹6,500 per 8 hr / 80 km; ₹9,000 per 12 hr / 120 km; ₹26 per extra km; outstation ₹30–34 per km; driver bata ₹600/day; airport (BLR) transfer from ₹4,200.
 - **Registration**: KA 51 AB 8485. Supplied for "21 seater tempo traveller" requests: tempo travellers stop at 17–20 seats, this mini bus seats 21 in 2x2 pushback seats.
 
 ### Vehicle Category B2: Mini Coach (25+1 Seater)
 - **Seating Capacity**: 25 Passengers + 1 Chauffeur
 - **Seat Configuration**: Pushback seats with curtained windows and a red-carpet aisle
 - **Luggage Capacity**: Underfloor luggage hold
-- **Price**: ₹7,500 per 8 hr / 80 km; ₹30 per extra km; outstation ₹36–40 per km; driver bata ₹650/day
+- **Price**: ₹7,500 per 8 hr / 80 km; ₹30 per extra km; outstation ₹32–36 per km; driver bata ₹650/day
 - **Optimal Usage**: Groups of 22 to 25 that outgrow a 21 seater.
 
 ### Vehicle Category C: Touring Bus (33+1 Seater)
@@ -59,14 +59,14 @@
 - **Luggage Capacity**: Deep Underfloor Luggage Bay for 35+ Suitcases
 - **Safety**: Dual Emergency Exits, Emergency Glass Hammers, Fire Safety Systems
 - **Optimal Usage**: School and university trips, religious pilgrimage circuits, multi-day interstate tours (26 to 33 persons).
-- **Price**: ₹9,000 per 8 hr / 80 km; outstation ₹42–46 per km; driver bata ₹700/day.
+- **Price**: ₹9,500 per 8 hr / 80 km; outstation ₹38–42 per km; driver bata ₹700/day.
 - **Registration**: KA 51 AL 7388.
 
 ### Vehicle Category C2: Premium Coach (45+1 Seater)
 - **Seating Capacity**: 45 Passengers + 1 Chauffeur
 - **Seat Configuration**: 2x2 pushback recliners with onboard TV screens
 - **Luggage Capacity**: Large underfloor luggage hold
-- **Price**: ₹14,000 per 8 hr / 80 km; ₹48 per extra km; outstation ₹54–60 per km; driver bata ₹800/day
+- **Price**: ₹14,000 per 8 hr / 80 km; ₹48 per extra km; outstation ₹55 per km; driver bata ₹800/day
 - **Optimal Usage**: Corporate events, wedding guests and long-distance tours (34 to 45 persons).
 
 ### Vehicle Category D: Luxury Highway Coach (49+1 Seater)
@@ -78,7 +78,7 @@
 - **Luggage Capacity**: Maximum Volume Underfloor Cargo Bay
 - **Safety**: AIS-140 GPS, Dual Fire Extinguishers, Emergency Exits, First Aid Station
 - **Optimal Usage**: Wedding Transport Logistics (Peak Nov–Feb Season), multi-vehicle coordinated convoys for weddings with 200+ guests, continuous shuttle loops between guest hotels and reception venues, destination weddings, major corporate summits, school batches, large pilgrimage groups (46 to 50 persons).
-- **Price**: ₹12,000 per 8 hr / 80 km; outstation ₹50–58 per km; driver bata ₹800/day.
+- **Price**: ₹12,500 per 8 hr / 80 km; outstation ₹48–52 per km; driver bata ₹800/day.
 - **Registration**: KA 51 AL 4498.
 
 ## 4. Operational Corridors & Road Travel Distances

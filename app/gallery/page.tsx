@@ -91,7 +91,7 @@ export default function GalleryPage() {
               {fleet.filter((v) => v.plate).map((v) => (
                 <li key={v.id} className="flex items-center justify-between gap-3 border-b border-line py-4 last:border-0">
                   <span className="font-bold">{v.seats.replace(" Seater", "")} {v.name}</span>
-                  <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{v.plate}</span>
+                  <span className="text-sm font-bold text-muted">{v.plate}</span>
                 </li>
               ))}
             </ul>

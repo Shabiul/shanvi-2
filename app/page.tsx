@@ -160,7 +160,7 @@ export default function Home() {
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
                 ["₹6,500 / day", "Local 8hr / 80km package (₹26/extra km, ₹350/extra hr)"],
-                ["₹32 – ₹36 / km", "Outstation interstate rate + ₹600/day driver bata"],
+                ["₹30 – ₹34 / km", "Outstation interstate rate + ₹600/day driver bata"],
               ].map(([a, b], i) => (
                 <Reveal key={a} delay={i * 0.1} className="rounded-3xl p-6 card">
                   <p className="display text-4xl text-forest">{a}</p>
@@ -185,7 +185,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <RevealImage src="/images/fleet/mini-bus-exterior.jpg" alt="Shanvi Tours & Travels 21 Seater Mini Bus Bangalore Exterior KA 51 AB 8485" className="aspect-[4/5] rounded-[36px]" sizes="(max-width:1024px) 100vw, 50vw" />
-            <span className="absolute bottom-6 left-6 rounded-md border-2 border-ink bg-[#ffd84d] px-3 py-1 font-mono text-sm font-bold text-ink">KA 51 AB 8485</span>
+            
           </div>
         </div>
       </section>
@@ -236,8 +236,8 @@ export default function Home() {
       <section id="video-showcase" className="pb-28">
         <div className="wrap">
           <VideoShowcase
-            src="/videos/scene-w2.mp4"
-            poster="/images/destinations/tajmahal-poster.jpg"
+            src="/videos/scene-w1.mp4"
+            poster="/images/destinations/gokarna-kudle-beach.jpg"
             title="South India Tour & Luxury Bus Fleet"
             text="Watch our fleet on outstation tour routes across South India, operating with All India Tourist Permits across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana."
           />

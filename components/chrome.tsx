@@ -39,7 +39,7 @@ export function Nav() {
       >
         <nav
           aria-label="Main"
-          className={`mx-auto flex h-[68px] max-w-[1400px] items-center gap-4 rounded-full pl-3 pr-2 transition-all duration-500 ${scrolled ? "glass-strong shadow-[0_16px_40px_-24px_rgb(20_33_28/0.35)]" : "bg-transparent"}`}
+          className={`mx-auto flex h-[68px] max-w-[1400px] items-center gap-4 rounded-full pl-3 pr-2 transition-all duration-500 ${scrolled || pathname === "/" ? "glass-strong shadow-[0_16px_40px_-24px_rgb(20_33_28/0.35)]" : "bg-transparent"}`}
         >
           <Link href="/" className="flex items-center rounded-full bg-white px-3.5 py-1.5 shadow-[0_1px_2px_rgb(20_33_28/0.08)] ring-1 ring-line" aria-label="Shanvi Tours & Travels home">
             <Image src="/images/logo.png" alt="Shanvi Tours & Travels Logo" width={1231} height={541} priority className="h-9 w-auto" />
@@ -288,6 +288,10 @@ export function Fabs() {
             </motion.button>
           )}
         </AnimatePresence>
+        <a href={`tel:${site.phoneIntl}`} aria-label={`Call ${site.phone}`} className="group relative grid h-14 w-14 place-items-center rounded-full bg-forest text-white shadow-[0_10px_30px_-8px_rgb(15_91_70/0.6)] transition hover:bg-forest-2">
+          <Phone className="h-6 w-6" />
+          <span className="pointer-events-none absolute right-[calc(100%+12px)] whitespace-nowrap rounded-full bg-white px-4 py-2 text-xs font-extrabold text-ink opacity-0 shadow-lg transition group-hover:opacity-100">Call {site.phone}</span>
+        </a>
         <a href={waLink()} target="_blank" rel="noopener" aria-label="Chat on WhatsApp" className="group relative grid h-16 w-16 place-items-center rounded-full bg-wa text-white shadow-[0_10px_30px_-8px_rgb(37_211_102/0.6)]">
           <span aria-hidden className="absolute inset-0 animate-pulse-ring rounded-full bg-wa" />
           <svg viewBox="0 0 24 24" className="relative h-8 w-8" fill="currentColor" aria-hidden>

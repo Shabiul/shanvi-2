@@ -32,18 +32,18 @@
 
 | Vehicle | 8 hr / 80 km local | Extra km / hr | Outstation per km | Driver bata / day |
 |---|---|---|---|---|
-| 12+1 Tempo Traveller | ₹4,500 | ₹20 / ₹250 | ₹24–26 | ₹500 |
-| 21+1 Mercedes Mini Bus | ₹6,500 | ₹26 / ₹350 | ₹32–36 | ₹600 |
-| 25+1 Mini Coach | ₹7,500 | ₹30 / ₹400 | ₹36–40 | ₹650 |
-| 33+1 Touring Coach | ₹9,000 | ₹35 / ₹450 | ₹42–46 | ₹700 |
-| 45+1 Premium Coach | ₹14,000 | ₹48 / ₹600 | ₹54–60 | ₹800 |
-| 49+1 Luxury Coach | ₹12,000 | ₹45 / ₹550 | ₹50–58 | ₹800 |
+| 12+1 Tempo Traveller | ₹4,500 | ₹20 / ₹250 | ₹20–24 | ₹500 |
+| 21+1 Mercedes Mini Bus | ₹6,500 | ₹26 / ₹350 | ₹30–34 | ₹600 |
+| 25+1 Mini Coach | ₹7,500 | ₹30 / ₹400 | ₹32–36 | ₹650 |
+| 33+1 Touring Coach | ₹9,500 | ₹35 / ₹450 | ₹38–42 | ₹700 |
+| 45+1 Premium Coach | ₹14,000 | ₹48 / ₹600 | ₹55 | ₹800 |
+| 49+1 Luxury Coach | ₹12,500 | ₹45 / ₹550 | ₹48–52 | ₹800 |
 
 Outstation trips are billed for a minimum of 300 km per calendar day, garage-to-garage from Nagadevanahalli. Tolls, parking, state entry taxes and interstate permits are charged at actuals with GST invoices.
 
 ## 21 Seater Bus Rental in Bangalore (most requested)
 
-- **How much does a 21 seater bus rental cost in Bangalore?** ₹6,500 for 8 hours / 80 km; ₹9,000 for 12 hours / 120 km; ₹26 per extra km and ₹350 per extra hour. Outstation: ₹32–36 per km, minimum 300 km/day, driver bata ₹600/day. Airport (BLR) transfer from ₹4,200.
+- **How much does a 21 seater bus rental cost in Bangalore?** ₹6,500 for 8 hours / 80 km; ₹9,000 for 12 hours / 120 km; ₹26 per extra km and ₹350 per extra hour. Outstation: ₹30–34 per km, minimum 300 km/day, driver bata ₹600/day. Airport (BLR) transfer from ₹4,200.
 - **Is there a 21 seater tempo traveller?** Most tempo travellers stop at 17–20 seats with a 1x2 aisle. Shanvi supplies its 21+1 Mercedes mini bus for 21-person groups: 2x2 pushback seats, wide aisle, 18–20 bag boot, at the same ₹6,500 day package.
 - **How many people fit in a 21 seater?** 21 passengers plus the driver; comfortable for 14–21 adults with luggage. For 22–25 use the 25+1 mini coach (₹7,500).
 - **Pickup areas**: anywhere in Bangalore, including Whitefield, Electronic City, Koramangala, Indiranagar, HSR Layout, Marathahalli, Hebbal, Yelahanka, Sarjapur Road, Manyata Tech Park and Kempegowda Airport.

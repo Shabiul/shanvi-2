@@ -27,8 +27,8 @@ const specs = [
 const compare = [
   ["Optimal Passenger Headcount", "8 to 12 passengers", "14 to 21 passengers", "22 to 33 passengers"],
   ["Seating Configuration", "1x2 or 2x1 Narrow Aisle", "2x2 Wide Central Walkway", "2x2 Coach Pushback"],
-  ["Local City Package (8h/80km)", "₹4,500", "₹6,500 (approx ₹310/person)", "₹9,000"],
-  ["Outstation Rate per Km", "₹24 – ₹26 / km", "₹32 – ₹36 / km", "₹42 – ₹46 / km"],
+  ["Local City Package (8h/80km)", "₹4,500", "₹6,500 (approx ₹310/person)", "₹9,500"],
+  ["Outstation Rate per Km", "₹20 – ₹24 / km", "₹30 – ₹34 / km", "₹38 – ₹42 / km"],
   ["Ghat Road / Hill Station Agility", "Excellent", "Excellent (Narrow wheelbase clears all 36 Ooty hairpins)", "Moderate (Some hill restrictions)"],
   ["Luggage Boot Capacity", "8 – 10 small bags", "18 – 20 medium suitcases + overhead racks", "30+ suitcases"],
 ];
@@ -50,7 +50,7 @@ const tables = [
   {
     tag: "Outstation Interstate",
     title: "South India Outstation Highway Rates",
-    rows: [["Per Kilometer Tariff (AC Mini Bus)", "₹32 – ₹36 / km"], ["Minimum Daily Billing Distance", "300 km / calendar day"], ["Driver Daily Bata (Allowance)", "₹600 / day"], ["Interstate Border Permit (Kerala / TN / AP)", "At actual RTO rates"], ["Toll Plaza & Expressway FASTag", "Recharged at actuals"], ["Driver Night Halt Allowance (if after 11 PM)", "₹300 / night"]],
+    rows: [["Per Kilometer Tariff (AC Mini Bus)", "₹30 – ₹34 / km"], ["Minimum Daily Billing Distance", "300 km / calendar day"], ["Driver Daily Bata (Allowance)", "₹600 / day"], ["Interstate Border Permit (Kerala / TN / AP)", "At actual RTO rates"], ["Toll Plaza & Expressway FASTag", "Recharged at actuals"], ["Driver Night Halt Allowance (if after 11 PM)", "₹300 / night"]],
     note: "*Kilometers are calculated garage-to-garage from our Nagadevanahalli hub. Full GST commercial bill provided.",
     cta: ["/contact?vehicle=21-seater&trip=outstation", "Calculate outstation route tariff"],
   },
@@ -77,7 +77,7 @@ export default function Seater21Page() {
             <dl className="px-3 py-4 text-sm">
               {[
                 ["Bangalore City Tariff", "₹6,500", "8h / 80km"],
-                ["Outstation Tariff", "₹32 – ₹36", "/ km"],
+                ["Outstation Tariff", "₹30 – ₹34", "/ km"],
                 ["Driver Day Allowance", "₹600", "/ day"],
               ].map(([k, a, b]) => (
                 <div key={k} className="flex items-baseline justify-between border-b border-line py-3">
@@ -113,7 +113,7 @@ export default function Seater21Page() {
         <div className="wrap">
           <AnswerBox title="Quick Answer: 21 Seater Bus Rental Price in Bangalore" chips={["Standard 2x2 Center-Aisle Configuration", "Fits 14 to 21 Passengers Comfortably", "Hill-Station Approved (Ooty, Coorg, Chikmagalur)", "Commercial Yellow Board Compliant"]}>
             <p>
-              Renting a <strong>21 seater mini bus in Bangalore</strong> with Shanvi Tours &amp; Travels costs <strong>₹6,500 for a local 8-hour / 80-kilometer city package</strong> (additional distance at ₹26/km and extra hours at ₹350/hr). For outstation journeys across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana, the tariff is <strong>₹32 to ₹36 per kilometer</strong> with a standard minimum billing of 300 km/day and a driver bata of <strong>₹600/day</strong>.
+              Renting a <strong>21 seater mini bus in Bangalore</strong> with Shanvi Tours &amp; Travels costs <strong>₹6,500 for a local 8-hour / 80-kilometer city package</strong> (additional distance at ₹26/km and extra hours at ₹350/hr). For outstation journeys across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana, the tariff is <strong>₹30 to ₹34 per kilometer</strong> with a standard minimum billing of 300 km/day and a driver bata of <strong>₹600/day</strong>.
             </p>
             <p>
               Our 21+1 vehicle (Registration <strong>KA 51 AB 8485</strong>) is an executive coach on a Mercedes-Benz chassis fabricated by <strong>Singh Motor Coach Builders</strong>. It is equipped with <strong>2x2 luxury pushback reclining seats</strong>, dual heavy-duty air conditioning, mobile phone charging points at every row, an LED TV infotainment system, a microphone for tour commentary, and a dedicated boot space accommodating 18 to 20 medium suitcases. The vehicle operates with a valid <strong>All India Tourist Permit (AITP)</strong> and <strong>AIS-140 GPS telemetry</strong>, making it the highest-rated transport solution in Bangalore for groups of 14 to 21 passengers.
@@ -287,7 +287,7 @@ export default function Seater21Page() {
           name: "21 Seater Bus Rental in Bangalore",
           alternateName: ["21 Seater Mini Bus Rental", "21 Seater Tempo Traveller Rental", "21 Seater Minibus Hire", "21+1 Seater Bus on Rent"],
           serviceType: "Mini bus rental with driver",
-          description: "Chauffeur-driven 21+1 seater Mercedes-chassis mini bus rental in Bangalore: ₹6,500 for 8 hours / 80 km, ₹32–36 per km outstation, 2x2 pushback seats, AC, AIS-140 GPS.",
+          description: "Chauffeur-driven 21+1 seater Mercedes-chassis mini bus rental in Bangalore: ₹6,500 for 8 hours / 80 km, ₹30–34 per km outstation, 2x2 pushback seats, AC, AIS-140 GPS.",
           provider: { "@id": `${site.url}/#organization` },
           areaServed: [{ "@type": "City", name: "Bangalore" }, ...["Karnataka", "Kerala", "Tamil Nadu", "Andhra Pradesh", "Telangana"].map((name) => ({ "@type": "State", name }))],
           image: `${site.url}/images/fleet/mini-bus-exterior.jpg`,

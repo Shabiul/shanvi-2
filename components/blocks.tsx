@@ -3,7 +3,7 @@ import { BadgeCheck, Sparkles } from "lucide-react";
 import { Btn, JsonLd, SectionHeading, slug } from "./ui";
 import { Faq } from "./sections";
 import { Reveal, VelocityMarquee } from "./motion";
-import { areas, credentials, fleet, site } from "@/lib/content";
+import { areas, credentials, fleet, rateText, site } from "@/lib/content";
 
 /** AEO "quick answer" block — plain, crawlable copy in a designed card. */
 export function AnswerBox({ title, children, chips }: { title: string; children: ReactNode; chips?: string[] }) {
@@ -89,7 +89,7 @@ export function TariffTable() {
                 ₹{v.extraKm}/km | ₹{v.extraHr}/hr
               </td>
               <td className="px-5 py-5 font-extrabold">
-                ₹{v.rateMin} – ₹{v.rateMax} / km
+                {rateText(v)} / km
               </td>
               <td className="px-5 py-5">₹{v.bata} / day</td>
               <td className="px-5 py-5">
