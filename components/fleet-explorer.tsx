@@ -14,7 +14,7 @@ export function SeatMap({ v, filled, compact = false }: { v: Vehicle; filled: nu
   let seat = 0;
   const cols = Math.max(...v.layout.map((r) => r.length));
   return (
-    <div className={`relative mx-auto w-full rounded-[38px] border-2 border-line bg-paper p-4 pt-14 ${compact ? "max-w-[230px]" : "max-w-[280px]"}`} role="img" aria-label={`${v.seats} seat layout: ${Math.min(filled, v.capacity)} of ${v.capacity} seats filled`}>
+    <div className={`relative mx-auto w-full rounded-[38px] border-2 border-line bg-paper p-4 pt-14 ${compact ? "max-w-[170px] sm:max-w-[230px]" : "max-w-[220px] sm:max-w-[280px]"}`} role="img" aria-label={`${v.seats} seat layout: ${Math.min(filled, v.capacity)} of ${v.capacity} seats filled`}>
       {/* windshield + driver */}
       <div aria-hidden className="absolute inset-x-6 top-3 h-2.5 rounded-full bg-gradient-to-r from-forest/15 via-forest/30 to-forest/15" />
       <div aria-hidden className="absolute right-6 top-7 flex items-center gap-1.5 text-[9px] font-extrabold uppercase tracking-widest text-muted">
@@ -97,7 +97,7 @@ export function FleetExplorer() {
             value={pax}
             onChange={(e) => setPax(Number(e.target.value))}
             aria-label="Number of travellers"
-            className="absolute inset-0 -top-2 h-6 w-full cursor-pointer appearance-none bg-transparent [&::-moz-range-thumb]:h-7 [&::-moz-range-thumb]:w-7 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-4 [&::-moz-range-thumb]:border-white [&::-moz-range-thumb]:bg-forest [&::-webkit-slider-thumb]:h-7 [&::-webkit-slider-thumb]:w-7 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-4 [&::-webkit-slider-thumb]:border-white [&::-webkit-slider-thumb]:bg-forest [&::-webkit-slider-thumb]:shadow-[0_0_0_6px_rgb(15_91_70/0.18)]"
+            className="absolute inset-0 -top-4 h-10 w-full cursor-pointer appearance-none bg-transparent [&::-moz-range-thumb]:h-7 [&::-moz-range-thumb]:w-7 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-4 [&::-moz-range-thumb]:border-white [&::-moz-range-thumb]:bg-forest [&::-webkit-slider-thumb]:h-7 [&::-webkit-slider-thumb]:w-7 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-4 [&::-webkit-slider-thumb]:border-white [&::-webkit-slider-thumb]:bg-forest [&::-webkit-slider-thumb]:shadow-[0_0_0_6px_rgb(15_91_70/0.18)]"
           />
           <div className="mt-3 flex justify-between text-[11px] font-bold text-subtle">
             <span>1</span>
@@ -126,7 +126,7 @@ export function FleetExplorer() {
       </div>
 
       {/* Stage */}
-      <div className="relative flex flex-col overflow-hidden rounded-[30px] border border-line bg-white shadow-[0_18px_40px_-28px_rgb(20_33_28/0.25)]">
+      <div data-vehicle={active.id} className="relative flex flex-col overflow-hidden rounded-[30px] border border-line bg-white shadow-[0_18px_40px_-28px_rgb(20_33_28/0.25)]">
         <div className="relative h-64 shrink-0 bg-sand sm:h-80 lg:h-[330px]">
         <AnimatePresence mode="sync">
           <motion.div
@@ -144,11 +144,7 @@ export function FleetExplorer() {
         </div>
         <div className="absolute left-5 right-5 top-5 flex items-start justify-between gap-3">
           {active.tag ? <span className="rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{active.tag}</span> : <span />}
-          {active.plate ? (
-            <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{active.plate}</span>
-          ) : active.images[img].credit ? (
-            <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-ink">Representative photo</span>
-          ) : null}
+          {active.plate && <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{active.plate}</span>}
         </div>
         <div className="relative flex flex-1 flex-col p-6 md:p-7">
           <AnimatePresence mode="wait">
@@ -166,10 +162,12 @@ export function FleetExplorer() {
               </div>
             </motion.div>
           </AnimatePresence>
-          <div className="mt-auto flex gap-1.5 pt-5">
+          <div className="mt-auto flex gap-1.5 pt-3">
             {active.images.map((_, i) => (
-              <button key={i} type="button" onClick={() => setImg(i)} aria-label={`Show photo ${i + 1}`} className="h-1.5 flex-1 overflow-hidden rounded-full bg-sand">
-                {i === img && <motion.span key={active.id + img} className="block h-full bg-forest" initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 4.2, ease: "linear" }} />}
+              <button key={i} type="button" onClick={() => setImg(i)} aria-label={`Show photo ${i + 1}`} className="flex h-8 flex-1 items-center">
+                <span className="block h-1.5 w-full overflow-hidden rounded-full bg-sand">
+                  {i === img && <motion.span key={active.id + img} className="block h-full bg-forest" initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 4.2, ease: "linear" }} />}
+                </span>
               </button>
             ))}
           </div>

@@ -24,7 +24,7 @@ export default function FleetPage() {
         eyebrow="Real fleet specifications"
         title="Our commercial fleet"
         accent="at a glance"
-        lede="Four standardized passenger classes, each backed by real vehicle photography, exact seating capacity, and All India Tourist Permits"
+        lede="Six standardized passenger classes, each backed by real vehicle photography, exact seating capacity, and All India Tourist Permits"
         image="/images/coach/coach-front-dusk.jpg"
         imageAlt="Shanvi Tours & Travels luxury coach front view at dusk, Bangalore fleet"
         position="center 40%"
@@ -48,7 +48,7 @@ export default function FleetPage() {
         <div className="wrap">
           <AnswerBox title="Quick Guide: Which Vehicle Size is Right for Your Group?" chips={["100% Real Fleet Photos (No Stock Images)", "AIS-140 GPS Telemetry & Speed Governors", "Pushback Reclining Seats in Every Coach", "5.0 Rating (25 Verified Google Reviews)"]}>
             <p>
-              Shanvi Tours &amp; Travels operates four distinct passenger seating capacities in Bangalore to prevent overbooking or paying for empty seats: <strong>1) 12+1 Seater Tempo Traveller</strong> (ideal for 8–12 passengers; families, airport pickups, small corporate teams); <strong>2) 21+1 Seater Mercedes-Chassis Mini Bus</strong> (ideal for 14–21 passengers; college departments, office outings); <strong>3) 33+1 Seater Touring Coach</strong> (ideal for 22–33 passengers; pilgrimage tours, school trips, inter-state holidays); <strong>4) 49+1 Seater Luxury Bus</strong> (ideal for 34–50 passengers; wedding guest convoys, corporate conferences, student batches). All vehicles feature high-capacity dual AC, AIS-140 GPS tracking, pushback seats, and yellow-board commercial registration.
+              Shanvi Tours &amp; Travels operates six distinct passenger seating capacities in Bangalore to prevent overbooking or paying for empty seats: <strong>1) 12+1 Seater Tempo Traveller</strong> (ideal for 8–12 passengers; families, airport pickups, small corporate teams); <strong>2) 21+1 Seater Mercedes-Chassis Mini Bus</strong> (ideal for 13–21 passengers; college departments, office outings); <strong>3) 25+1 Seater Mini Coach</strong> (ideal for 22–25 passengers; office outings, extended families); <strong>4) 33+1 Seater Touring Coach</strong> (ideal for 26–33 passengers; pilgrimage tours, school trips, inter-state holidays); <strong>5) 45+1 Seater Premium Coach</strong> (ideal for 34–45 passengers; corporate events, wedding guests); <strong>6) 49+1 Seater Luxury Bus</strong> (ideal for 46–50 passengers; wedding guest convoys, corporate conferences, student batches). All vehicles feature high-capacity dual AC, AIS-140 GPS tracking, pushback seats, and yellow-board commercial registration.
             </p>
           </AnswerBox>
         </div>
@@ -57,17 +57,15 @@ export default function FleetPage() {
       <section className="py-24">
         <div className="wrap">
           {fleet.map((v, i) => (
-            <article key={v.id} id={v.anchor} className="grid scroll-mt-28 gap-10 border-b border-line py-20 first:pt-0 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
+            <article key={v.id} id={v.anchor} data-vehicle={v.id} className="grid scroll-mt-28 gap-10 border-b border-line py-20 first:pt-0 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
               <div className={`grid gap-4 ${i % 2 ? "lg:order-2" : ""}`}>
                 <Reveal className="relative aspect-[16/10] overflow-hidden rounded-[32px]">
                   <Image src={v.images[0].src} alt={v.images[0].alt} fill sizes="(max-width:1024px) 100vw, 55vw" className="object-cover transition-transform duration-[1.4s] hover:scale-105" />
-                  {v.plate && <span className="absolute bottom-5 left-5 rounded-md border-2 border-ink bg-[#ffd84d] px-3 py-1 font-mono text-sm font-bold text-ink">{v.plate}</span>}
-                  {v.images[0].credit && <span className="absolute bottom-5 left-5 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-ink">Representative photo</span>}
-                  {v.tag && <span className="absolute right-5 top-5 rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{v.tag}</span>}
+                  {v.plate && <span className="absolute bottom-5 left-5 rounded-md border-2 border-ink bg-[#ffd84d] px-3 py-1 font-mono text-sm font-bold text-ink">{v.plate}</span>}                  {v.tag && <span className="absolute right-5 top-5 rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{v.tag}</span>}
                 </Reveal>
                 <div className={`grid grid-cols-1 gap-4 ${v.images[1] ? "sm:grid-cols-[1fr_230px]" : ""}`}>
                   {v.images[1] && (
-                    <Reveal className="relative overflow-hidden rounded-[28px]" delay={0.1}>
+                    <Reveal className="relative aspect-[16/10] overflow-hidden rounded-[28px] sm:aspect-auto" delay={0.1}>
                       <Image src={v.images[1].src} alt={v.images[1].alt} fill sizes="(max-width:1024px) 60vw, 30vw" className="object-cover" />
                     </Reveal>
                   )}

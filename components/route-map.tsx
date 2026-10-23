@@ -87,7 +87,7 @@ export function RouteMap() {
             <div className="mt-5 flex flex-wrap items-center gap-4 text-sm font-bold text-ink">
               <span className="inline-flex items-center gap-1.5"><MapPin className="h-4 w-4 text-forest" /> {d.km} km</span>
               <span className="inline-flex items-center gap-1.5"><Clock className="h-4 w-4 text-forest" /> ~{d.hrs} hrs drive</span>
-              <Link href={`/contact?destination=${d.slug}`} className="ml-auto inline-flex items-center gap-1.5 text-forest hover:underline">
+              <Link href={`/contact?destination=${d.slug}`} className="-my-2.5 ml-auto inline-flex items-center gap-1.5 py-2.5 text-forest hover:underline">
                 Quote this route <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>

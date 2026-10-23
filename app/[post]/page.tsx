@@ -44,8 +44,8 @@ export default async function PostPage({ params }: { params: Promise<{ post: str
       <header className="relative overflow-hidden bg-paper pb-16 pt-32 md:pt-40">
         <div className="wrap relative max-w-5xl">
           <ol className="flex flex-wrap items-center gap-1.5 text-xs font-bold text-muted">
-            <li><Link href="/" className="hover:text-forest">Home</Link></li>
-            <li className="flex items-center gap-1.5"><ChevronRight className="h-3 w-3" /><Link href="/blog" className="hover:text-forest">Blog</Link></li>
+            <li><Link href="/" className="-my-3 inline-block py-3 hover:text-forest">Home</Link></li>
+            <li className="flex items-center gap-1.5"><ChevronRight className="h-3 w-3" /><Link href="/blog" className="-my-3 inline-block py-3 hover:text-forest">Blog</Link></li>
             <li className="flex items-center gap-1.5"><ChevronRight className="h-3 w-3" /><span className="text-ink">{p.category}</span></li>
           </ol>
           <p className="mt-6 flex flex-wrap gap-4 text-xs font-bold text-muted">

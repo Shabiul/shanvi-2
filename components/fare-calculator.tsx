@@ -27,7 +27,7 @@ function Slider({ label, value, min, max, step = 1, unit, onChange }: { label: s
           step={step}
           value={value}
           onChange={(e) => onChange(Number(e.target.value))}
-          className="absolute -top-2.5 left-0 h-7 w-full cursor-pointer appearance-none bg-transparent [&::-moz-range-thumb]:h-6 [&::-moz-range-thumb]:w-6 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-4 [&::-moz-range-thumb]:border-white [&::-moz-range-thumb]:bg-forest [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-4 [&::-webkit-slider-thumb]:border-white [&::-webkit-slider-thumb]:bg-forest [&::-webkit-slider-thumb]:shadow-md"
+          className="absolute -top-4 left-0 h-10 w-full cursor-pointer appearance-none bg-transparent [&::-moz-range-thumb]:h-6 [&::-moz-range-thumb]:w-6 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-4 [&::-moz-range-thumb]:border-white [&::-moz-range-thumb]:bg-forest [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-4 [&::-webkit-slider-thumb]:border-white [&::-webkit-slider-thumb]:bg-forest [&::-webkit-slider-thumb]:shadow-md"
         />
       </span>
     </label>
@@ -87,7 +87,7 @@ export function FareCalculator() {
         </div>
         <div className="mt-6 inline-flex rounded-full bg-sand p-1">
           {(["outstation", "local"] as Mode[]).map((m) => (
-            <button key={m} type="button" onClick={() => setMode(m)} className={`relative rounded-full px-5 py-2 text-sm font-extrabold capitalize ${mode === m ? "text-ink" : "text-muted"}`}>
+            <button key={m} type="button" onClick={() => setMode(m)} className={`relative min-h-10 rounded-full px-5 py-2 text-sm font-extrabold capitalize ${mode === m ? "text-ink" : "text-muted"}`}>
               {mode === m && <motion.span layoutId="calc-mode" className="absolute inset-0 rounded-full bg-white shadow" transition={{ type: "spring", stiffness: 400, damping: 32 }} />}
               <span className="relative">{m === "local" ? "Local city" : "Outstation"}</span>
             </button>

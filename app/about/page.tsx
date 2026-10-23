@@ -17,7 +17,7 @@ const why = [
   { icon: Clock, href: "/contact", img: "/images/destinations/chikmagalur.jpg", alt: "Misty hills of Chikmagalur Western Ghats", title: "24/7 Live Dispatch Support", text: "Round-the-clock reservation desk and live operational support for flight delays, schedule revisions, and emergency travel needs." },
   { icon: UserCheck, href: "/fleet", img: "/images/destinations/wayanad.jpg", alt: "Forested hills of Wayanad Kerala", title: "Verified Highway Chauffeurs", text: "Police background-verified drivers with commercial passenger badges and at least 5 years experience on South Indian routes." },
   { icon: IndianRupee, href: "/services#corporate", img: "/images/destinations/munnar.jpg", alt: "Rolling tea estates in Munnar Kerala", title: "Transparent GST Pricing", text: "Clear upfront quotes with itemized toll, state tax, and driver allowance estimates. Full B2B corporate GST credit compliance." },
-  { icon: Bus, href: "/fleet", img: "/images/destinations/gokarna.jpg", alt: "Om Beach in Gokarna Karnataka", title: "Diverse Fleet Inventory", text: "Four distinct seating sizes (12+1, 21+1, 33+1, 49+1) matching any headcount without overcharging or vehicle overcrowding." },
+  { icon: Bus, href: "/fleet", img: "/images/destinations/gokarna.jpg", alt: "Om Beach in Gokarna Karnataka", title: "Diverse Fleet Inventory", text: "Six distinct seating sizes (12+1, 21+1, 25+1, 33+1, 45+1, 49+1) matching any headcount without overcharging or vehicle overcrowding." },
 ];
 
 export default function AboutPage() {
@@ -64,7 +64,7 @@ export default function AboutPage() {
             <p>
               During the peak November to February wedding season, Shanvi Tours is Bangalore&apos;s trusted operator for <strong className="text-ink">Wedding Transport Logistics</strong> — orchestrating <strong className="text-ink">multi-vehicle coordinated convoys for weddings with 200+ guests</strong>, deploying flagship <strong className="text-ink">49+1 Luxury Coaches with red carpet aisle and plush pushback upholstery</strong>, and running <strong className="text-ink">continuous shuttle loops between guest hotels and reception venues</strong> across Palace Grounds, Kanakapura Road, and Yelahanka.
             </p>
-            <p>Today, our fleet encompasses four distinct vehicle capacities: 12+1 Seater Tempo Travellers, 21+1 Seater Mercedes Mini Buses, 33+1 Seater Touring Buses, and 49+1 Seater Luxury Highway Coaches. Our drivers are trained in highway safety, defensive driving on ghat sections, and courteous passenger service.</p>
+            <p>Today, our fleet encompasses six distinct vehicle capacities: 12+1 Seater Tempo Travellers, 21+1 Seater Mercedes Mini Buses, 25+1 Seater Mini Coaches, 33+1 Seater Touring Buses, 45+1 Seater Premium Coaches, and 49+1 Seater Luxury Highway Coaches. Our drivers are trained in highway safety, defensive driving on ghat sections, and courteous passenger service.</p>
           </Reveal>
         </div>
         <div className="wrap mt-24">

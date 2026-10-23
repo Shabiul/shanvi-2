@@ -47,7 +47,7 @@ export function BookingWidget({ className = "" }: { className?: string }) {
               role="tab"
               aria-selected={tab === t}
               onClick={() => setTab(t)}
-              className={`relative rounded-full px-3.5 py-1.5 text-xs font-extrabold transition-colors sm:px-4 ${tab === t ? "text-white" : "text-muted hover:text-ink"}`}
+              className={`relative min-h-10 rounded-full px-3.5 py-2 text-xs font-extrabold transition-colors sm:px-4 ${tab === t ? "text-white" : "text-muted hover:text-ink"}`}
             >
               {tab === t && <motion.span layoutId="booking-tab" className="absolute inset-0 rounded-full bg-forest" transition={{ type: "spring", stiffness: 400, damping: 32 }} />}
               <span className="relative">{t}</span>
@@ -93,11 +93,11 @@ export function BookingWidget({ className = "" }: { className?: string }) {
           <span className="min-w-0 flex-1">
             <span className={label}>Travellers</span>
             <span className="mt-0.5 flex items-center gap-3">
-              <button type="button" aria-label="Fewer travellers" onClick={() => setPax((p) => Math.max(1, p - 1))} className="grid h-7 w-7 place-items-center rounded-full bg-sand hover:bg-mint">
+              <button type="button" aria-label="Fewer travellers" onClick={() => setPax((p) => Math.max(1, p - 1))} className="grid h-10 w-10 place-items-center rounded-full bg-sand hover:bg-mint">
                 <Minus className="h-3.5 w-3.5" />
               </button>
               <output aria-live="polite" className="w-8 text-center text-lg font-extrabold tabular-nums">{pax}</output>
-              <button type="button" aria-label="More travellers" onClick={() => setPax((p) => Math.min(200, p + 1))} className="grid h-7 w-7 place-items-center rounded-full bg-sand hover:bg-mint">
+              <button type="button" aria-label="More travellers" onClick={() => setPax((p) => Math.min(200, p + 1))} className="grid h-10 w-10 place-items-center rounded-full bg-sand hover:bg-mint">
                 <Plus className="h-3.5 w-3.5" />
               </button>
             </span>

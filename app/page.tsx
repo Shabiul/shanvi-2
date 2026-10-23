@@ -106,7 +106,7 @@ export default function Home() {
               <SectionHeading eyebrow="Who we are" title="Built around your group," accent="not a fixed package" light className="!mb-8" />
               <Reveal>
                 <div className="space-y-4 text-[15.5px] leading-relaxed text-body">
-                  <p>Since 2013, Shanvi Tours &amp; Travels has managed passenger transport across Bangalore and South India. We operate 4 standardized vehicle classes — from our agile 12+1 Tempo Traveller for family getaways to our 49+1 Luxury Bus for large weddings and corporate conferences.</p>
+                  <p>Since 2013, Shanvi Tours &amp; Travels has managed passenger transport across Bangalore and South India. We operate 6 standardized vehicle classes — from our agile 12+1 Tempo Traveller for family getaways to our 49+1 Luxury Bus for large weddings and corporate conferences.</p>
                   <p>Every booking includes an experienced, background-verified chauffeur with at least 5 years of commercial highway experience, transparent upfront pricing, zero hidden charges at drop-off, and dedicated GST billing for institutional clients.</p>
                   <p>Whether you require a recurring 5 AM employee shuttle in Electronic City, an airport transfer to Kempegowda International Airport (BLR), or a multi-day temple circuit across Karnataka, Tamil Nadu, and Kerala, our dispatch desk is available 24/7.</p>
                 </div>
@@ -124,7 +124,7 @@ export default function Home() {
       {/* Services */}
       <section className="py-28">
         <div className="wrap">
-          <SectionHeading eyebrow="What we offer" title="Bus rental" accent="by occasion" align="split" lede="Four standardized seating capacities deployed for corporate, personal, and institutional journeys." />
+          <SectionHeading eyebrow="What we offer" title="Bus rental" accent="by occasion" align="split" lede="Six standardized seating capacities deployed for corporate, personal, and institutional journeys." />
           <ServicePanels />
         </div>
       </section>
@@ -221,7 +221,7 @@ export default function Home() {
               <div>
                 <p className="text-lg tracking-widest text-forest">★★★★★</p>
                 <p className="text-sm text-muted">Based on 25 verified Google reviews</p>
-                <a href={site.maps} target="_blank" rel="noopener" className="mt-2 inline-block text-sm font-extrabold text-forest hover:underline">
+                <a href={site.maps} target="_blank" rel="noopener" className="mt-2 inline-block py-2.5 text-sm font-extrabold text-forest hover:underline">
                   View on Google Maps →
                 </a>
               </div>

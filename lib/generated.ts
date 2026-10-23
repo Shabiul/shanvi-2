@@ -153,7 +153,7 @@ export const faqs = {
     },
     {
       "q": "Which bus size is most suitable for my group headcount?",
-      "a": "We operate four standardized capacities: 12+1 Seater Tempo Traveller (best for 8-12 passengers), 21+1 Seater Mini Bus (best for 14-21 passengers), 33+1 Seater Touring Bus (best for 22-33 passengers), and 49+1 Seater Luxury Bus (best for 34-50 passengers). Let us know your passenger headcount and we will deploy the exact fit."
+      "a": "We operate six standardized capacities: 12+1 Seater Tempo Traveller (best for 8-12 passengers), 21+1 Seater Mini Bus (best for 13-21 passengers), 25+1 Seater Mini Coach (best for 22-25 passengers), 33+1 Seater Touring Bus (best for 26-33 passengers), 45+1 Seater Premium Coach (best for 34-45 passengers), and 49+1 Seater Luxury Bus (best for 46-50 passengers). Let us know your passenger headcount and we will deploy the exact fit."
     },
     {
       "q": "Are professional commercial drivers provided with all rentals?",

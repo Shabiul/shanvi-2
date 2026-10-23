@@ -42,8 +42,8 @@ export type Vehicle = {
   anchor: string;
   plate: string;
   chassis: string;
-  /** credit marks a licensed stock photo standing in for a vehicle we have no own photos of. */
-  images: { src: string; alt: string; credit?: string }[];
+  /** shared marks a photo borrowed from another vehicle's album (shown in both). */
+  images: { src: string; alt: string; shared?: boolean }[];
   local: number;
   localLabel: string;
   extraKm: number;
@@ -75,7 +75,13 @@ const albums = {
     pic("tempo/tempo-interior-ceiling", "Tempo Traveller cabin with illuminated ceiling panels"),
     pic("tempo/tempo-ceiling-art", "Custom illuminated ceiling art inside a Shanvi Tempo Traveller"),
   ],
-  mini: [pic("fleet/mini-bus-exterior", "Shanvi Tours & Travels 21+1 Seater Mercedes Mini Bus Bangalore KA 51 AB 8485")],
+  mini: [
+    pic("fleet/mini-bus-exterior", "Shanvi Tours & Travels 21+1 Seater Mercedes Mini Bus Bangalore KA 51 AB 8485"),
+    pic("seater21/interior", "21+1 Seater Mini Bus interior with pushback seats and ambient lighting"),
+    pic("seater21/side", "21+1 Seater Mercedes Mini Bus side view"),
+    pic("seater21/door-side", "21+1 Seater Mini Bus entry door and side windows"),
+    pic("seater21/rear-quarter", "21+1 Seater Mercedes Mini Bus rear three-quarter view"),
+  ],
   touring: [
     pic("coach/coach-sunset-side", "Shanvi Tours & Travels 33+1 Seater Touring Coach at sunset, Bangalore"),
     pic("coach/coach-interior-aisle", "33+1 Touring Coach interior with red carpet aisle and pushback seats"),
@@ -93,6 +99,8 @@ const albums = {
     pic("fleet/luxury-bus-parked", "49+1 Luxury Coach parked at a temple, ready for departure"),
     pic("fleet/luxury-bus-temple-2", "49+1 Luxury Coach on a temple pilgrimage circuit"),
     pic("coach/bus-side", "49+1 Luxury Coach side profile"),
+    pic("fleet/luxury-bus-rear", "49+1 Luxury Coach KA 51 AL 4498 rear with Shanvi branding"),
+    pic("fleet/luxury-bus-side", "49+1 Luxury Coach side view with curtained windows"),
   ],
   seater25: [
     pic("seater25/side-front", "Shanvi Tours & Travels 25+1 Seater Mini Coach Bangalore exterior"),
@@ -101,16 +109,6 @@ const albums = {
     pic("seater25/side", "25+1 Seater Mini Coach side view with luggage hold"),
     pic("seater25/rear", "25+1 Seater Mini Coach rear with Shanvi Tours & Travels branding"),
     pic("seater25/interior-aisle", "25+1 Seater Mini Coach aisle with pushback seats and red carpet"),
-  ],
-};
-// No own photos yet: licensed stock stand-ins, shown with a "Representative photo"
-// tag and credit, and kept out of the gallery (which promises real fleet photos).
-const pexels = "Photo: Pexels";
-const stock = {
-  coach45: [
-    { ...pic("stock/coach-45-front", "Representative photo of a 45+1 seater white luxury coach, front view"), credit: pexels },
-    { ...pic("stock/coach-45-interior", "Representative photo of a 45+1 seater coach interior with pushback seats and TV screens"), credit: pexels },
-    { ...pic("stock/coach-45-rear", "Representative photo of a 45+1 seater white luxury coach, rear view"), credit: pexels },
   ],
 };
 // Re-saved copies of album photos that some pages still reference.
@@ -181,7 +179,7 @@ export const fleet: Vehicle[] = [
     anchor: "25-mini-coach",
     plate: "",
     chassis: "Shanvi 25+1 mini coach",
-    images: albums.seater25,
+    images: [...albums.seater25, ...albums.touring.map((p) => ({ ...p, shared: true }))],
     local: 7500,
     localLabel: "8 hr / 80 km",
     extraKm: 30,
@@ -227,7 +225,7 @@ export const fleet: Vehicle[] = [
     anchor: "45-premium-coach",
     plate: "",
     chassis: "Full-size premium coach",
-    images: stock.coach45,
+    images: albums.luxury.map((p) => ({ ...p, shared: true })),
     local: 14000,
     localLabel: "8 hr / 80 km",
     extraKm: 48,
@@ -266,14 +264,19 @@ export const fleet: Vehicle[] = [
   },
 ];
 
-/** The album (vehicle photos) a site image belongs to, or null if it is not a vehicle photo. */
-export function albumFor(src: string) {
+/**
+ * The album (vehicle photos) a site image belongs to, or null if it is not a vehicle photo.
+ * A photo shown in two albums opens `vehicle`'s when clicked inside that vehicle's card,
+ * otherwise the album it was not borrowed into.
+ */
+export function albumFor(src: string, vehicle?: string) {
   const s = photoAliases[src] ?? src;
-  for (const v of fleet) {
+  const hits = fleet.flatMap((v) => {
     const index = v.images.findIndex((p) => p.src === s);
-    if (index >= 0) return { title: `${v.name} · ${v.seats}`, photos: v.images, index };
-  }
-  return null;
+    return index < 0 ? [] : [{ v, index }];
+  });
+  const hit = hits.find((h) => h.v.id === vehicle) ?? hits.find((h) => !h.v.images[h.index].shared) ?? hits[0];
+  return hit ? { title: `${hit.v.name} · ${hit.v.seats}`, photos: hit.v.images, index: hit.index } : null;
 }
 
 export const vehicleFor = (pax: number) => fleet.find((v) => pax <= v.maxPax) ?? fleet[fleet.length - 1];
@@ -391,4 +394,4 @@ export const team = [
   { name: "Kiran Gowda", role: "Wedding Logistics & Route Dispatch", text: "Specialist in Bangalore wedding season logistics (Nov–Feb). Coordinates 49+1 Luxury Coach convoys for 200+ guests and continuous shuttle loops between guest hotels, reception halls, and airport terminals.", foot: "Wedding Convoy Specialist" },
 ];
 
-export const galleryPhotos = fleet.flatMap((v) => v.images.filter((i) => !i.credit).map((i) => ({ ...i, label: `${v.name} · ${v.seats}` })));
+export const galleryPhotos = fleet.flatMap((v) => v.images.filter((i) => !i.shared).map((i) => ({ ...i, label: `${v.name} · ${v.seats}` })));

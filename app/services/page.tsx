@@ -96,7 +96,7 @@ export default function ServicesPage() {
       >
         <div className="flex flex-wrap gap-2">
           {rows.map((r) => (
-            <Link key={r.id} href={`#${r.id}`} className="rounded-full px-4 py-2 text-xs font-extrabold border border-line bg-white text-ink transition hover:border-forest hover:text-forest">
+            <Link key={r.id} href={`#${r.id}`} className="rounded-full px-4 py-3 text-xs font-extrabold border border-line bg-white text-ink transition hover:border-forest hover:text-forest">
               {r.label.split(" · ")[0]}
             </Link>
           ))}
@@ -115,7 +115,7 @@ export default function ServicesPage() {
 
       <section className="py-24">
         <div className="wrap">
-          <SectionHeading eyebrow="Tailored solutions" title="Commercial bus rental" accent="by occasion" lede="Our four standardized vehicle classes — 12+1 Tempo Traveller, 21+1 Mini Bus, 33+1 Bus, and 49+1 Luxury Bus — deployed for your exact logistical requirement." />
+          <SectionHeading eyebrow="Tailored solutions" title="Commercial bus rental" accent="by occasion" lede="Our six standardized vehicle classes — 12+1 Tempo Traveller, 21+1 Mini Bus, 25+1 Mini Coach, 33+1 Bus, 45+1 Premium Coach, and 49+1 Luxury Bus — deployed for your exact logistical requirement." />
           {rows.map((r, i) => (
             <article key={r.id} id={r.id} className="grid scroll-mt-28 gap-12 border-t border-line py-20 lg:grid-cols-2 lg:gap-20">
               <div className={i % 2 ? "lg:order-2" : ""}>

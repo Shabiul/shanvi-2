@@ -246,6 +246,8 @@ export function ScrollProgress() {
 }
 
 /* ---------- Cursor: dot + ring; grows and labels on [data-cursor] ---------- */
+// Sits above every overlay (photo viewer, video popup at z-95): the native
+// cursor is hidden site-wide, so anything covering this hides the pointer.
 const fineQuery = "(pointer: fine) and (prefers-reduced-motion: no-preference)";
 function useFinePointer() {
   return useSyncExternalStore(
@@ -288,10 +290,10 @@ export function Cursor() {
   if (!enabled) return null;
   return (
     <>
-      <motion.div aria-hidden className="pointer-events-none fixed left-0 top-0 z-[90] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-forest" style={{ x, y }} />
+      <motion.div aria-hidden className="pointer-events-none fixed left-0 top-0 z-[130] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-forest" style={{ x, y }} />
       <motion.div
         aria-hidden
-        className="pointer-events-none fixed left-0 top-0 z-[89] flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-forest/60 text-[11px] font-extrabold uppercase tracking-widest text-white mix-blend-normal"
+        className="pointer-events-none fixed left-0 top-0 z-[129] flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-forest/60 text-[11px] font-extrabold uppercase tracking-widest text-white mix-blend-normal"
         style={{ x: rx, y: ry }}
         animate={{ width: label ? 92 : hover ? 54 : 34, height: label ? 92 : hover ? 54 : 34, backgroundColor: label ? "rgb(15 91 70)" : "rgb(15 91 70 / 0)" }}
         transition={{ type: "spring", stiffness: 260, damping: 22 }}

@@ -67,7 +67,7 @@ export function PageHero({
               <li key={c.label} className="flex items-center gap-1.5">
                 {i > 0 && <ChevronRight className="h-3 w-3" />}
                 {c.href ? (
-                  <Link href={c.href} className="hover:text-forest">
+                  <Link href={c.href} className="-my-3 inline-block py-3 hover:text-forest">
                     {c.label}
                   </Link>
                 ) : (
