@@ -122,7 +122,7 @@ export function FleetExplorer() {
             </button>
           ))}
         </div>
-        <p className="mt-6 text-xs leading-relaxed text-subtle">All four classes: dual AC, AIS-140 GPS &amp; speed governor, pushback seats, verified driver.</p>
+        <p className="mt-6 text-xs leading-relaxed text-subtle">Every class: dual AC, AIS-140 GPS &amp; speed governor, pushback seats, verified driver.</p>
       </div>
 
       {/* Stage */}
@@ -144,7 +144,11 @@ export function FleetExplorer() {
         </div>
         <div className="absolute left-5 right-5 top-5 flex items-start justify-between gap-3">
           {active.tag ? <span className="rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{active.tag}</span> : <span />}
-          <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{active.plate}</span>
+          {active.plate ? (
+            <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{active.plate}</span>
+          ) : (
+            <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-ink">Representative photo</span>
+          )}
         </div>
         <div className="relative flex flex-1 flex-col p-6 md:p-7">
           <AnimatePresence mode="wait">

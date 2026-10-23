@@ -81,12 +81,38 @@ export const organizationSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
+          "name": "25 Seater Mini Coach Rental Bangalore",
+          "description": "Local 8-Hour / 80-Km package starting from ₹7,500; outstation from ₹36/km"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "7500",
+          "priceCurrency": "INR"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
           "name": "33+1 Seater Touring Bus Rental Bangalore",
           "description": "Local 8-Hour / 80-Km package starting from ₹9,000; outstation from ₹42/km"
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
           "price": "9000",
+          "priceCurrency": "INR"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "45+1 Seater Premium Coach Rental Bangalore",
+          "description": "Local 8-Hour / 80-Km package starting from ₹14,000; outstation from ₹54/km"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "14000",
           "priceCurrency": "INR"
         }
       },

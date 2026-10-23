@@ -95,6 +95,11 @@ export function PhotoViewer() {
           <p className="absolute left-4 top-5 rounded-full bg-white px-4 py-2 text-xs font-extrabold text-ink shadow-md sm:text-sm">
             {album.title} · {i + 1}/{n}
           </p>
+          {p.credit && (
+            <p className="absolute bottom-1 left-1/2 w-max max-w-[95vw] -translate-x-1/2 text-center text-[11px] text-muted">
+              Representative photo · {p.credit}
+            </p>
+          )}
           <motion.div
             key={p.src}
             className="relative min-h-0 w-full max-w-6xl flex-1 touch-pan-y"

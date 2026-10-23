@@ -63,7 +63,7 @@ export default function GalleryPage() {
           <Reveal className="rounded-[32px] p-7 card">
             <h3 className="text-xs font-extrabold uppercase tracking-[0.2em] text-forest">Active Fleet Registration Index</h3>
             <ul className="mt-5">
-              {fleet.map((v) => (
+              {fleet.filter((v) => v.plate).map((v) => (
                 <li key={v.id} className="flex items-center justify-between gap-3 border-b border-line py-4 last:border-0">
                   <span className="font-bold">{v.seats.replace(" Seater", "")} {v.name}</span>
                   <span className="rounded-md border-2 border-ink bg-[#ffd84d] px-2.5 py-1 font-mono text-xs font-bold text-ink">{v.plate}</span>

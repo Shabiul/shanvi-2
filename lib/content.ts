@@ -33,7 +33,7 @@ export const nav = [
 
 /** Seat rows: "L" seat, "_" aisle. Rendered left→right, front→back. */
 export type Vehicle = {
-  id: "12" | "21" | "33" | "49";
+  id: "12" | "21" | "25" | "33" | "45" | "49";
   name: string;
   seats: string;
   capacity: number;
@@ -42,7 +42,8 @@ export type Vehicle = {
   anchor: string;
   plate: string;
   chassis: string;
-  images: { src: string; alt: string }[];
+  /** credit marks a licensed stock photo standing in for a vehicle we have no own photos of. */
+  images: { src: string; alt: string; credit?: string }[];
   local: number;
   localLabel: string;
   extraKm: number;
@@ -92,6 +93,19 @@ const albums = {
     pic("fleet/luxury-bus-parked", "49+1 Luxury Coach parked at a temple, ready for departure"),
     pic("fleet/luxury-bus-temple-2", "49+1 Luxury Coach on a temple pilgrimage circuit"),
     pic("coach/bus-side", "49+1 Luxury Coach side profile"),
+  ],
+};
+// No own photos yet: licensed stock stand-ins, shown with a "Representative photo"
+// tag and credit, and kept out of the gallery (which promises real fleet photos).
+const pexels = "Photo: Pexels";
+const stock = {
+  seater25: [
+    { ...pic("stock/traveller-26-seater", "Representative photo of a Force Traveller 26 seater mini coach"), credit: "Photo: Biswarup Ganguly, CC BY 3.0, via Wikimedia Commons" },
+  ],
+  coach45: [
+    { ...pic("stock/coach-45-front", "Representative photo of a 45+1 seater white luxury coach, front view"), credit: pexels },
+    { ...pic("stock/coach-45-interior", "Representative photo of a 45+1 seater coach interior with pushback seats and TV screens"), credit: pexels },
+    { ...pic("stock/coach-45-rear", "Representative photo of a 45+1 seater white luxury coach, rear view"), credit: pexels },
   ],
 };
 // Re-saved copies of album photos that some pages still reference.
@@ -153,11 +167,34 @@ export const fleet: Vehicle[] = [
     perks: ["2x2 pushback recliners", "USB charging every row", "LED TV + PA mic", "18–20 bag boot"],
   },
   {
+    id: "25",
+    name: "Mini Coach",
+    seats: "25 Seater",
+    capacity: 25,
+    minPax: 22,
+    maxPax: 25,
+    anchor: "25-mini-coach",
+    plate: "",
+    chassis: "Force Traveller 26 class",
+    images: stock.seater25,
+    local: 7500,
+    localLabel: "8 hr / 80 km",
+    extraKm: 30,
+    extraHr: 400,
+    rateMin: 36,
+    rateMax: 40,
+    bata: 650,
+    ideal: "22–25 passengers: office outings, extended families, college groups",
+    desc: "A 25 seater mini coach for groups that just outgrow a mini bus. Air-conditioned with pushback seats and rear luggage space, it suits city outings, airport transfers, and weekend trips to Mysore, Coorg, and Chikmagalur.",
+    layout: ["LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LLLLL"],
+    perks: ["Pushback seats", "Full AC cabin", "Rear luggage space", "Speed-governed 80 km/h"],
+  },
+  {
     id: "33",
     name: "Touring Coach",
     seats: "33+1 Seater",
     capacity: 33,
-    minPax: 22,
+    minPax: 26,
     maxPax: 33,
     anchor: "33-tourist-bus",
     plate: "KA 51 AL 7388",
@@ -170,17 +207,40 @@ export const fleet: Vehicle[] = [
     rateMin: 42,
     rateMax: 46,
     bata: 700,
-    ideal: "22–33 passengers: pilgrimages, school trips, inter-state holidays",
+    ideal: "26–33 passengers: pilgrimages, school trips, inter-state holidays",
     desc: "A full-size touring coach with pushback reclining seats and generous legroom, built for long outstation routes across Karnataka, Kerala, Tamil Nadu, Telangana, and Andhra Pradesh.",
     layout: ["LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LLLLL"],
     perks: ["2x2 coach pushback", "30+ suitcase bay", "Reading lights", "Speed-governed 80 km/h"],
+  },
+  {
+    id: "45",
+    name: "Premium Coach",
+    seats: "45+1 Seater",
+    capacity: 45,
+    minPax: 34,
+    maxPax: 45,
+    anchor: "45-premium-coach",
+    plate: "",
+    chassis: "Full-size premium coach",
+    images: stock.coach45,
+    local: 14000,
+    localLabel: "8 hr / 80 km",
+    extraKm: 48,
+    extraHr: 600,
+    rateMin: 54,
+    rateMax: 60,
+    bata: 800,
+    ideal: "34–45 passengers: corporate events, wedding guests, long-distance tours",
+    desc: "A full-size 45+1 seater premium coach with 2x2 pushback recliners, onboard TV screens, and a large underfloor luggage hold — built for corporate events, wedding guest movement, and multi-day tours across South India.",
+    layout: ["LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LLLLL"],
+    perks: ["2x2 pushback recliners", "Onboard TV screens", "Underfloor luggage hold", "Curtained windows"],
   },
   {
     id: "49",
     name: "Luxury Coach",
     seats: "49+1 Seater",
     capacity: 49,
-    minPax: 34,
+    minPax: 46,
     maxPax: 50,
     anchor: "49-luxury-bus",
     plate: "KA 51 AL 4498",
@@ -194,7 +254,7 @@ export const fleet: Vehicle[] = [
     rateMax: 58,
     bata: 800,
     tag: "Wedding flagship",
-    ideal: "34–50 passengers: weddings (200+ guest convoys), summits, large tours",
+    ideal: "46–50 passengers: weddings (200+ guest convoys), summits, large tours",
     desc: "Our flagship coach — 49+1 Luxury Coach with red carpet aisle and plush pushback upholstery, onboard LED entertainment screen, and deep luggage hold. Deployed for wedding transport logistics, multi-vehicle coordinated convoys for weddings with 200+ guests, continuous shuttle loops between guest hotels and reception venues, and multi-day South India tours.",
     layout: ["LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LL_LL", "LLLLL"],
     perks: ["Red carpet aisle", "LED entertainment screen", "Underfloor cargo hold", "Ambient mood lighting"],
@@ -326,4 +386,4 @@ export const team = [
   { name: "Kiran Gowda", role: "Wedding Logistics & Route Dispatch", text: "Specialist in Bangalore wedding season logistics (Nov–Feb). Coordinates 49+1 Luxury Coach convoys for 200+ guests and continuous shuttle loops between guest hotels, reception halls, and airport terminals.", foot: "Wedding Convoy Specialist" },
 ];
 
-export const galleryPhotos = fleet.flatMap((v) => v.images.map((i) => ({ ...i, label: `${v.name} · ${v.seats}` })));
+export const galleryPhotos = fleet.flatMap((v) => v.images.filter((i) => !i.credit).map((i) => ({ ...i, label: `${v.name} · ${v.seats}` })));

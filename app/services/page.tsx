@@ -63,7 +63,7 @@ const rows = [
     lead: "Inter-state highway passenger transport across Karnataka, Kerala, Tamil Nadu, Andhra Pradesh, and Telangana. One-way drops or multi-day round-trip vacation packages.",
     body: "Backed by All India Tourist Permits (AITP) for seamless border transit without border checkpost delays. Our chauffeurs possess intimate knowledge of ghat roads, hairpin bends, highway rest stops, and scenic detour routes.",
     listTitle: "Outstation Journey Features",
-    list: ["All 4 vehicle classes available: 12+1, 21+1, 33+1, and 49+1 seater", "All India Tourist Permit (AITP) interstate coverage", "Transparent per-km or all-inclusive day package billing", "Driver accommodation and day/night bata factored transparently", "Top destinations: Mysore, Coorg, Wayanad, Munnar, Ooty, Gokarna, Tirupati, Hyderabad", "Full mechanical pre-trip inspection before every highway departure"],
+    list: ["All 6 vehicle classes available: 12+1, 21+1, 25, 33+1, 45+1, and 49+1 seater", "All India Tourist Permit (AITP) interstate coverage", "Transparent per-km or all-inclusive day package billing", "Driver accommodation and day/night bata factored transparently", "Top destinations: Mysore, Coorg, Wayanad, Munnar, Ooty, Gokarna, Tirupati, Hyderabad", "Full mechanical pre-trip inspection before every highway departure"],
     cta: "Plan outstation trip",
     images: [["/images/coach/coach-sunset-front.jpg", "Outstation Bus Rental from Bangalore Across Karnataka Kerala and Tamil Nadu"], ["/images/fleet/luxury-bus-temple-1.jpg", "Luxury Bus on Inter-State Outstation Route from Bangalore"]],
   },

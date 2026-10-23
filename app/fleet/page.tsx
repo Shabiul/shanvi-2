@@ -61,7 +61,8 @@ export default function FleetPage() {
               <div className={`grid gap-4 ${i % 2 ? "lg:order-2" : ""}`}>
                 <Reveal className="relative aspect-[16/10] overflow-hidden rounded-[32px]">
                   <Image src={v.images[0].src} alt={v.images[0].alt} fill sizes="(max-width:1024px) 100vw, 55vw" className="object-cover transition-transform duration-[1.4s] hover:scale-105" />
-                  <span className="absolute bottom-5 left-5 rounded-md border-2 border-ink bg-[#ffd84d] px-3 py-1 font-mono text-sm font-bold text-ink">{v.plate}</span>
+                  {v.plate && <span className="absolute bottom-5 left-5 rounded-md border-2 border-ink bg-[#ffd84d] px-3 py-1 font-mono text-sm font-bold text-ink">{v.plate}</span>}
+                  {v.images[0].credit && <span className="absolute bottom-5 left-5 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-ink">Representative photo</span>}
                   {v.tag && <span className="absolute right-5 top-5 rounded-full bg-forest px-3.5 py-1.5 text-xs font-extrabold text-white">{v.tag}</span>}
                 </Reveal>
                 <div className={`grid grid-cols-1 gap-4 ${v.images[1] ? "sm:grid-cols-[1fr_230px]" : ""}`}>
@@ -87,7 +88,7 @@ export default function FleetPage() {
                     ["City (8hr / 80km)", `From ${inr(v.local)}`],
                     ["Extra km / hr", `₹${v.extraKm}/km · ₹${v.extraHr}/hr`],
                     ["Outstation", `₹${v.rateMin}–${v.rateMax}/km + bata ₹${v.bata}/day`],
-                    ["Plate", v.plate],
+                    ["Plate", v.plate || "Assigned at booking"],
                     ["Permit", "All India Tourist Permit (AITP)"],
                   ].map(([k, val], j) => (
                     <div key={k} className={`flex justify-between gap-4 px-5 py-3.5 text-sm ${j % 2 ? "" : "bg-white/[0.03]"}`}>
